@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Document Comments TAC XSLT transformation -->
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	<xsl:output method="xml" indent="yes"/>
+	<xsl:strip-space elements="*"/>
+	<xsl:template match="@* | node()">
+		<xsl:copy>
+			<xsl:apply-templates select="@* | node()"/>
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="@* | node()" mode="raw">
+		<xsl:value-of select="@* | node()"/>
+		<xsl:text> </xsl:text>
+	</xsl:template>
+	<xsl:template match="*" mode="addParent">
+		<xsl:param name="name" select="name(..)"/>
+		<xsl:element name="{concat($name,name())}">
+			<xsl:value-of select="."/>
+		</xsl:element>
+	</xsl:template>
+	<!--Search02c-->
+	<xsl:template match="Search02cResponse">
+		<Output_Shell>
+			<xsl:apply-templates select="@* | node()[not(
+			   
+				name() = 'matchedindividual' or 
+				name() = 'debtsummary' or 
+				name() = 'debtstress' or
+				name() = 'owngroup' or
+				name() = 'alerts' or 
+				name() = 'cardbds'
+			)]"/>
+		</Output_Shell>
+	</xsl:template>
+	<xsl:template match="searchDefinition">
+		<xsl:copy>
+			<xsl:apply-templates select="@* | node()[
+				not(name() = 'Alias')
+			]"/>
+		</xsl:copy>
+	</xsl:template>
+	<!-- Applicant Fields START -->
+	<xsl:template match="parameters/applicant">
+		<xsl:apply-templates select="@* | node()[not(
+					name()='isselected' or
+					name()='name' or 
+					name()='address' or 
+					name()='income'
+			)]"/>
+		<appl_isselected>
+			<xsl:value-of select="isselected"/>
+		</appl_isselected>
+		<xsl:apply-templates select="name/*"/>
+		<xsl:apply-templates select="address/*[not(name()='isselected')]"/>
+		<addr_isselected>
+			<xsl:value-of select="address/isselected"/>
+		</addr_isselected>
+		<xsl:apply-templates select="income/*"/>
+	</xsl:template>
+	<!-- Applicant Fields END -->
+	<!-- Pick List Address Fields START -->
+	<!-- Pick List Address , Applicant Fields START -->
+	<xsl:template match="parameters/picklist/addresses">
+		<picklistaddresses_NiFiGroup>
+			<xsl:apply-templates select="@* | node()"/>
+		</picklistaddresses_NiFiGroup>
+	</xsl:template>
+	<xsl:template match="parameters/picklist/addresses/address">
+		<picklist_address>
+			<xsl:apply-templates select="@* | node()"/>
+		</picklist_address>
+	</xsl:template>
+	<xsl:template match="parameters/picklist/applicants">
+		<picklistapplicants_NiFiGroup>
+			<xsl:apply-templates select="@* | node()"/>
+		</picklistapplicants_NiFiGroup>
+	</xsl:template>
+	<!--  isselected repeated twice in the node "parameters/picklist/applicants/applicant" handled prem 08-11-2018  -->
+	<xsl:template match="parameters/picklist/applicants/applicant">
+		<xsl:apply-templates select="@* | node()[not(
+					name()='isselected' or
+					name()='name' or 
+					name()='dob' or 
+					name()='accountnumber' or 
+					name()='residenceid' or
+					name()='address' or 
+					name()='income'
+			)]"/>
+		<picklist_applicant>
+			<xsl:apply-templates select="dob"/>
+			<xsl:apply-templates select="accountnumber"/>
+			<xsl:apply-templates select="residenceid"/>
+			<xsl:apply-templates select="name/*"/>
+			<appl_isselected>
+				<xsl:value-of select="isselected"/>
+			</appl_isselected>
+			<xsl:apply-templates select="address/*[not(name()='isselected')]"/>
+			<addr_isselected>
+				<xsl:value-of select="address/isselected"/>
+			</addr_isselected>
+			<xsl:apply-templates select="income/*"/>
+		</picklist_applicant>
+	</xsl:template>
+	<!--  isselected repeated twice in the node "parameters/picklist/applicants/applicant" handled prem 08-11-2018  END  -->
+	
+	
+	<!-- Pick List Address, Applicant Fields End -->
+	<!-- Matched Individual table START -->
+	<xsl:template match="results/matchedindividual/name | results/matchedindividual/address">
+		<xsl:apply-templates select="@* | node()"/>
+	</xsl:template>
+	<!-- Matched Individual table END -->
+	
+	<!-- Matched Individual linkded matches table START -->
+	<xsl:template match="results/matchedindividual/linkedmatches">
+		<linkedmatchesapplicant_NiFiGroup>
+			<xsl:apply-templates select="@* | node()"/>
+		</linkedmatchesapplicant_NiFiGroup>
+	</xsl:template>
+	<!--  isselected repeated twice in the node "results/matchedindividual/linkedmatches" handled prem 08-11-2018  -->
+	<xsl:template match="results/matchedindividual/linkedmatches/applicant">
+		<xsl:apply-templates select="@* | node()[not(
+					name()='isselected' or
+					name()='name' or 
+					name()='dob' or 
+					name()='accountnumber' or 
+					name()='residenceid' or
+					name()='address' or 
+					name()='income'
+			)]"/>
+		<linkedmatches_applicant>
+			<xsl:apply-templates select="dob"/>
+			<xsl:apply-templates select="accountnumber"/>
+			<xsl:apply-templates select="residenceid"/>
+			<xsl:apply-templates select="name/*"/>
+			<appl_isselected>
+				<xsl:value-of select="isselected"/>
+			</appl_isselected>
+			<xsl:apply-templates select="address/*[not(name()='isselected')]"/>
+			<addr_isselected>
+				<xsl:value-of select="address/isselected"/>
+			</addr_isselected>
+			<xsl:apply-templates select="income/*"/>
+		</linkedmatches_applicant>
+	</xsl:template>
+	<!--  isselected repeated twice in the node "parameters/picklist/applicants/applicant" handled prem 08-11-2018  END  -->
+	<!-- Matched Individual  linked matches table END -->
+	
+		<!-- debtsummary START-->
+	<xsl:template match="turnoverpercentiles|capacity">
+		<xsl:apply-templates select="@* | node()"/>
+	</xsl:template>
+	<!-- debtsummary END-->
+	
+	<!-- debtstress START -->
+	<xsl:template match="incomedebtratio|recentaccountactivity|accountholdings|cardutilisation|owngroupdata">
+		<xsl:apply-templates select="@* | node()"/>
+	</xsl:template>
+	<!-- debtstress END -->
+	
+	<!-- owngroup summary START -->
+	<!-- working code dont touch 
+    <xsl:template match="owngroup">
+		<xsl:copy>
+			<owngroupaccounts_NiFiGroup>
+				<xsl:apply-templates select="accounts/*"/>
+			</owngroupaccounts_NiFiGroup>
+		</xsl:copy>
+	</xsl:template>
+	<xsl:template match="account">
+		<owngroup_account>
+			<xsl:apply-templates select="@* | node()"/>
+			<xsl:apply-templates select="../../summary/*"/>
+		</owngroup_account>
+	</xsl:template>  -->
+<!--
+  <item>
+        <name>item2</name>
+        <comment>comment2</comment>
+        <stick>default</stick>
+        <place>place2</place>
+    </item>
+
+
+		<owngroup>
+			<summary>
+				<numownca>123</numownca>
+				<numownln>123</numownln>
+				<numowncc>123</numowncc>
+				<numownmg>123</numownmg>
+			</summary>
+			<accounts>
+				<account>
+					<recordtype>st</recordtype>
+					<portfolio>str123</portfolio>
+					<accnumber>str1234</accnumber>
+					<accopendate>2012-12-13T12:12:12</accopendate>
+					<paymentstatus>s</paymentstatus>
+					<accbalance>123</accbalance>
+					<lendername>str1234</lendername>
+				</account>
+			</accounts>
+		</owngroup>
+
+<xsl:template match="item[not(stick)]/comment | item[not(stick or comment)]/name">
+    <xsl:copy-of select="."/>
+    <stick>default</stick>
+</xsl:template>
+
+-->
+
+ <!-- Prem
+
+   <xsl:template match="owngroup">
+		<xsl:copy> 
+			<owngroupaccounts_NiFiGroup>
+				<xsl:apply-templates select="accounts/*" />
+			</owngroupaccounts_NiFiGroup>
+	</xsl:copy>				
+			</xsl:template>
+	
+	<xsl:template match="account">
+		<owngroup_account>
+			<xsl:apply-templates select="@* | node()"/>
+			<xsl:apply-templates select="../../summary/*"/>
+		</owngroup_account>
+	</xsl:template>
+-->
+<!--
+<xsl:template match="results/owngroup">
+	<xsl:copy>
+		<owngroupaccounts_NiFiGroup>
+		<owngroup_account>
+			<xsl:apply-templates select="summary/*"/>
+			<xsl:apply-templates select="accounts/account/*"/>
+		 </owngroup_account>
+		</owngroupaccounts_NiFiGroup>	
+	
+	</xsl:copy>		
+</xsl:template>
+<xsl:if test="year != ''">
+
+<xsl:if test="((node/ABC!='') and (normalize-space(node/DEF)='') and (normalize-space(node/GHI)=''))">
+  This worked perfectly fine.
+</xsl:if>
+-->
+  <xsl:template match="owngroup">
+    <xsl:if test="accounts != '' ">  	<!-- This will only trigger when accounts element is not empty -->
+	<xsl:copy> 
+			<owngroupaccounts_NiFiGroup>
+				<xsl:apply-templates select="accounts/*" />
+			</owngroupaccounts_NiFiGroup>
+	</xsl:copy>	
+    </xsl:if>
+
+    <xsl:if test="accounts= ''" >  <!-- accounts element is empty -->
+	<xsl:copy>
+		<owngroupaccounts_NiFiGroup>
+		<owngroup_account>
+			<xsl:apply-templates select="summary/*"/>
+			<xsl:apply-templates select="accounts/account/*"/>
+		 </owngroup_account>
+		</owngroupaccounts_NiFiGroup>	
+	
+	</xsl:copy>		
+    </xsl:if>
+  </xsl:template>
+
+	
+	<!-- This will only trigger when accounts element is exists  -->
+	<xsl:template match="account">
+		<owngroup_account>
+			<xsl:apply-templates select="@* | node()"/>
+			<xsl:apply-templates select="../../summary/*"/>
+		</owngroup_account>
+	</xsl:template>
+
+
+	<!-- owngroup summary END -->
+	
+	<!-- Alert summary START -->
+	<xsl:template match="bai|ccj">
+		<xsl:apply-templates select="@* | node()" mode="addParent"/>
+	</xsl:template>
+	<xsl:template match="alerts">
+		<xsl:copy>
+			<xsl:apply-templates select="summary/*"/>
+			<xsl:apply-templates select="degradingsharedata/*"/>
+			<publicdata>
+				<xsl:apply-templates select="publicdata/*"/>
+			</publicdata>
+			<unsecuredbalanceexposure_NiFiGroup>
+				<unsecuredbalanceexposure_alert>
+					<xsl:apply-templates select="unsecuredbalanceexposure/alert/*"/>
+				</unsecuredbalanceexposure_alert>
+			</unsecuredbalanceexposure_NiFiGroup>
+			<overallcreditexposure_NiFiGroup>
+				<overallcreditexposure_alert>
+					<xsl:apply-templates select="overallcreditexposure/alert/*"/>
+				</overallcreditexposure_alert>
+			</overallcreditexposure_NiFiGroup>
+			<limitstressratio_NiFiGroup>
+				<limitstressratio_alert>
+					<xsl:apply-templates select="limitstressratio/alert/*"/>
+				</limitstressratio_alert>
+			</limitstressratio_NiFiGroup>
+			<balancechanges_NiFiGroup>
+				<balancechanges_alert>
+					<xsl:apply-templates select="balancechanges/alert/*"/>
+				</balancechanges_alert>
+			</balancechanges_NiFiGroup> 
+		</xsl:copy>
+	</xsl:template>
+
+	<!-- Alert summary END -->
+</xsl:stylesheet>
