@@ -1,0 +1,2150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Envelope>
+	<Body>
+		<Search07aResponse>
+			<SearchResult>
+				<jobdetails>
+					<searchid>String</searchid>
+					<cast>String</cast>
+					<pstv>0</pstv>
+					<ls>0</ls>
+					<searchdate>2001-12-17T09:30:47Z</searchdate>
+				</jobdetails>
+				<payload>
+					<anytext>String</anytext>
+				</payload>
+				<yourreference>119658816</yourreference>
+				<linkrequest schemaversion="String" datasets="0">
+					<origsrchid>String</origsrchid>
+					<navlinkid>String</navlinkid>
+				</linkrequest>
+				<secondaryrequest schemaversion="String" datasets="0">
+					<origsrchid>String</origsrchid>
+					<amendments>
+						<amendment amendmentname="String" amendmenttype="String">
+							<balorlim>0</balorlim>
+							<term>String</term>
+							<address>
+								<abodeno>String</abodeno>
+								<buildingno>String</buildingno>
+								<buildingname>String</buildingname>
+								<street1>String</street1>
+								<street2>String</street2>
+								<sublocality>String</sublocality>
+								<locality>String</locality>
+								<posttown>String</posttown>
+								<postcode>String</postcode>
+								<startdate>1957-08-13</startdate>
+								<enddate>1957-08-13</enddate>
+								<duration>String</duration>
+							</address>
+							<name>
+								<title>String</title>
+								<forename>String</forename>
+								<othernames>String</othernames>
+								<surname>String</surname>
+								<suffix>String</suffix>
+							</name>
+						</amendment>
+					</amendments>
+				</secondaryrequest>
+				<creditrequest schemaversion="scString" datasets="0">
+					<applicant>
+						<address>
+							<abodeno>String</abodeno>
+							<buildingno>String</buildingno>
+							<buildingname>String</buildingname>
+							<street1>String</street1>
+							<street2>String</street2>
+							<sublocality>String</sublocality>
+							<locality>String</locality>
+							<posttown>String</posttown>
+							<postcode>String</postcode>
+							<startdate>1957-08-13</startdate>
+							<enddate>1957-08-13</enddate>
+							<duration>String</duration>
+						</address>
+						<name>
+							<title>String</title>
+							<forename>String</forename>
+							<othernames>String</othernames>
+							<surname>String</surname>
+							<suffix>String</suffix>
+						</name>
+						<dob>1957-08-13</dob>
+						<hho>65535</hho>
+						<tpoptout>65535</tpoptout>
+						<applicantdemographics>
+							<person>
+								<customerstatus>String</customerstatus>
+								<maritalstatus>String</maritalstatus>
+								<totaldependents>0</totaldependents>
+								<language>String</language>
+								<identity>
+									<type>String</type>
+								</identity>
+							</person>
+							<accommodation>
+								<type>String</type>
+								<propertyvalue>0</propertyvalue>
+								<mortgagebalance>0</mortgagebalance>
+								<monthlyrental>0</monthlyrental>
+								<residentialstatus>String</residentialstatus>
+							</accommodation>
+							<contact>
+								<email>
+									<type>String</type>
+									<address>String</address>
+								</email>
+								<telephone>
+									<type>String</type>
+									<std>String</std>
+									<number>String</number>
+									<extension>String</extension>
+								</telephone>
+							</contact>
+							<employment>
+								<occupation>String</occupation>
+								<employmentstatus>String</employmentstatus>
+								<expirydate>1957-08-13</expirydate>
+								<employmentrecency>String</employmentrecency>
+								<employercategory>String</employercategory>
+								<timeatcurrentemployer>String</timeatcurrentemployer>
+							</employment>
+							<account>
+								<sortcode>String</sortcode>
+								<accountnumber>String</accountnumber>
+								<timeatbank>String</timeatbank>
+								<paymentmethod>String</paymentmethod>
+								<financetype>String</financetype>
+							</account>
+							<expenditure>
+								<totaldebitcards>0</totaldebitcards>
+								<totalcreditcards>0</totalcreditcards>
+								<monthlyunsecuredamount>0</monthlyunsecuredamount>
+							</expenditure>
+							<income>
+								<primary>
+									<amount>0</amount>
+									<type>String</type>
+									<paymentmethod>String</paymentmethod>
+									<frequency>String</frequency>
+								</primary>
+								<additional>
+									<amount>0</amount>
+									<type>String</type>
+									<paymentmethod>String</paymentmethod>
+									<frequency>String</frequency>
+								</additional>
+							</income>
+						</applicantdemographics>
+					</applicant>
+					<score>65535</score>
+					<purpose>String</purpose>
+					<credittype>String</credittype>
+					<balorlim>0</balorlim>
+					<term>String</term>
+					<transient>65535</transient>
+					<autosearch>65535</autosearch>
+					<autosearchmaximum>0</autosearchmaximum>
+				</creditrequest>
+				<picklist maxaddressitems="65535" maxnameitems="65535" picklist="0" regenerated="0">
+					<applicant id="65535" reporttype="String">
+						<address addressid="65535">
+							<addressinput>
+								<abodeno>String</abodeno>
+								<buildingno>String</buildingno>
+								<buildingname>String</buildingname>
+								<street1>String</street1>
+								<street2>String</street2>
+								<sublocality>String</sublocality>
+								<locality>String</locality>
+								<posttown>String</posttown>
+								<postcode>String</postcode>
+							</addressinput>
+							<fullmatches reporttype="ddddd" matchstatus="eeee">
+								<fullmatch selected="0">
+									<addressmatch>
+										<abodeno>String</abodeno>
+										<buildingno>String</buildingno>
+										<buildingname>String</buildingname>
+										<street1>String</street1>
+										<street2>String</street2>
+										<sublocality>String</sublocality>
+										<locality>String</locality>
+										<posttown>String</posttown>
+										<postcode>String</postcode>
+										<domicileid>0</domicileid>
+									</addressmatch>
+									<name nameid="65535">
+										<nameinput>
+											<title>String</title>
+											<forename>String</forename>
+											<othernames>String</othernames>
+											<surname>Test</surname>
+											<suffix>MR</suffix>
+										</nameinput>
+										<namematches reporttype="abcd" matchstatus="efgh">
+											<namematch selected="0">
+												<title>String</title>
+												<forename>String</forename>
+												<othernames>String</othernames>
+												<surname>String</surname>
+												<suffix>MR</suffix>
+												<residenceid>0</residenceid>
+												<dob>1957-08-13</dob>
+											</namematch>
+										</namematches>
+									</name>
+								</fullmatch>
+							</fullmatches>
+						</address>
+					</applicant>
+				</picklist>
+				<creditreport searchid="String" linktype="0">
+					<applicant reporttype="String" tpoptout="0" autosearchmaxexceeded="0" ageflag="0" reporttitle="String">
+						<summary>
+							<searches>
+								<totalsearches3months>0</totalsearches3months>
+								<totalsearches12months>0</totalsearches12months>
+								<totalhomecreditsearches3months>0</totalhomecreditsearches3months>
+							</searches>
+							<judgments>
+								<total36m>0</total36m>
+								<total>0</total>
+								<totalactive>0</totalactive>
+								<totalsatisfied>0</totalsatisfied>
+								<totalactiveamount>0</totalactiveamount>
+								<totalsatisfiedamount>0</totalsatisfiedamount>
+							</judgments>
+							<bais>
+								<totaldischarged>0</totaldischarged>
+								<currentlyinsolvent>65535</currentlyinsolvent>
+								<restricted>65535</restricted>
+							</bais>
+							<notices>
+								<nocflag>65535</nocflag>
+								<totaldisputes>0</totaldisputes>
+							</notices>
+							<links>
+								<totalundecaddresses>0</totalundecaddresses>
+								<totalundecaddressessearched>0</totalundecaddressessearched>
+								<totalundecaddressesunsearched>0</totalundecaddressesunsearched>
+								<totalundecaliases>0</totalundecaliases>
+								<totalundecassociates>0</totalundecassociates>
+							</links>
+							<cifas>
+								<totalcifas>0</totalcifas>
+							</cifas>
+							<share>
+								<totalaccounts>0</totalaccounts>
+								<totalactiveaccs>0</totalactiveaccs>
+								<totalsettledaccs>0</totalsettledaccs>
+								<totalopened6months>0</totalopened6months>
+								<worsepaystatus12months>String</worsepaystatus12months>
+								<worsepaystatus36months>String</worsepaystatus36months>
+								<totaldelinqs12months>0</totaldelinqs12months>
+								<totaldefaults12months>0</totaldefaults12months>
+								<totaldefaults36months>0</totaldefaults36months>
+							</share>
+							<bds>
+								<totalminpayments12months>0</totalminpayments12months>
+								<totalminpayments36months>0</totalminpayments36months>
+								<totalvaluecashadvances12months>0</totalvaluecashadvances12months>
+								<totalvaluecashadvances36months>0</totalvaluecashadvances36months>
+							</bds>
+							<ich>
+								<impairedcredit>65535</impairedcredit>
+								<secured>65535</secured>
+								<unsecured>65535</unsecured>
+								<judgment>65535</judgment>
+								<iva>65535</iva>
+								<boss>65535</boss>
+							</ich>
+							<indebt>
+								<totalbalancesactive>0</totalbalancesactive>
+								<totalbalancesrevolve>0</totalbalancesrevolve>
+								<balancelimitratiorevolve>0</balancelimitratiorevolve>
+								<totallimitsrevolve>0</totallimitsrevolve>
+								<totalbalancesloans>0</totalbalancesloans>
+								<totalbalancesmortgages>0</totalbalancesmortgages>
+							</indebt>
+							<tpd>
+								<alertdecision>0</alertdecision>
+								<alertreview>0</alertreview>
+								<hho>0</hho>
+							</tpd>
+							<summaryaddress>
+								<pafvalid>65535</pafvalid>
+								<rollingroll>65535</rollingroll>
+								<messagecode>0</messagecode>
+							</summaryaddress>
+							<address current="0" undeclaredaddresstype="0" messagecode="0" id="0">String</address>
+						</summary>
+						<creditscore>
+							<score class="0">0</score>
+							<reasons>
+								<code>0</code>
+							</reasons>
+						</creditscore>
+						<addressconfs>
+							<addressconf pafvalid="90" otherresidents="100">
+								<address current="01" undeclaredaddresstype="02">String</address>
+								<resident matchtype="String" currentname="0" declaredalias="0">
+									<name>String</name>
+									<duration>String</duration>
+									<startdate>1957-08-13</startdate>
+									<enddate>1957-08-13</enddate>
+									<ervalid>0</ervalid>
+									<erhistory>
+										<startdate>1957-08-13</startdate>
+										<enddate>1957-08-13</enddate>
+										<optout>65535</optout>
+										<rollingroll>65535</rollingroll>
+										<notice>
+											<type>String</type>
+											<refnum>String</refnum>
+											<dateraised>1957-08-13</dateraised>
+											<text>String</text>
+											<name>String</name>
+											<address current="0000" undeclaredaddresstype="000">String</address>
+										</notice>
+									</erhistory>
+									<notice>
+										<type>String</type>
+										<refnum>String</refnum>
+										<dateraised>1957-08-13</dateraised>
+										<text>String</text>
+										<name>String</name>
+										<address current="0" undeclaredaddresstype="0">String</address>
+									</notice>
+								</resident>
+							</addressconf>
+						</addressconfs>
+						<judgments>
+							<judgment>
+								<name>String</name>
+								<address current="0" undeclaredaddresstype="0">String</address>
+								<dob>1957-08-13</dob>
+								<courtname>String</courtname>
+								<courttype>0</courttype>
+								<casenumber>String</casenumber>
+								<status>String</status>
+								<amount>0</amount>
+								<judgmentdate>1957-08-13</judgmentdate>
+								<datesatisfied>1957-08-13</datesatisfied>
+								<notice>
+									<type>String</type>
+									<refnum>String</refnum>
+									<dateraised>1957-08-13</dateraised>
+									<text>String</text>
+									<name>String</name>
+									<address current="0" undeclaredaddresstype="0">String</address>
+								</notice>
+							</judgment>
+						</judgments>
+						<bais>
+							<bai>
+								<dischargedate>1957-08-13</dischargedate>
+								<lineofbusiness>String</lineofbusiness>
+								<courtname>String</courtname>
+								<currentstatus>String</currentstatus>
+								<amount>0</amount>
+								<ordertype>String</ordertype>
+								<orderdate>1957-08-13</orderdate>
+								<caseyear>0</caseyear>
+								<caseref>String</caseref>
+								<restriction>
+									<type>String</type>
+									<startdate>1957-08-13</startdate>
+									<enddate>1957-08-13</enddate>
+								</restriction>
+								<name>String</name>
+								<tradingname>String</tradingname>
+								<address current="0" undeclaredaddresstype="0">String</address>
+								<dob>1957-08-13</dob>
+								<notice>
+									<type>String</type>
+									<refnum>String</refnum>
+									<dateraised>1957-08-13</dateraised>
+									<text>String</text>
+									<name>String</name>
+									<address current="0" undeclaredaddresstype="0">String</address>
+								</notice>
+							</bai>
+						</bais>
+						<nocs>
+							<noc>
+								<type>String</type>
+								<refnum>String</refnum>
+								<dateraised>1957-08-13</dateraised>
+								<text>String</text>
+								<name>String</name>
+								<address current="0" undeclaredaddresstype="0">String</address>
+							</noc>
+						</nocs>
+						<searches>
+							<search>
+								<searchref>String</searchref>
+								<searchorgtype>String</searchorgtype>
+								<searchorgname>String</searchorgname>
+								<yourreference>String</yourreference>
+								<searchunitname>String</searchunitname>
+								<ownsearch>65535</ownsearch>
+								<subsequentenquiry>65535</subsequentenquiry>
+								<username>String</username>
+								<searchpurpose>String</searchpurpose>
+								<credittype>String</credittype>
+								<balance>0</balance>
+								<term>0</term>
+								<jointapplication>65535</jointapplication>
+								<searchdate>2001-12-17T09:30:47Z</searchdate>
+								<name>String</name>
+								<dob>1957-08-13</dob>
+								<address current="0" undeclaredaddresstype="0">String</address>
+								<startdate>1957-08-13</startdate>
+								<enddate>1957-08-13</enddate>
+								<tpoptout>65535</tpoptout>
+								<transient>65535</transient>
+								<linktype>0</linktype>
+							</search>
+						</searches>
+						<addresslinks>
+							<addresses>
+								<address current="0" undeclaredaddresstype="0" addressid="0" declared="0" navlinkid="String">String</address>
+							</addresses>
+							<links>
+								<link from="0" to="0">
+									<creationdate>1957-08-13</creationdate>
+									<lastconfdate>1957-08-13</lastconfdate>
+									<supplierdetails>
+										<suppliername>String</suppliername>
+										<suppliertypecode>String</suppliertypecode>
+									</supplierdetails>
+									<notice>
+										<type>String</type>
+										<refnum>String</refnum>
+										<dateraised>1957-08-13</dateraised>
+										<text>String</text>
+										<name>String</name>
+										<address current="0" undeclaredaddresstype="0">String</address>
+									</notice>
+								</link>
+							</links>
+						</addresslinks>
+						<aliaslinks>
+							<aliaslink declared="0">
+								<name>String</name>
+								<alias>String</alias>
+								<creationdate>1957-08-13</creationdate>
+								<lastconfdate>1957-08-13</lastconfdate>
+								<supplierdetails>
+									<suppliername>String</suppliername>
+									<suppliertypecode>String</suppliertypecode>
+								</supplierdetails>
+								<notice>
+									<type>String</type>
+									<refnum>String</refnum>
+									<dateraised>1957-08-13</dateraised>
+									<text>String</text>
+									<name>String</name>
+									<address current="0" undeclaredaddresstype="0">String</address>
+								</notice>
+							</aliaslink>
+						</aliaslinks>
+						<associatelinks>
+							<associatelink declaredaddress="0" oiaid="0">
+								<navlinkid>String</navlinkid>
+								<name>String</name>
+								<creationdate>1957-08-13</creationdate>
+								<lastconfdate>1957-08-13</lastconfdate>
+								<supplierdetails>
+									<suppliername>String</suppliername>
+									<suppliertypecode>String</suppliertypecode>
+								</supplierdetails>
+								<notice>
+									<type>String</type>
+									<refnum>String</refnum>
+									<dateraised>1957-08-13</dateraised>
+									<text>String</text>
+									<name>String</name>
+									<address current="0" undeclaredaddresstype="0">String</address>
+								</notice>
+							</associatelink>
+						</associatelinks>
+						<cifas>
+							<filing>
+								<person>
+									<name>String</name>
+									<dob>1957-08-13</dob>
+									<address current="0" undeclaredaddresstype="0">String</address>
+								</person>
+								<company>
+									<number>String</number>
+									<name>String</name>
+									<address current="0" undeclaredaddresstype="0">String</address>
+								</company>
+								<details>
+									<membernumber>0</membernumber>
+									<casereferenceno>String</casereferenceno>
+									<name>String</name>
+									<productcode>String</productcode>
+									<fraudcategory>String</fraudcategory>
+									<productdesc>String</productdesc>
+									<frauddesc>String</frauddesc>
+									<inputdate>1957-08-13</inputdate>
+									<expirydate>1957-08-13</expirydate>
+									<transactiontype>String</transactiontype>
+								</details>
+								<notice>
+									<type>String</type>
+									<refnum>String</refnum>
+									<dateraised>1957-08-13</dateraised>
+									<text>String</text>
+									<name>String</name>
+									<address current="0" undeclaredaddresstype="0">String</address>
+								</notice>
+							</filing>
+							<case>
+								<caseid>0</caseid>
+								<details>
+									<owningmember>0</owningmember>
+									<managingmember>0</managingmember>
+									<casetype>String</casetype>
+									<productcode>String</productcode>
+									<facility>String</facility>
+									<supplydate>1957-08-13</supplydate>
+									<expirydate>1957-08-13</expirydate>
+									<applicationdate>1957-08-13</applicationdate>
+									<filingreasons>
+										<filingreason>String</filingreason>
+									</filingreasons>
+									<subjects>
+										<subject>
+											<person>
+												<name>String</name>
+												<dob>1957-08-13</dob>
+											</person>
+											<company>
+												<name>String</name>
+												<number>String</number>
+											</company>
+											<hometelephone>String</hometelephone>
+											<mobiletelephone>String</mobiletelephone>
+											<email>String</email>
+											<subjectrole>String</subjectrole>
+											<subjectrolequalifier>String</subjectrolequalifier>
+											<addressdata>
+												<type>String</type>
+												<address current="0" undeclaredaddresstype="0">String</address>
+											</addressdata>
+										</subject>
+									</subjects>
+								</details>
+								<dmrs>
+									<dmr>0</dmr>
+								</dmrs>
+								<notice>
+									<type>String</type>
+									<refnum>String</refnum>
+									<dateraised>1957-08-13</dateraised>
+									<text>String</text>
+									<name>String</name>
+									<address current="0" undeclaredaddresstype="0">String</address>
+								</notice>
+							</case>
+						</cifas>
+						<accs>
+							<acc>
+								<supplierdetails apacs="0">
+									<suppliername>String</suppliername>
+									<suppliertypecode>String</suppliertypecode>
+								</supplierdetails>
+								<accholderdetails>
+									<name>String</name>
+									<address current="0" undeclaredaddresstype="0">String</address>
+									<dob>1957-08-13</dob>
+									<statuscode>String</statuscode>
+									<startdate>1957-08-13</startdate>
+									<enddate>1957-08-13</enddate>
+								</accholderdetails>
+								<default>
+									<defdate>1957-08-13</defdate>
+									<origdefbal>0</origdefbal>
+									<termbal>0</termbal>
+									<defsatdate>1957-08-13</defsatdate>
+									<repodate>1957-08-13</repodate>
+								</default>
+								<delinquent>
+									<delinqdate>1957-08-13</delinqdate>
+									<delinqbal>0</delinqbal>
+								</delinquent>
+								<acchistory>
+									<ah m="1957-08-13" bal="0" limit="0" acc="String" pay="String" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+								</acchistory>
+								<accdetails>
+									<accno>String</accno>
+									<accsuffix>0</accsuffix>
+									<joint>65535</joint>
+									<status>String</status>
+									<dateupdated>1957-08-13</dateupdated>
+									<acctypecode>String</acctypecode>
+									<accgroupid>0</accgroupid>
+									<currencycode>String</currencycode>
+									<balance>0</balance>
+									<limit>0</limit>
+									<openbalance>0</openbalance>
+									<arrstartdate>1957-08-13</arrstartdate>
+									<arrenddate>1957-08-13</arrenddate>
+									<paystartdate>1957-08-13</paystartdate>
+									<accstartdate>1957-08-13</accstartdate>
+									<accenddate>1957-08-13</accenddate>
+									<regpayment>0</regpayment>
+									<expectedpayment>0</expectedpayment>
+									<actualpayment>0</actualpayment>
+									<repayperiod>0</repayperiod>
+									<repayfreqcode>String</repayfreqcode>
+									<lumppayment>0</lumppayment>
+									<penintamt>0</penintamt>
+									<promotionalrate>65535</promotionalrate>
+									<minimumpayment>65535</minimumpayment>
+									<statementbalance>0</statementbalance>
+								</accdetails>
+								<notice>
+									<type>String</type>
+									<refnum>String</refnum>
+									<dateraised>1957-08-13</dateraised>
+									<text>String</text>
+									<name>String</name>
+									<address current="0" undeclaredaddresstype="0">String</address>
+								</notice>
+							</acc>
+						</accs>
+						<demographics>
+							<cameouk>String</cameouk>
+							<cameoinvestor>String</cameoinvestor>
+							<cameoincome>String</cameoincome>
+							<cameounemployment>String</cameounemployment>
+							<cameoproperty>String</cameoproperty>
+							<cameofinance>String</cameofinance>
+							<family>
+								<cameoukfam>fdfsdf</cameoukfam>
+								<ind_adult1>65535</ind_adult1>
+							</family>
+							<household>
+								<adult_1>65535</adult_1>
+								<adults_2>65535</adults_2>
+								<adult_3pl>65535</adult_3pl>
+							</household>
+							<age>
+								<age0_17>65535</age0_17>
+								<age18_24>65535</age18_24>
+								<age25_34>65535</age25_34>
+								<age35_44>65535</age35_44>
+								<age45_54>65535</age45_54>
+								<age55_64>65535</age55_64>
+								<age65_74>65535</age65_74>
+								<age75pl>65535</age75pl>
+							</age>
+							<economic>
+								<unem_prob>3.1415926535897900073734945</unem_prob>
+								<unem_index>65535</unem_index>
+							</economic>
+							<economicactivity>
+								<wkfem_ind>65535</wkfem_ind>
+								<stu_ind>65535</stu_ind>
+								<sick_ind>65535</sick_ind>
+								<degree_ind>65535</degree_ind>
+							</economicactivity>
+							<socialclass>
+								<ab_ind>65535</ab_ind>
+								<c1_ind>65535</c1_ind>
+								<c2_ind>65535</c2_ind>
+								<de_ind>65535</de_ind>
+							</socialclass>
+							<housing>
+								<cameoukhsg>String</cameoukhsg>
+								<cameoukten>String</cameoukten>
+								<natprice>65535</natprice>
+								<regprice>65535</regprice>
+							</housing>
+							<propertyprice>
+								<d_index>65535</d_index>
+								<d_r_index>65535</d_r_index>
+								<s_index>65535</s_index>
+								<s_r_index>65535</s_r_index>
+								<t_index>65535</t_index>
+								<t_r_index>65535</t_r_index>
+								<f_index>65535</f_index>
+								<f_r_index>65535</f_r_index>
+							</propertyprice>
+							<movement>
+								<l_of_res>3.1415926535897900073734945</l_of_res>
+								<move_rate>65535</move_rate>
+							</movement>
+						</demographics>
+						<demographics2006>
+							<cameouk>String</cameouk>
+							<cameoukg>String</cameoukg>
+							<cameoincome>String</cameoincome>
+							<cameoincg>String</cameoincg>
+							<cameoinvestor>String</cameoinvestor>
+							<cameoinvg>String</cameoinvg>
+							<cameoproperty>String</cameoproperty>
+							<cameofinance>String</cameofinance>
+							<cameofing>String</cameofing>
+							<cameounemploy>String</cameounemploy>
+							<age>
+								<agescore>3.1415926535897900073734945</agescore>
+								<ageband>0</ageband>
+							</age>
+							<tenure>
+								<tenrscore>3.1415926535897900073734945</tenrscore>
+								<tenrband>0</tenrband>
+							</tenure>
+							<hhcomp>
+								<compscore>3.1415926535897900073734945</compscore>
+								<compband>0</compband>
+							</hhcomp>
+							<economic>
+								<econscore>3.1415926535897900073734945</econscore>
+								<econband>0</econband>
+							</economic>
+							<lifestage>
+								<lifescore>3.1415926535897900073734945</lifescore>
+								<lifeband>0</lifeband>
+							</lifestage>
+							<social>
+								<millhhld>3.1415926535897900073734945</millhhld>
+								<dirhhld>3.1415926535897900073734945</dirhhld>
+								<socscore>3.1415926535897900073734945</socscore>
+								<socband>0</socband>
+							</social>
+							<occupation>
+								<occscore>3.1415926535897900073734945</occscore>
+								<occband>0</occband>
+							</occupation>
+							<mortgage>
+								<mortscore>3.1415926535897900073734945</mortscore>
+								<mortband>0</mortband>
+							</mortgage>
+							<sharehld>
+								<hhldshare>3.1415926535897900073734945</hhldshare>
+								<avnumhold>3.1415926535897900073734945</avnumhold>
+								<avnumshares>3.1415926535897900073734945</avnumshares>
+								<avnumcomps>3.1415926535897900073734945</avnumcomps>
+								<avvalshares>3.1415926535897900073734945</avvalshares>
+							</sharehld>
+							<unemployment>
+								<unemmalelt>3.1415926535897900073734945</unemmalelt>
+								<unem1824>3.1415926535897900073734945</unem1824>
+								<unem2539>3.1415926535897900073734945</unem2539>
+								<unem40pl>3.1415926535897900073734945</unem40pl>
+								<unemscore>3.1415926535897900073734945</unemscore>
+								<unemband>0</unemband>
+							</unemployment>
+							<unemprate>
+								<unemrate>3.1415926535897900073734945</unemrate>
+								<unemdiff>3.1415926535897900073734945</unemdiff>
+								<unemind>0</unemind>
+								<unemall>3.1415926535897900073734945</unemall>
+								<unemallindex>0</unemallindex>
+							</unemprate>
+							<property>
+								<houseage>String</houseage>
+								<hhlddensity>3.1415926535897900073734945</hhlddensity>
+								<ctaxband>String</ctaxband>
+								<locationtype>0</locationtype>
+								<natavghouse>0</natavghouse>
+								<housescore>3.1415926535897900073734945</housescore>
+								<houseband>0</houseband>
+								<pricediff>0</pricediff>
+								<priceindex>0</priceindex>
+								<activity>0</activity>
+								<regionalband>0</regionalband>
+								<avgdetvalue>0</avgdetvalue>
+								<avgdetindex>0</avgdetindex>
+								<avgsemivalue>0</avgsemivalue>
+								<avgsemiindex>0</avgsemiindex>
+								<avgterrvalue>0</avgterrvalue>
+								<avgterrindex>0</avgterrindex>
+								<avgflatvalue>0</avgflatvalue>
+								<avgflatindex>0</avgflatindex>
+								<regioncode>0</regioncode>
+							</property>
+							<international>
+								<cameointl>String</cameointl>
+							</international>
+						</demographics2006>
+						<tpd>
+							<decision total="0">
+								<alertindividual>
+									<name>StringAlert Individual aname</name>
+									<notice>
+										<type>String Indiv7udal notice</type>
+										<refnum>refenum individlau</refnum>
+										<dateraised>1957-08-13</dateraised>
+										<text>String</text>
+										<name>String</name>
+										<address current="0" undeclaredaddresstype="0">indidual notice address</address>
+									</notice>
+								</alertindividual>
+								<creditscore>
+									<score class="99">100</score>
+									<reasons>
+										<code>0</code>
+									</reasons>
+								</creditscore>
+								<summary>
+									<judgments>
+										<total36m>0</total36m>
+										<total>0</total>
+										<totalactive>0</totalactive>
+										<totalsatisfied>0</totalsatisfied>
+										<totalactiveamount>0</totalactiveamount>
+										<totalsatisfiedamount>0</totalsatisfiedamount>
+									</judgments>
+									<bais>
+										<totaldischarged>0</totaldischarged>
+										<currentlyinsolvent>65535</currentlyinsolvent>
+										<restricted>65535</restricted>
+									</bais>
+									<share>
+										<totalaccounts>0</totalaccounts>
+										<totalactiveaccounts>0</totalactiveaccounts>
+										<totalactiveaccountsamount>0</totalactiveaccountsamount>
+										<totalaccountszerobal>0</totalaccountszerobal>
+										<totalsettledaccountsamount>0</totalsettledaccountsamount>
+										<worsepaystatus12m>String</worsepaystatus12m>
+										<worsepaystatus24m>String</worsepaystatus24m>
+										<totaldefaults>0</totaldefaults>
+										<totaldefaults12m>0</totaldefaults12m>
+										<totalsettleddefaults>0</totalsettleddefaults>
+										<totaldefaultsamount>0</totaldefaultsamount>
+										<totalwriteoffs>0</totalwriteoffs>
+										<totalwriteoffsamount>0</totalwriteoffsamount>
+										<totaldelinqs>0</totaldelinqs>
+										<totaldelinqsamount>0</totaldelinqsamount>
+									</share>
+								</summary>
+							</decision>
+							<review total="0">
+								<alertindividual>
+									<name>String</name>
+									<notice>
+										<type>String</type>
+										<refnum>String</refnum>
+										<dateraised>1957-08-13</dateraised>
+										<text>String</text>
+										<name>String</name>
+										<address current="0" undeclaredaddresstype="0">String</address>
+									</notice>
+								</alertindividual>
+								<creditscore>
+									<score class="99">1000</score>
+									<reasons>
+										<code>0</code>
+									</reasons>
+								</creditscore>
+								<summary>
+									<judgments>
+										<total36m>0</total36m>
+										<total>0</total>
+										<totalactive>0</totalactive>
+										<totalsatisfied>0</totalsatisfied>
+										<totalactiveamount>0</totalactiveamount>
+										<totalsatisfiedamount>0</totalsatisfiedamount>
+									</judgments>
+									<bais>
+										<totaldischarged>0</totaldischarged>
+										<currentlyinsolvent>65535</currentlyinsolvent>
+										<restricted>65535</restricted>
+									</bais>
+									<share>
+										<totalaccounts>0</totalaccounts>
+										<totalactiveaccounts>0</totalactiveaccounts>
+										<totalactiveaccountsamount>0</totalactiveaccountsamount>
+										<totalaccountszerobal>0</totalaccountszerobal>
+										<totalsettledaccountsamount>0</totalsettledaccountsamount>
+										<worsepaystatus12m>String</worsepaystatus12m>
+										<worsepaystatus24m>String</worsepaystatus24m>
+										<totaldefaults>0</totaldefaults>
+										<totaldefaults12m>0</totaldefaults12m>
+										<totalsettleddefaults>0</totalsettleddefaults>
+										<totaldefaultsamount>0</totaldefaultsamount>
+										<totalwriteoffs>0</totalwriteoffs>
+										<totalwriteoffsamount>0</totalwriteoffsamount>
+										<totaldelinqs>0</totaldelinqs>
+										<totaldelinqsamount>0</totaldelinqsamount>
+									</share>
+								</summary>
+							</review>
+							<hho thinfile="0" total="0">
+								<creditscore>
+									<score class="0">0</score>
+									<reasons>
+										<code>0</code>
+									</reasons>
+								</creditscore>
+								<summary>
+									<judgments>
+										<total36m>0</total36m>
+										<total>0</total>
+										<totalactive>0</totalactive>
+										<totalsatisfied>0</totalsatisfied>
+										<totalactiveamount>0</totalactiveamount>
+										<totalsatisfiedamount>0</totalsatisfiedamount>
+									</judgments>
+									<bais>
+										<totaldischarged>0</totaldischarged>
+										<currentlyinsolvent>65535</currentlyinsolvent>
+										<restricted>65535</restricted>
+									</bais>
+									<share>
+										<totalaccounts>0</totalaccounts>
+										<totalactiveaccounts>0</totalactiveaccounts>
+										<totalactiveaccountsamount>0</totalactiveaccountsamount>
+										<totalaccountszerobal>0</totalaccountszerobal>
+										<totalsettledaccountsamount>0</totalsettledaccountsamount>
+										<worsepaystatus12m>String</worsepaystatus12m>
+										<worsepaystatus24m>String</worsepaystatus24m>
+										<totaldefaults>0</totaldefaults>
+										<totaldefaults12m>0</totaldefaults12m>
+										<totalsettleddefaults>0</totalsettleddefaults>
+										<totaldefaultsamount>0</totaldefaultsamount>
+										<totalwriteoffs>0</totalwriteoffs>
+										<totalwriteoffsamount>0</totalwriteoffsamount>
+										<totaldelinqs>0</totaldelinqs>
+										<totaldelinqsamount>0</totaldelinqsamount>
+									</share>
+								</summary>
+							</hho>
+						</tpd>
+						<oias total="0">
+							<oia reporttype="String" tpoptout="0" autosearchmaxexceeded="0" ageflag="0" reporttitle="String" searchid="String" oiaid="0">
+								<summary>
+									<searches>
+										<totalsearches3months>0</totalsearches3months>
+										<totalsearches12months>0</totalsearches12months>
+										<totalhomecreditsearches3months>0</totalhomecreditsearches3months>
+									</searches>
+									<judgments>
+										<total36m>0</total36m>
+										<total>0</total>
+										<totalactive>0</totalactive>
+										<totalsatisfied>0</totalsatisfied>
+										<totalactiveamount>0</totalactiveamount>
+										<totalsatisfiedamount>0</totalsatisfiedamount>
+									</judgments>
+									<bais>
+										<totaldischarged>0</totaldischarged>
+										<currentlyinsolvent>65535</currentlyinsolvent>
+										<restricted>65535</restricted>
+									</bais>
+									<notices>
+										<nocflag>65535</nocflag>
+										<totaldisputes>0</totaldisputes>
+									</notices>
+									<links>
+										<totalundecaddresses>0</totalundecaddresses>
+										<totalundecaddressessearched>0</totalundecaddressessearched>
+										<totalundecaddressesunsearched>0</totalundecaddressesunsearched>
+										<totalundecaliases>0</totalundecaliases>
+										<totalundecassociates>0</totalundecassociates>
+									</links>
+									<cifas>
+										<totalcifas>0</totalcifas>
+									</cifas>
+									<share>
+										<totalaccounts>0</totalaccounts>
+										<totalactiveaccs>0</totalactiveaccs>
+										<totalsettledaccs>0</totalsettledaccs>
+										<totalopened6months>0</totalopened6months>
+										<worsepaystatus12months>String</worsepaystatus12months>
+										<worsepaystatus36months>String</worsepaystatus36months>
+										<totaldelinqs12months>0</totaldelinqs12months>
+										<totaldefaults12months>0</totaldefaults12months>
+										<totaldefaults36months>0</totaldefaults36months>
+									</share>
+									<bds>
+										<totalminpayments12months>0</totalminpayments12months>
+										<totalminpayments36months>0</totalminpayments36months>
+										<totalvaluecashadvances12months>0</totalvaluecashadvances12months>
+										<totalvaluecashadvances36months>0</totalvaluecashadvances36months>
+									</bds>
+									<ich>
+										<impairedcredit>65535</impairedcredit>
+										<secured>65535</secured>
+										<unsecured>65535</unsecured>
+										<judgment>65535</judgment>
+										<iva>65535</iva>
+										<boss>65535</boss>
+									</ich>
+									<indebt>
+										<totalbalancesactive>0</totalbalancesactive>
+										<totalbalancesrevolve>0</totalbalancesrevolve>
+										<balancelimitratiorevolve>0</balancelimitratiorevolve>
+										<totallimitsrevolve>0</totallimitsrevolve>
+										<totalbalancesloans>0</totalbalancesloans>
+										<totalbalancesmortgages>0</totalbalancesmortgages>
+									</indebt>
+									<tpd>
+										<alertdecision>0</alertdecision>
+										<alertreview>0</alertreview>
+										<hho>0</hho>
+									</tpd>
+									<summaryaddress>
+										<pafvalid>65535</pafvalid>
+										<rollingroll>65535</rollingroll>
+										<messagecode>0</messagecode>
+									</summaryaddress>
+									<address current="100" undeclaredaddresstype="200" messagecode="300" id="400">SUMMSRY SUMMSRYD</address>
+								</summary>
+								<creditscore>
+									<score class="0">0</score>
+									<reasons>
+										<code>0</code>
+									</reasons>
+								</creditscore>
+								<addressconfs>
+									<addressconf pafvalid="0" otherresidents="0">
+										<address current="09" undeclaredaddresstype="09">44 MOSQUE STREET CHENNAI</address>
+										<resident matchtype="55588885" currentname="0999" declaredalias="0333">
+											<name>String</name>
+											<duration>String</duration>
+											<startdate>1957-08-13</startdate>
+											<enddate>1957-08-13</enddate>
+											<ervalid>0</ervalid>
+											<erhistory>
+												<startdate>1957-08-13</startdate>
+												<enddate>1957-08-13</enddate>
+												<optout>65535</optout>
+												<rollingroll>65535</rollingroll>
+												<notice>
+													<type>ER NOTICE String</type>
+													<refnum>ER NOTICE String</refnum>
+													<dateraised>1957-08-13</dateraised>
+													<text>String</text>
+													<name>String</name>
+													<address current="004" undeclaredaddresstype="005">ERHISTORY ADDRESS</address>
+												</notice>
+											</erhistory>
+											<notice>
+												<type>String</type>
+												<refnum>String</refnum>
+												<dateraised>1957-08-13</dateraised>
+												<text>String</text>
+												<name>String</name>
+												<address current="066" undeclaredaddresstype="0444">84 589 GOOGEL DRIVE</address>
+											</notice>
+										</resident>
+									</addressconf>
+								</addressconfs>
+								<judgments>
+									<judgment>
+										<name>String</name>
+										<address current="0" undeclaredaddresstype="0">String</address>
+										<dob>1957-08-13</dob>
+										<courtname>String</courtname>
+										<courttype>0</courttype>
+										<casenumber>String</casenumber>
+										<status>String</status>
+										<amount>0</amount>
+										<judgmentdate>1957-08-13</judgmentdate>
+										<datesatisfied>1957-08-13</datesatisfied>
+										<notice>
+											<type>String</type>
+											<refnum>String</refnum>
+											<dateraised>1957-08-13</dateraised>
+											<text>String</text>
+											<name>String</name>
+											<address current="0" undeclaredaddresstype="0">String</address>
+										</notice>
+									</judgment>
+								</judgments>
+								<bais>
+									<bai>
+										<dischargedate>1957-08-13</dischargedate>
+										<lineofbusiness>String</lineofbusiness>
+										<courtname>String</courtname>
+										<currentstatus>String</currentstatus>
+										<amount>0</amount>
+										<ordertype>String</ordertype>
+										<orderdate>1957-08-13</orderdate>
+										<caseyear>0</caseyear>
+										<caseref>String</caseref>
+										<restriction>
+											<type>String</type>
+											<startdate>1957-08-13</startdate>
+											<enddate>1957-08-13</enddate>
+										</restriction>
+										<name>String</name>
+										<tradingname>String</tradingname>
+										<address current="0" undeclaredaddresstype="0">BAI ADDRESS </address>
+										<dob>1957-08-13</dob>
+										<notice>
+											<type>String</type>
+											<refnum>String</refnum>
+											<dateraised>1957-08-13</dateraised>
+											<text>String</text>
+											<name>String</name>
+											<address current="70" undeclaredaddresstype="70">NOTICE ADDRESS BAI</address>
+										</notice>
+									</bai>
+								</bais>
+								<nocs>
+									<noc>
+										<type>String</type>
+										<refnum>String</refnum>
+										<dateraised>1957-08-13</dateraised>
+										<text>String</text>
+										<name>String</name>
+										<address current="0" undeclaredaddresstype="0">String</address>
+									</noc>
+								</nocs>
+								<searches>
+									<search>
+										<searchref>String</searchref>
+										<searchorgtype>String</searchorgtype>
+										<searchorgname>String</searchorgname>
+										<yourreference>String</yourreference>
+										<searchunitname>String</searchunitname>
+										<ownsearch>65535</ownsearch>
+										<subsequentenquiry>65535</subsequentenquiry>
+										<username>String</username>
+										<searchpurpose>String</searchpurpose>
+										<credittype>String</credittype>
+										<balance>0</balance>
+										<term>0</term>
+										<jointapplication>65535</jointapplication>
+										<searchdate>2001-12-17T09:30:47Z</searchdate>
+										<name>String</name>
+										<dob>1957-08-13</dob>
+										<address current="0" undeclaredaddresstype="0">address string ADDRESSS STRING</address>
+										<startdate>1957-08-13</startdate>
+										<enddate>1957-08-13</enddate>
+										<tpoptout>65535</tpoptout>
+										<transient>65535</transient>
+										<linktype>0</linktype>
+									</search>
+								</searches>
+								<addresslinks>
+									<addresses>
+										<address current="0" undeclaredaddresstype="0" addressid="0" declared="0" navlinkid="String">String</address>
+									</addresses>
+									<links>
+										<link from="0" to="0">
+											<creationdate>1957-08-13</creationdate>
+											<lastconfdate>1957-08-13</lastconfdate>
+											<supplierdetails>
+												<suppliername>StringOIAS</suppliername>
+												<suppliertypecode>StringOIAS</suppliertypecode>
+											</supplierdetails>
+											<notice>
+												<type>Stringtype00</type>
+												<refnum>String</refnum>
+												<dateraised>1957-08-13</dateraised>
+												<text>String</text>
+												<name>String</name>
+												<address current="03" undeclaredaddresstype="023">Stringdfsd</address>
+											</notice>
+										</link>
+									</links>
+								</addresslinks>
+								<aliaslinks>
+									<aliaslink declared="077">
+										<name>Strasdfasfsing</name>
+										<alias>Stfasdfasdfring</alias>
+										<creationdate>1957-08-13</creationdate>
+										<lastconfdate>1957-08-13</lastconfdate>
+										<supplierdetails>
+											<suppliername>Strinfsdfafsg</suppliername>
+											<suppliertypecode>Strfdafsdfing</suppliertypecode>
+										</supplierdetails>
+										<notice>
+											<type>AliasLinknotice </type>
+											<refnum>AliasLinknotice</refnum>
+											<dateraised>1957-08-13</dateraised>
+											<text>AliasLinknotice</text>
+											<name>AliasLinknotice</name>
+											<address current="90" undeclaredaddresstype="91">AliasLinknotice address</address>
+										</notice>
+									</aliaslink>
+								</aliaslinks>
+								<associatelinks>
+									<associatelink declaredaddress="0" oiaid="0">
+										<navlinkid>Associated</navlinkid>
+										<name>Associated</name>
+										<creationdate>1957-08-13</creationdate>
+										<lastconfdate>1957-08-13</lastconfdate>
+										<supplierdetails>
+											<suppliername>Associated Lnk</suppliername>
+											<suppliertypecode>Associated</suppliertypecode>
+										</supplierdetails>
+										<notice>
+											<type>associatelink</type>
+											<refnum>associatelink</refnum>
+											<dateraised>1957-08-13</dateraised>
+											<text>associatelink</text>
+											<name>associatelink</name>
+											<address current="04" undeclaredaddresstype="05">associatelink</address>
+										</notice>
+									</associatelink>
+								</associatelinks>
+								<cifas>
+									<filing>
+										<person>
+											<name>String</name>
+											<dob>1957-08-13</dob>
+											<address current="0" undeclaredaddresstype="0">PERSON ADDRESS</address>
+										</person>
+										<company>
+											<number>String</number>
+											<name>String</name>
+											<address current="0" undeclaredaddresstype="0">COMPANY ADDRESS</address>
+										</company>
+										<details>
+											<membernumber>0</membernumber>
+											<casereferenceno>String</casereferenceno>
+											<name>String</name>
+											<productcode>String</productcode>
+											<fraudcategory>String</fraudcategory>
+											<productdesc>String</productdesc>
+											<frauddesc>String</frauddesc>
+											<inputdate>1957-08-13</inputdate>
+											<expirydate>1957-08-13</expirydate>
+											<transactiontype>String</transactiontype>
+										</details>
+										<notice>
+											<type>NOTICE TYPE0</type>
+											<refnum>String</refnum>
+											<dateraised>1957-08-13</dateraised>
+											<text>String</text>
+											<name>String</name>
+											<address current="60" undeclaredaddresstype="70">ADDRESSSSSSSSSSSSSS</address>
+										</notice>
+									</filing>
+									<case>
+										<caseid>0</caseid>
+										<details>
+											<owningmember>0</owningmember>
+											<managingmember>0</managingmember>
+											<casetype>String</casetype>
+											<productcode>String</productcode>
+											<facility>String</facility>
+											<supplydate>1957-08-13</supplydate>
+											<expirydate>1957-08-13</expirydate>
+											<applicationdate>1957-08-13</applicationdate>
+											<filingreasons>
+												<filingreason>String</filingreason>
+											</filingreasons>
+											<subjects>
+												<subject>
+													<person>
+														<name>String</name>
+														<dob>1957-08-13</dob>
+													</person>
+													<company>
+														<name>String</name>
+														<number>String</number>
+													</company>
+													<hometelephone>String</hometelephone>
+													<mobiletelephone>String</mobiletelephone>
+													<email>String</email>
+													<subjectrole>String</subjectrole>
+													<subjectrolequalifier>String</subjectrolequalifier>
+													<addressdata>
+														<type>String</type>
+														<address current="0" undeclaredaddresstype="0">String</address>
+													</addressdata>
+												</subject>
+											</subjects>
+										</details>
+										<dmrs>
+											<dmr>0</dmr>
+										</dmrs>
+										<notice>
+											<type>String</type>
+											<refnum>String</refnum>
+											<dateraised>1957-08-13</dateraised>
+											<text>String</text>
+											<name>String</name>
+											<address current="90" undeclaredaddresstype="090">CASE NOTICE ADDRESS</address>
+										</notice>
+									</case>
+								</cifas>
+								<accs>
+									<acc>
+										<supplierdetails apacs="0">
+											<suppliername>String</suppliername>
+											<suppliertypecode>String</suppliertypecode>
+										</supplierdetails>
+										<accholderdetails>
+											<name>String</name>
+											<address current="0" undeclaredaddresstype="0">String</address>
+											<dob>1957-08-13</dob>
+											<statuscode>String</statuscode>
+											<startdate>1957-08-13</startdate>
+											<enddate>1957-08-13</enddate>
+										</accholderdetails>
+										<default>
+											<defdate>1957-08-13</defdate>
+											<origdefbal>0</origdefbal>
+											<termbal>0</termbal>
+											<defsatdate>1957-08-13</defsatdate>
+											<repodate>1957-08-13</repodate>
+										</default>
+										<delinquent>
+											<delinqdate>1957-08-13</delinqdate>
+											<delinqbal>0</delinqbal>
+										</delinquent>
+										<acchistory>
+											<ah m="1957-08-13" bal="0" limit="0" acc="String" pay="String" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+										</acchistory>
+										<accdetails>
+											<accno>String</accno>
+											<accsuffix>0</accsuffix>
+											<joint>65535</joint>
+											<status>String</status>
+											<dateupdated>1957-08-13</dateupdated>
+											<acctypecode>String</acctypecode>
+											<accgroupid>0</accgroupid>
+											<currencycode>String</currencycode>
+											<balance>0</balance>
+											<limit>0</limit>
+											<openbalance>0</openbalance>
+											<arrstartdate>1957-08-13</arrstartdate>
+											<arrenddate>1957-08-13</arrenddate>
+											<paystartdate>1957-08-13</paystartdate>
+											<accstartdate>1957-08-13</accstartdate>
+											<accenddate>1957-08-13</accenddate>
+											<regpayment>0</regpayment>
+											<expectedpayment>0</expectedpayment>
+											<actualpayment>0</actualpayment>
+											<repayperiod>0</repayperiod>
+											<repayfreqcode>String</repayfreqcode>
+											<lumppayment>0</lumppayment>
+											<penintamt>0</penintamt>
+											<promotionalrate>65535</promotionalrate>
+											<minimumpayment>65535</minimumpayment>
+											<statementbalance>0</statementbalance>
+										</accdetails>
+										<notice>
+											<type>1</type>
+											<refnum>2</refnum>
+											<dateraised>1957-08-13</dateraised>
+											<text>3</text>
+											<name>4</name>
+											<address current="0" undeclaredaddresstype="0">String</address>
+										</notice>
+									</acc>
+								</accs>
+								<demographics>
+									<cameouk>String</cameouk>
+									<cameoinvestor>String</cameoinvestor>
+									<cameoincome>String</cameoincome>
+									<cameounemployment>String</cameounemployment>
+									<cameoproperty>String</cameoproperty>
+									<cameofinance>String</cameofinance>
+									<family>
+										<cameoukfam>String</cameoukfam>
+										<ind_adult1>65535</ind_adult1>
+									</family>
+									<household>
+										<adult_1>65535</adult_1>
+										<adults_2>65535</adults_2>
+										<adult_3pl>65535</adult_3pl>
+									</household>
+									<age>
+										<age0_17>65535</age0_17>
+										<age18_24>65535</age18_24>
+										<age25_34>65535</age25_34>
+										<age35_44>65535</age35_44>
+										<age45_54>65535</age45_54>
+										<age55_64>65535</age55_64>
+										<age65_74>65535</age65_74>
+										<age75pl>65535</age75pl>
+									</age>
+									<economic>
+										<unem_prob>3.1415926535897900073734945</unem_prob>
+										<unem_index>65535</unem_index>
+									</economic>
+									<economicactivity>
+										<wkfem_ind>65535</wkfem_ind>
+										<stu_ind>65535</stu_ind>
+										<sick_ind>65535</sick_ind>
+										<degree_ind>65535</degree_ind>
+									</economicactivity>
+									<socialclass>
+										<ab_ind>65535</ab_ind>
+										<c1_ind>65535</c1_ind>
+										<c2_ind>65535</c2_ind>
+										<de_ind>65535</de_ind>
+									</socialclass>
+									<housing>
+										<cameoukhsg>String</cameoukhsg>
+										<cameoukten>String</cameoukten>
+										<natprice>65535</natprice>
+										<regprice>65535</regprice>
+									</housing>
+									<propertyprice>
+										<d_index>65535</d_index>
+										<d_r_index>65535</d_r_index>
+										<s_index>65535</s_index>
+										<s_r_index>65535</s_r_index>
+										<t_index>65535</t_index>
+										<t_r_index>65535</t_r_index>
+										<f_index>65535</f_index>
+										<f_r_index>65535</f_r_index>
+									</propertyprice>
+									<movement>
+										<l_of_res>3.1415926535897900073734945</l_of_res>
+										<move_rate>65535</move_rate>
+									</movement>
+								</demographics>
+								<demographics2006>
+									<cameouk>String</cameouk>
+									<cameoukg>String</cameoukg>
+									<cameoincome>String</cameoincome>
+									<cameoincg>String</cameoincg>
+									<cameoinvestor>String</cameoinvestor>
+									<cameoinvg>String</cameoinvg>
+									<cameoproperty>String</cameoproperty>
+									<cameofinance>String</cameofinance>
+									<cameofing>String</cameofing>
+									<cameounemploy>String</cameounemploy>
+									<age>
+										<agescore>3.1415926535897900073734945</agescore>
+										<ageband>0</ageband>
+									</age>
+									<tenure>
+										<tenrscore>3.1415926535897900073734945</tenrscore>
+										<tenrband>0</tenrband>
+									</tenure>
+									<hhcomp>
+										<compscore>3.1415926535897900073734945</compscore>
+										<compband>0</compband>
+									</hhcomp>
+									<economic>
+										<econscore>3.1415926535897900073734945</econscore>
+										<econband>0</econband>
+									</economic>
+									<lifestage>
+										<lifescore>3.1415926535897900073734945</lifescore>
+										<lifeband>0</lifeband>
+									</lifestage>
+									<social>
+										<millhhld>3.1415926535897900073734945</millhhld>
+										<dirhhld>3.1415926535897900073734945</dirhhld>
+										<socscore>3.1415926535897900073734945</socscore>
+										<socband>0</socband>
+									</social>
+									<occupation>
+										<occscore>3.1415926535897900073734945</occscore>
+										<occband>0</occband>
+									</occupation>
+									<mortgage>
+										<mortscore>3.1415926535897900073734945</mortscore>
+										<mortband>0</mortband>
+									</mortgage>
+									<sharehld>
+										<hhldshare>3.1415926535897900073734945</hhldshare>
+										<avnumhold>3.1415926535897900073734945</avnumhold>
+										<avnumshares>3.1415926535897900073734945</avnumshares>
+										<avnumcomps>3.1415926535897900073734945</avnumcomps>
+										<avvalshares>3.1415926535897900073734945</avvalshares>
+									</sharehld>
+									<unemployment>
+										<unemmalelt>3.1415926535897900073734945</unemmalelt>
+										<unem1824>3.1415926535897900073734945</unem1824>
+										<unem2539>3.1415926535897900073734945</unem2539>
+										<unem40pl>3.1415926535897900073734945</unem40pl>
+										<unemscore>3.1415926535897900073734945</unemscore>
+										<unemband>0</unemband>
+									</unemployment>
+									<unemprate>
+										<unemrate>3.1415926535897900073734945</unemrate>
+										<unemdiff>3.1415926535897900073734945</unemdiff>
+										<unemind>0</unemind>
+										<unemall>3.1415926535897900073734945</unemall>
+										<unemallindex>0</unemallindex>
+									</unemprate>
+									<property>
+										<houseage>String</houseage>
+										<hhlddensity>3.1415926535897900073734945</hhlddensity>
+										<ctaxband>String</ctaxband>
+										<locationtype>0</locationtype>
+										<natavghouse>0</natavghouse>
+										<housescore>3.1415926535897900073734945</housescore>
+										<houseband>0</houseband>
+										<pricediff>0</pricediff>
+										<priceindex>0</priceindex>
+										<activity>0</activity>
+										<regionalband>0</regionalband>
+										<avgdetvalue>0</avgdetvalue>
+										<avgdetindex>0</avgdetindex>
+										<avgsemivalue>0</avgsemivalue>
+										<avgsemiindex>0</avgsemiindex>
+										<avgterrvalue>0</avgterrvalue>
+										<avgterrindex>0</avgterrindex>
+										<avgflatvalue>0</avgflatvalue>
+										<avgflatindex>0</avgflatindex>
+										<regioncode>0</regioncode>
+									</property>
+									<international>
+										<cameointl>String</cameointl>
+									</international>
+								</demographics2006>
+							</oia>
+						</oias>
+					</applicant>
+				</creditreport>
+				<BSB searchid="String" linktype="0">
+					<OVERALL>
+						<MAIN B="String"/>
+						<CUGMEMB K="String" L="String"/>
+					</OVERALL>
+					<APPLICANT app_no="65535">
+						<APPLSUMMARY>
+							<MAIN W="{ND}" X="String"/>
+							<COUNTS Z="String" AB="{ND}" BB="String" CB="String" DB="String" EB="String" FB="String" GB="String"/>
+							<SCOTDEBT OQB="String"/>
+							<NOTICES HB="String" IB="String"/>
+							<SUB_BLOCKS C="String" D="String" E="String" F="String"/>
+							<ALIAS_NO UPB="String" VPB="String" WPB="String"/>
+							<ASSOC_NO DD="String" ED="String" AC="String"/>
+							<ALERTSUMM PB="String" QB="String" RB="String" SB="String" TB="String" UB="String"/>
+							<HHOSUMM BC="String" RGB="String"/>
+							<TPD INB="String" JNB="String" KNB="String" LNB="String"/>
+							<OCCUPANCY AD="String"/>
+							<DECEASED LQB="String" FCC="String" GCC="String" HCC="String" ICC="String"/>
+							<IMPAIRED MQB="String" LJC="String"/>
+							<ACTIVITY JCC="String" KCC="String" LCC="String"/>
+							<ADVERSE MCC="String" HHC="String"/>
+						</APPLSUMMARY>
+						<ID>
+							<APPL DC="String" EC="String" FC="String" GC="String" HC="String" IC="String"/>
+						</ID>
+						<PUBLIC>
+							<BOTH FD="22" GD="23" HD="24" ID="25" JD="26" QDB="27" TQB="28" KD="29" CQB="30" LD="31" DQB="32" MD="String" ND="String" OD="String" PD="String" QD="String" RD="String" SD="444444445"/>
+							<AMOUNT TD="44" VD="Stri55ng"/>
+							<TIME WD="44" XD="44" YD="55" ZD="55" AE="55" BE="55" CE="55"/>
+							<NUMRECENCY IE="String" JE="String" KE="String" LE="String" ME="66"/>
+							<OTHER NE="String" OE="String" PE="String" QE="String" RE="33"/>
+						</PUBLIC>
+						<ER>
+							<ADDRESS WE="12" XE="13" YE="14" ZE="15" AF="16" BF="{ND}" CF="{ND}" DF="{ND}" KQB="{ND}" WQB="{ND}"/>
+							<OCCUPANCY EF="String" GF="String"/>
+							<NOTICES HF="String" IF="String"/>
+							<TURNOVER NCC="String"/>
+						</ER>
+						<SCORE>
+							<MAIN JF="12" KF="String" MF="String" NF="String" OF="String" PF="String" QF="String" SF="String" TF="String" UF="String" VF="String" WF="String" YF="String" ZF="String" AG="String" CG="String"/>
+						</SCORE>
+						<FULL>
+							<HHO FG="99999" GG="4554" HG="String" IG="String" JG="String" KG="String"/>
+							<BOTH LG="String" MG="String" NG="String" OG="String" SPB="String" RDB="String" HDC="String" IDC="String"/>
+							<ALERT PG="String"/>
+							<EVENT RG="String" TG="String" OGC="String" PGC="String" QGC="String"/>
+							<TIME UG="String" VG="25455" WG="String" XG="String" ZG="String" AH="String" BH="String" CH="String" JDC="String" KDC="String" GH="String" HH="String" IH="String" JH="String" SDB="String"/>
+							<OPENVAL KH="String" LH="String" MH="String" NH="String" OH="String" NDC="String" ARB="String" CRB="String" DRB="String" TDB="String" RRB="String"/>
+							<WORSTLESS2 PH="String" QH="String" RH="String" SH="String"/>
+							<WORSTLESS1 UH="String" VH="String" WH="String" XH="String"/>
+							<WORSTUNCLASS ZH="String" AI="String" BI="String" CI="String"/>
+							<WORST0 EI="String" FI="String" GI="String" HI="String"/>
+							<WORST3PLUS EJ="String" FJ="String"/>
+							<CODE1 HJ="String" TJ="4555"/>
+							<CODE2 ZJ="String" FK="String" RGC="String"/>
+							<CODEDM LJ="String" MJ="String" NJ="String" OJ="String"/>
+							<TOTAL1 LK="String" WK="String"/>
+							<TOTAL2 CL="String" IL="String" SGC="String"/>
+							<TOTALDM PK="String" JCH="String" QK="String" RK="String"/>
+							<ACCOUNT OL="String" PL="String" QL="String" RL="String" SL="String" TL="String" UL="String" VL="String" WL="String" XL="String"/>
+							<VALUE DM="String" EM="String" FM="String" GM="String" HM="String" IM="String" JM="String" KM="String" LM="String" MM="String"/>
+							<ACCOUNTACT KHC="String" LHC="String" MHC="String" NHC="String" OHC="String"/>
+							<PERCUNSEC WZB="String" XZB="String" YZB="String" ZZB="String" MBC="String"/>
+							<DEBT SM="String" TM="String" UM="String" VM="String" WM="String" XM="String" MRB="String" POB="String"/>
+							<DEBTLIMIT ZM="String" AN="String" BN="String" ODC="String" PDC="String" QDC="String"/>
+							<DEBTXMTGREPAY HN="String" IN="String" JN="String" KN="String" LN="String" SDC="String" TDC="String"/>
+							<DEBTMISC MN="String" NN="String" ON="String" PN="String" QN="String" SJC="String"/>
+							<PAYMENTS RN="String" SN="String" TN="String" UN="String"/>
+							<DUE WN="String" XN="String" YN="String"/>
+							<PAYSTAT3PLUS PO="String" QO="String" RO="String" SO="String"/>
+							<WORSTPAY FRB="String" BQ="String" CQ="String" DQ="String" EQ="String" FQ="String"/>
+							<WORSTXHOME GRB="String" IRB="String"/>
+							<WORSTXUTIL NJC="String" OJC="String"/>
+							<COMPANIES HQ="String" IQ="String"/>
+							<OPENED412MNTH BRB="String"/>
+							<OPENED12MNTH JQ="String" KQ="String" LQ="String" MQ="String"/>
+							<OPENED12PLUSMNTH ERB="String"/>
+							<OPENED24MNTH NQ="String" OQ="String" PQ="String" QQ="String" RQ="String"/>
+							<OPENEDSETTLD ZQ="String" AR="String" BR="String"/>
+							<INDEBT NMB="String" OMB="String" RMB="String" SMB="String" TMB="String" WMB="String" RUB="String" XMB="String"/>
+							<NOTICES DG="String" EG="String"/>
+							<CURRENT JRB="String" KRB="String" HRB="String"/>
+							<SETTLED0 LRB="String" YQB="String" ZQB="String"/>
+							<RUNAWAYS FYB="String" GYB="String"/>
+							<ALLHCSTATUS HYB="String" MYB="String" NYB="String" OYB="String"/>
+							<ACTHCSTATUS RYB="String"/>
+							<XHOMECREDIT SYB="String"/>
+							<HCBALANCES TYB="String" WYB="String" XYB="String" YYB="String"/>
+							<LNOPENED UDC="String" VDC="String" WDC="String" XDC="String"/>
+							<MTGOPENED YDC="String" ZDC="String" AEC="String" BEC="String"/>
+							<CCOPENED CEC="String" DEC="String" EEC="String" FEC="String"/>
+							<TELCOOPENED GEC="String" HEC="String" IEC="String" JEC="String"/>
+							<UTILOPENED KEC="String" LEC="String" MEC="String" NEC="String"/>
+							<HOMESHOPOPENED OEC="String" PEC="String" QEC="String" REC="String"/>
+							<BKOPENED SEC="String" TEC="String" UEC="String" VEC="String"/>
+							<MISCOPENED WEC="String" XEC="String" YEC="String" ZEC="String"/>
+							<INSOPENED AFC="String" BFC="String" CFC="String" DFC="String"/>
+							<HCNEWACCS WWB="String" XWB="String" YWB="String" ZWB="String"/>
+							<LNSETTLED EFC="String" FFC="String" GFC="String" HFC="String"/>
+							<MTGSETTLED IFC="String" JFC="String" KFC="String" LFC="String"/>
+							<CCSETTLED MFC="String" NFC="String" OFC="String" PFC="String"/>
+							<TELCOSETTLED QFC="String" RFC="String" SFC="String" TFC="String"/>
+							<UTILSETTLED UFC="String" VFC="String" WFC="String" XFC="String"/>
+							<HOMESHOPSETTLED YFC="String" ZFC="String" AGC="String" BGC="String"/>
+							<BKSETTLED CGC="String" DGC="String" EGC="String" FGC="String"/>
+							<MISCSETTLED GGC="String" HGC="String" IGC="String" JGC="String"/>
+							<INSSETTLED KGC="String" LGC="String" MGC="String" NGC="String"/>
+							<HCSETTLED BZB="String" CZB="String" DZB="String" FZB="String" NAC="String" OAC="String"/>
+							<REVOLVECRED MZB="String" RIC="String" SIC="String" TIC="String"/>
+							<HCWRSTSETT PAC="String" QAC="String"/>
+							<HCWRSTACT WAC="String"/>
+							<HCPAY RAC="String"/>
+							<HCAGE SAC="String" TAC="String"/>
+							<HCBALCHG UAC="String" VAC="String" XAC="String" YAC="String"/>
+							<WORSTPAYLOAN ABC="String" BBC="String" CBC="String"/>
+							<WORSTPAYCC DBC="String" EBC="String" FBC="String"/>
+							<WORSTPAYMTG GBC="String" HBC="String" IBC="String"/>
+							<WORSTPAYTELECO PCC="String" QCC="String" RCC="String"/>
+							<WORSTPAYUTIL SCC="String" TCC="String" UCC="String"/>
+							<WORSTPAYHOMESHOP VCC="String" WCC="String" XCC="String"/>
+							<WORSTPAYBNK JBC="String" KBC="String" LBC="String"/>
+							<WORSTPAYMISC YCC="String" ZCC="String" ADC="String"/>
+							<WORSTPAYINS BDC="String" CDC="String" DDC="String"/>
+							<WORSTPAYHOMECR EDC="String" FDC="String" GDC="String"/>
+							<OPENED12MTHXHISTORIC ZBC="String"/>
+							<OPENED24MTHXHISTORIC ACC="String"/>
+							<DUEXHISTORIC BCC="String" CCC="String" DCC="String"/>
+							<BOTHXHISTORIC UBC="String" VBC="String"/>
+							<WORSTPAYXHISTORIC WBC="String" XBC="String" YBC="String"/>
+							<UTILISATION OCC="String" PHC="String" QHC="String" RHC="String" SHC="String" THC="String"/>
+							<HIGHEST UHC="String" VHC="String"/>
+							<PAYDAY XHC="String" ZHC="String" LIC="String"/>
+							<PAYDAYOPENED BIC="String" CIC="String" DIC="String" MIC="String" EJC="String"/>
+							<PAYDAYWORST IIC="String" JIC="String" KIC="String"/>
+							<PAYDAYVALUE YHC="4554" AIC="545" EIC="88" FIC="1" GIC="2" FJC="3" GJC="4" HJC="5" PJC="999"/>
+							<PAYDAYSETTLED HIC="{ND}" JJC="{ND}" KJC="{ND}" IJC="{ND}"/>
+						</FULL>
+						<PARTIAL>
+							<BOTH MR="START" NR="String" OR="String" PR="String" QR="String" RR="String" SR="String" TR="String" UT="String" UR="String" VR="String" TPB="String" TGC="String" UGC="String"/>
+							<ALERT WR="String"/>
+							<ALL XR="String" YR="String" ZR="String" ZS="String" AT="String" BT="String" CT="String" DT="String" ET="String" FT="String" GT="String" IT="String"/>
+							<VALDEFAULT AS="String" BS="String" CS="String" DS="String" ES="String" FS="String" GS="String" HS="String" JS="String"/>
+							<DOB PS="String"/>
+							<NOTICES WS="String"/>
+							<MISC XS="String" HZB="String" MJC="String"/>
+							<NUMDEFBAL PT="String" QT="String" RT="String" ST="String" TT="String"/>
+							<ENTERDEF PP="String" QP="String" RP="String" SP="String" TP="String"/>
+							<SETTLED UP="String" GAC="String" HAC="String" IAC="String" JAC="String" VP="String"/>
+							<RECOVERED GZB="String" NZB="String" ZP="String" UZB="String" VZB="String" AQ="String"/>
+							<HCDELQ AAC="String" BAC="String" CAC="String"/>
+							<HCVALDEF KAC="String" LAC="String" MAC="END"/>
+						</PARTIAL>
+						<OWN>
+							<TYPE AU="String" BU="String" CU="String" DU="String" EU="String" FU="String" GU="String" HU="String" KZB="String" IU="String" JU="String" KU="String" LU="String"/>
+							<TIME MU="String" NU="String" PU="String" QU="String" QZB="String"/>
+							<OPENED WW="String" XW="String" YW="String" ZW="String" AX="String" WGC="String"/>
+							<TOTDF MX="String"/>
+							<NUMDF BY="String"/>
+							<TOTNONDF QY="String"/>
+							<NUMNONDF FZ="String"/>
+							<VALSECTOR LZ="String" MZ="String" NZ="String"/>
+							<DEBT UZ="String" VZ="String"/>
+							<INDEBT YMB="String" ZMB="String" CNB="String" DNB="String" ENB="String" FNB="String" GNB="String" EQB="String"/>
+							<NOTICES TGB="String" UGB="String"/>
+							<WORST JQB="String" TZB="String"/>
+							<HCDELQ DAC="String" EAC="String" FAC="String"/>
+						</OWN>
+						<CIFAS>
+							<MAIN CAB="String" DAB="String" EAB="String" FAB="String" GAB="String" HAB="String" IAB="String" JAB="String" KAB="String" LAB="String" MAB="String" NAB="String" OAB="String"/>
+							<NOTICES KBB="String"/>
+						</CIFAS>
+						<CAMEO2006>
+							<MAIN GCB="55555555555555555" HCB="String" TRB="String" ICB="String" FWB="String" KCB="String" URB="String" MOB="String" VRB="String" NOB="String" OOB="String" WRB="String" CSB="String"/>
+							<AGE DSB="String" ESB="String"/>
+							<TENURE FSB="String" GSB="String"/>
+							<HHCOMP HSB="String" LCB="String"/>
+							<ECONOMIC MCB="String" NCB="String"/>
+							<LIFESTAGE OCB="String" PCB="String"/>
+							<SOCIAL DDB="String" EDB="String" FDB="String" GDB="String"/>
+							<OCCUPATION QCB="String" RCB="String"/>
+							<MORTGAGE XCB="String" YCB="String"/>
+							<SHAREHLD SCB="String" TCB="String" UCB="String" VCB="String" WCB="String"/>
+							<UNEMPLOY ZCB="String" ADB="String" BDB="String" CDB="String" HDB="String" IDB="String"/>
+							<UNEMPRATE HWB="String" IWB="String" JWB="String" KWB="String" LWB="String"/>
+							<PROPERTY JDB="String" KDB="String" LDB="String" MDB="String" NDB="String" ODB="String" ISB="String" GWB="String" JSB="String" KSB="String" LSB="String" MSB="String" NSB="String" OSB="String" PSB="String" QSB="String" RSB="String" SSB="String" TSB="String" USB="555555555555"/>
+							<INTERNATIONAL PDB="String"/>
+						</CAMEO2006>
+						<SEARCH>
+							<MAIN UDB="String"/>
+							<DEBTCOLL KEB="String" LEB="String" MEB="String" NEB="String"/>
+							<ALLCA YGC="String" QEB="String" REB="String" SEB="String" TEB="String" UEB="String"/>
+							<OWNCA VEB="String" WEB="String" XEB="String" YEB="String" ZEB="String"/>
+							<HOMECREDIT MFB="String" NFB="String" OFB="String" PFB="String" QFB="String" RFB="String"/>
+							<TELECOM XGC="String"/>
+							<PAYDAY DJC="String" NIC="String" OIC="String" PIC="String" QIC="String"/>
+						</SEARCH>
+						<ADDRLINK>
+							<ADDMAIN VGB="String" WGB="String" ZAC="String" NBC="String"/>
+							<ADDRAW XGB="String" YGB="String" QOB="String" ZGB="String" AHB="String" ROB="String" BHB="String" CHB="String" SOB="String" DHB="String" EHB="String" TOB="String" FHB="String" GHB="String" JBB="String"/>
+							<ADDTIME HHB="String" IHB="String" JHB="String" KHB="String" LHB="String"/>
+							<NOTICES XPB="String" YPB="String"/>
+						</ADDRLINK>
+						<ASSLINK>
+							<MAIN VOB="2424" WOB="24224" XOB="2424"/>
+							<DECASSRAW YOB="5252" ZOB="String" APB="String" BPB="String" CPB="String" DPB="String" EPB="String" FPB="String" GPB="String" HPB="5252"/>
+							<UNDECASSRAW IPB="5353" JPB="String" KPB="String" LPB="String" MPB="String" NPB="String" OPB="String" PPB="String" QPB="String" RPB="5353"/>
+							<NOTICES ZPB="9191" AQB="9191"/>
+						</ASSLINK>
+						<GEORISK2006>
+							<MAIN VSB="00000" WSB="String" XSB="String" YSB="String" ZSB="String" ATB="String" BTB="String" CTB="String"/>
+							<CCJ DTB="String" ETB="String" FTB="String" NWB="String" GTB="String" OWB="String" HTB="String" PWB="String" ITB="String" MWB="String" JTB="String" KTB="String" LTB="String" MTB="String" NTB="String" OTB="String" PTB="String" QTB="String"/>
+							<INSOLVENCY RTB="String" STB="String" TTB="String"/>
+							<FAMILY UTB="String" VTB="String" WTB="String" XTB="String" YTB="String" ZTB="String" AUB="String" BUB="String"/>
+							<HH DUB="String" EUB="String" FUB="String" GUB="String" HUB="String" IUB="String" JUB="String" KUB="String"/>
+							<HIST LUB="String" MUB="String" NUB="String" OUB="String" PUB="String" QUB="String"/>
+							<GD1 SUB="String"/>
+							<PARTSHARE TUB="String" UUB="String" VUB="String" WUB="String" XUB="String" YUB="String" ZUB="String" AVB="String"/>
+							<FULLSHARE CVB="String" DVB="String" EVB="String" FVB="String" GVB="String" HVB="String" IVB="String" JVB="String" KVB="String" LVB="String" MVB="String" NVB="String" OVB="String" PVB="String" QVB="String" RVB="String" SVB="String" TVB="String" UVB="String" VVB="String" WVB="String" XVB="String" YVB="String" ZVB="String" AWB="String" BWB="String" CWB="String" DWB="String"/>
+							<SEARCH EWB="00000000000"/>
+						</GEORISK2006>
+						<ICH>
+							<PUBLIC FQB="String" GQB="String" NQB="String"/>
+							<SHARE HQB="String" IQB="String"/>
+						</ICH>
+						<ACD>
+							<BALANCE AYB="String"/>
+							<PAYMENTS BYB="String" CYB="String" DYB="String" EYB="String" FHC="String" GHC="String" IYB="String" JYB="String" KYB="String" LYB="String" WHC="String"/>
+							<CASH_ADV_NUM PYB="String" QYB="String" ZGC="String" AHC="String"/>
+							<CASH_ADV_VAL UYB="String" VYB="String" BHC="String" CHC="String"/>
+							<CASH_ADV_BAL ZYB="String" AZB="String" DHC="String" EHC="String"/>
+							<CASH_ADV_BALTIME EZB="String"/>
+							<CASH_ADV_PAY IZB="String"/>
+						</ACD>
+						<SPA>
+							<APPLSUMMARY>
+								<COUNTS Z="99" AB="999" BB="9999" CB="999999" DB="99999999" EB="String" FB="String" GB="9999999"/>
+								<NOTICES HB="8888" IB="88"/>
+							</APPLSUMMARY>
+							<PUBLIC>
+								<BOTH FD="55" GD="555555" HD="String" ID="String" JD="String" QDB="String" TQB="String" KD="String" CQB="String" LD="String" DQB="String" MD="String" ND="String" OD="String" PD="String" QD="String" RD="String" SD="285582"/>
+								<AMOUNT TD="String" VD="String"/>
+								<TIME WD="String" XD="String" YD="String" ZD="String" AE="String" BE="String" CE="String"/>
+								<NUMRECENCY IE="78" JE="79" KE="80" LE="81" ME="82"/>
+							</PUBLIC>
+							<FULL>
+								<BOTH LG="String" MG="String" NG="String" OG="String" SPB="String" RDB="String" HDC="String" IDC="String"/>
+								<WORSTPAY FRB="String" BQ="String" CQ="String" DQ="String" EQ="String" FQ="String"/>
+								<BOTHXHISTORIC UBC="String" VBC="String"/>
+								<WORSTPAYXHISTORIC WBC="String" XBC="String" YBC="String"/>
+							</FULL>
+							<PARTIAL>
+								<BOTH MR="String" NR="String" OR="String" PR="String" QR="String" RR="String" SR="String" TR="String" UT="String" UR="String" VR="String" TPB="String" TGC="String" UGC="String"/>
+								<ALERT WR="String"/>
+							</PARTIAL>
+							<OWN>
+								<TYPE AU="String" BU="String" CU="String" DU="String" EU="String" FU="String" GU="String" HU="String" KZB="String" IU="String" JU="String" KU="String" LU="String"/>
+							</OWN>
+						</SPA>
+						<USF>
+							<APPLSUMMARY>
+								<COUNTS Z="String" AB="String" BB="String" CB="String" DB="String" EB="String" FB="String" GB="String"/>
+								<NOTICES HB="String" IB="String"/>
+							</APPLSUMMARY>
+							<PUBLIC>
+								<BOTH FD="String" GD="String" HD="String" ID="String" JD="String" QDB="String" TQB="String" KD="String" CQB="String" LD="String" DQB="String" MD="String" ND="String" OD="String" PD="String" QD="String" RD="String" SD="String"/>
+								<AMOUNT TD="String" VD="String"/>
+								<TIME WD="String" XD="String" YD="String" ZD="String" AE="String" BE="String" CE="String"/>
+								<NUMRECENCY IE="String" JE="String" KE="String" LE="String" ME="String"/>
+							</PUBLIC>
+							<FULL>
+								<BOTH LG="String" MG="String" NG="String" OG="String" SPB="String" RDB="String" HDC="String" IDC="String"/>
+								<WORSTPAY FRB="String" BQ="String" CQ="String" DQ="String" EQ="String" FQ="String"/>
+								<BOTHXHISTORIC UBC="String" VBC="String"/>
+								<WORSTPAYXHISTORIC WBC="String" XBC="String" YBC="String"/>
+							</FULL>
+							<PARTIAL>
+								<BOTH MR="String" NR="String" OR="String" PR="String" QR="String" RR="String" SR="String" TR="String" UT="String" UR="String" VR="String" TPB="String" TGC="String" UGC="String"/>
+								<ALERT WR="String"/>
+							</PARTIAL>
+							<OWN>
+								<TYPE AU="String" BU="String" CU="String" DU="String" EU="String" FU="String" GU="String" HU="String" KZB="String" IU="String" JU="String" KU="String" LU="String"/>
+							</OWN>
+						</USF>
+						<HHO>
+							<PUBLIC>
+								<BOTH FD="String" GD="String" HD="String" ID="String" JD="String" QDB="String" TQB="String" KD="String" CQB="String" LD="String" DQB="String" MD="String" ND="String" OD="String" PD="String" QD="String" RD="String" SD="String"/>
+								<AMOUNT TD="String" VD="String"/>
+								<TIME WD="String" XD="String" YD="String" ZD="String" AE="String" BE="String" CE="String"/>
+								<NUMRECENCY IE="String" JE="String" KE="String" LE="String" ME="String"/>
+							</PUBLIC>
+							<FULL>
+								<HHO FG="String" GG="String" HG="String" IG="String" JG="String" KG="String"/>
+								<BOTH LG="String" MG="String" NG="String" OG="String" SPB="String" RDB="String" HDC="String" IDC="String"/>
+								<BOTHXHISTORIC UBC="String" VBC="String"/>
+							</FULL>
+							<PARTIAL>
+								<BOTH MR="String" NR="String" OR="String" PR="String" QR="String" RR="String" SR="String" TR="String" UT="String" UR="String" VR="String" TPB="String" TGC="String" UGC="String"/>
+							</PARTIAL>
+							<OWN>
+								<TYPE AU="String" BU="String" CU="String" DU="String" EU="String" FU="String" GU="String" HU="String" KZB="String" IU="String" JU="String" KU="String" LU="String"/>
+							</OWN>
+						</HHO>
+						<OIA>
+							<OIADEC>
+								<APPLSUMMARY>
+									<COUNTS Z="22" AB="22" BB="22" CB="22" DB="22" EB="22" FB="22" GB="22"/>
+									<SCOTDEBT OQB="33"/>
+									<NOTICES HB="44" IB="44"/>
+									<ALIAS_NO UPB="55" VPB="55" WPB="55"/>
+								</APPLSUMMARY>
+								<PUBLIC>
+									<BOTH FD="String" GD="String" HD="String" ID="String" JD="String" QDB="String" TQB="String" KD="String" CQB="String" LD="String" DQB="String" MD="String" ND="String" OD="String" PD="String" QD="String" RD="String" SD="String"/>
+									<AMOUNT TD="String" VD="String"/>
+									<TIME WD="String" XD="String" YD="String" ZD="String" AE="String" BE="String" CE="String"/>
+									<NUMRECENCY IE="String" JE="String" KE="String" LE="String" ME="String"/>
+									<OTHER NE="String" OE="String" PE="String" QE="String" RE="String"/>
+								</PUBLIC>
+								<ER>
+									<Oia UMB="String" VMB="String"/>
+								</ER>
+								<FULL>
+									<HHO FG="String" GG="String" HG="String" IG="String" JG="String" KG="String"/>
+									<BOTH LG="String" MG="String" NG="String" OG="String" SPB="String" RDB="String" HDC="String" IDC="String"/>
+									<ALERT PG="String"/>
+									<EVENT RG="String" TG="String" OGC="String" PGC="String" QGC="String"/>
+									<TIME UG="String" VG="String" WG="String" XG="String" ZG="String" AH="String" BH="String" CH="String" JDC="String" KDC="String" GH="String" HH="String" IH="String" JH="String" SDB="String"/>
+									<OPENVAL KH="String" LH="String" MH="String" NH="String" OH="String" NDC="String" ARB="String" CRB="String" DRB="String" TDB="String" RRB="String"/>
+									<WORSTLESS2 PH="String" QH="String" RH="String" SH="String"/>
+									<WORSTLESS1 UH="String" VH="String" WH="String" XH="String"/>
+									<WORSTUNCLASS ZH="String" AI="String" BI="String" CI="String"/>
+									<WORST0 EI="String" FI="String" GI="String" HI="String"/>
+									<WORST3PLUS EJ="String" FJ="String"/>
+									<CODE1 HJ="String" TJ="String"/>
+									<CODE2 ZJ="String" FK="String" RGC="String"/>
+									<CODEDM LJ="String" MJ="String" NJ="String" OJ="String"/>
+									<TOTAL1 LK="String" WK="String"/>
+									<TOTAL2 CL="String" IL="String" SGC="String"/>
+									<TOTALDM PK="String" JCH="String" QK="String" RK="String"/>
+									<ACCOUNT OL="String" PL="String" QL="String" RL="String" SL="String" TL="String" UL="String" VL="String" WL="String" XL="String"/>
+									<VALUE DM="String" EM="String" FM="String" GM="String" HM="String" IM="String" JM="String" KM="String" LM="String" MM="String"/>
+									<ACCOUNTACT KHC="String" LHC="String" MHC="String" NHC="String" OHC="String"/>
+									<PERCUNSEC WZB="String" XZB="String" YZB="String" ZZB="String" MBC="String"/>
+									<DEBT SM="String" TM="String" UM="String" VM="String" WM="String" XM="String" MRB="String" POB="String"/>
+									<DEBTLIMIT ZM="String" AN="String" BN="String" ODC="String" PDC="String" QDC="String"/>
+									<DEBTXMTGREPAY HN="String" IN="String" JN="String" KN="String" LN="String" SDC="String" TDC="String"/>
+									<DEBTMISC MN="String" NN="String" ON="String" PN="String" QN="String" SJC="String"/>
+									<PAYMENTS RN="String" SN="String" TN="String" UN="String"/>
+									<DUE WN="String" XN="String" YN="String"/>
+									<PAYSTAT3PLUS PO="String" QO="String" RO="String" SO="String"/>
+									<WORSTPAY FRB="String" BQ="String" CQ="String" DQ="String" EQ="String" FQ="String"/>
+									<WORSTXHOME GRB="String" IRB="String"/>
+									<WORSTXUTIL NJC="String" OJC="String"/>
+									<COMPANIES HQ="String" IQ="String"/>
+									<OPENED412MNTH BRB="String"/>
+									<OPENED12MNTH JQ="String" KQ="String" LQ="String" MQ="String"/>
+									<OPENED12PLUSMNTH ERB="String"/>
+									<OPENED24MNTH NQ="String" OQ="String" PQ="String" QQ="String" RQ="String"/>
+									<OPENEDSETTLD ZQ="String" AR="String" BR="String"/>
+									<NOTICES DG="String" EG="String"/>
+									<CURRENT JRB="String" KRB="String" HRB="String"/>
+									<SETTLED0 LRB="String" YQB="String" ZQB="String"/>
+									<RUNAWAYS FYB="String" GYB="String"/>
+									<ALLHCSTATUS HYB="String" MYB="String" NYB="String" OYB="String"/>
+									<ACTHCSTATUS RYB="String"/>
+									<XHOMECREDIT SYB="String"/>
+									<HCBALANCES TYB="String" WYB="String" XYB="String" YYB="String"/>
+									<LNOPENED UDC="String" VDC="String" WDC="String" XDC="String"/>
+									<MTGOPENED YDC="String" ZDC="String" AEC="String" BEC="String"/>
+									<CCOPENED CEC="String" DEC="String" EEC="String" FEC="String"/>
+									<TELCOOPENED GEC="String" HEC="String" IEC="String" JEC="String"/>
+									<UTILOPENED KEC="String" LEC="String" MEC="String" NEC="String"/>
+									<HOMESHOPOPENED OEC="String" PEC="String" QEC="String" REC="String"/>
+									<BKOPENED SEC="String" TEC="String" UEC="String" VEC="String"/>
+									<MISCOPENED WEC="String" XEC="String" YEC="String" ZEC="String"/>
+									<INSOPENED AFC="String" BFC="String" CFC="String" DFC="String"/>
+									<HCNEWACCS WWB="String" XWB="String" YWB="String" ZWB="String"/>
+									<LNSETTLED EFC="String" FFC="String" GFC="String" HFC="String"/>
+									<MTGSETTLED IFC="String" JFC="String" KFC="String" LFC="String"/>
+									<CCSETTLED MFC="String" NFC="String" OFC="String" PFC="String"/>
+									<TELCOSETTLED QFC="String" RFC="String" SFC="String" TFC="String"/>
+									<UTILSETTLED UFC="String" VFC="String" WFC="String" XFC="String"/>
+									<HOMESHOPSETTLED YFC="String" ZFC="String" AGC="String" BGC="String"/>
+									<BKSETTLED CGC="String" DGC="String" EGC="String" FGC="String"/>
+									<MISCSETTLED GGC="String" HGC="String" IGC="String" JGC="String"/>
+									<INSSETTLED KGC="String" LGC="String" MGC="String" NGC="String"/>
+									<HCSETTLED BZB="String" CZB="String" DZB="String" FZB="String" NAC="String" OAC="String"/>
+									<REVOLVECRED MZB="String" RIC="String" SIC="String" TIC="String"/>
+									<HCWRSTSETT PAC="String" QAC="String"/>
+									<HCWRSTACT WAC="String"/>
+									<HCPAY RAC="String"/>
+									<HCAGE SAC="String" TAC="String"/>
+									<HCBALCHG UAC="String" VAC="String" XAC="String" YAC="String"/>
+									<WORSTPAYLOAN ABC="String" BBC="String" CBC="String"/>
+									<WORSTPAYCC DBC="String" EBC="String" FBC="String"/>
+									<WORSTPAYMTG GBC="String" HBC="String" IBC="String"/>
+									<WORSTPAYTELECO PCC="String" QCC="String" RCC="String"/>
+									<WORSTPAYUTIL SCC="String" TCC="String" UCC="String"/>
+									<WORSTPAYHOMESHOP VCC="String" WCC="String" XCC="String"/>
+									<WORSTPAYBNK JBC="String" KBC="String" LBC="String"/>
+									<WORSTPAYMISC YCC="String" ZCC="String" ADC="String"/>
+									<WORSTPAYINS BDC="String" CDC="String" DDC="String"/>
+									<WORSTPAYHOMECR EDC="String" FDC="String" GDC="String"/>
+									<OPENED12MTHXHISTORIC ZBC="String"/>
+									<OPENED24MTHXHISTORIC ACC="String"/>
+									<DUEXHISTORIC BCC="String" CCC="String" DCC="String"/>
+									<BOTHXHISTORIC UBC="String" VBC="String"/>
+									<WORSTPAYXHISTORIC WBC="String" XBC="String" YBC="String"/>
+									<UTILISATION OCC="String" PHC="String" QHC="String" RHC="String" SHC="String" THC="String"/>
+									<HIGHEST UHC="String" VHC="String"/>
+									<PAYDAY XHC="String" ZHC="String" LIC="String"/>
+									<PAYDAYOPENED BIC="String" CIC="String" DIC="String" MIC="String" EJC="String"/>
+									<PAYDAYWORST IIC="String" JIC="String" KIC="String"/>
+									<PAYDAYVALUE YHC="String" AIC="String" EIC="String" FIC="String" GIC="String" FJC="String" GJC="String" HJC="String" PJC="String"/>
+									<PAYDAYSETTLED HIC="String" JJC="String" KJC="String" IJC="String"/>
+								</FULL>
+								<PARTIAL>
+									<BOTH MR="String" NR="String" OR="String" PR="String" QR="String" RR="String" SR="String" TR="String" UT="String" UR="String" VR="String" TPB="String" TGC="String" UGC="String"/>
+									<ALERT WR="String"/>
+									<ALL XR="String" YR="String" ZR="String" ZS="String" AT="String" BT="String" CT="String" DT="String" ET="String" FT="String" GT="String" IT="String"/>
+									<VALDEFAULT AS="String" BS="String" CS="String" DS="String" ES="String" FS="String" GS="String" HS="String" JS="String"/>
+									<NOTICES WS="String"/>
+									<MISC XS="String" HZB="String" MJC="String"/>
+									<NUMDEFBAL PT="String" QT="String" RT="String" ST="String" TT="String"/>
+									<ENTERDEF PP="String" QP="String" RP="String" SP="String" TP="String"/>
+									<SETTLED UP="String" GAC="String" HAC="String" IAC="String" JAC="String" VP="String"/>
+									<RECOVERED GZB="String" NZB="String" ZP="String" UZB="String" VZB="String" AQ="String"/>
+									<HCDELQ AAC="String" BAC="String" CAC="String"/>
+									<HCVALDEF KAC="String" LAC="String" MAC="String"/>
+								</PARTIAL>
+								<OWN>
+									<TYPE AU="String" BU="String" CU="String" DU="String" EU="String" FU="String" GU="String" HU="String" KZB="String" IU="String" JU="String" KU="String" LU="String"/>
+									<TIME MU="String" NU="String" PU="String" QU="String" QZB="String"/>
+									<OPENED WW="String" XW="String" YW="String" ZW="String" AX="String" WGC="String"/>
+									<TOTDF MX="String"/>
+									<NUMDF BY="String"/>
+									<TOTNONDF QY="String"/>
+									<NUMNONDF FZ="String"/>
+									<VALSECTOR LZ="String" MZ="String" NZ="String"/>
+									<DEBT UZ="String" VZ="String"/>
+									<NOTICES TGB="String" UGB="String"/>
+									<WORST JQB="String" TZB="String"/>
+									<HCDELQ DAC="String" EAC="String" FAC="String"/>
+								</OWN>
+								<CIFAS>
+									<MAIN CAB="String" DAB="String" EAB="String" FAB="String" GAB="String" HAB="String" IAB="String" JAB="String" KAB="String" LAB="String" MAB="String" NAB="String" OAB="String"/>
+									<NOTICES KBB="String"/>
+								</CIFAS>
+								<SEARCH>
+									<MAIN UDB="String"/>
+									<DEBTCOLL KEB="String" LEB="String" MEB="String" NEB="String"/>
+									<ALLCA YGC="String" QEB="String" REB="String" SEB="String" TEB="String" UEB="String"/>
+									<OWNCA VEB="String" WEB="String" XEB="String" YEB="String" ZEB="String"/>
+									<HOMECREDIT MFB="String" NFB="String" OFB="String" PFB="String" QFB="String" RFB="String"/>
+									<TELECOM XGC="String"/>
+									<PAYDAY DJC="String" NIC="String" OIC="String" PIC="String" QIC="String"/>
+								</SEARCH>
+								<ADDRLINK>
+									<ADDMAIN VGB="String" WGB="String" ZAC="String" NBC="String"/>
+									<ADDRAW XGB="String" YGB="String" QOB="String" ZGB="String" AHB="String" ROB="String" BHB="String" CHB="String" SOB="String" DHB="String" EHB="String" TOB="String" FHB="String" GHB="String" JBB="String"/>
+									<ADDTIME HHB="String" IHB="String" JHB="String" KHB="String" LHB="String"/>
+									<NOTICES XPB="String" YPB="String"/>
+								</ADDRLINK>
+								<ACD>
+									<BALANCE AYB="String"/>
+									<PAYMENTS BYB="String" CYB="String" DYB="String" EYB="String" FHC="String" GHC="String" IYB="String" JYB="String" KYB="String" LYB="String" WHC="String"/>
+									<CASH_ADV_NUM PYB="String" QYB="String" ZGC="String" AHC="String"/>
+									<CASH_ADV_VAL UYB="String" VYB="String" BHC="String" CHC="String"/>
+									<CASH_ADV_BAL ZYB="String" AZB="String" DHC="String" EHC="String"/>
+									<CASH_ADV_BALTIME EZB="String"/>
+									<CASH_ADV_PAY IZB="String"/>
+								</ACD>
+							</OIADEC>
+							<OIAUNDEC>
+								<APPLSUMMARY>
+									<COUNTS Z="String" AB="String" BB="String" CB="String" DB="String" EB="String" FB="String" GB="String"/>
+									<SCOTDEBT OQB="String"/>
+									<NOTICES HB="String" IB="String"/>
+									<ALIAS_NO UPB="String" VPB="String" WPB="String"/>
+								</APPLSUMMARY>
+								<PUBLIC>
+									<BOTH FD="String" GD="String" HD="String" ID="String" JD="String" QDB="String" TQB="String" KD="String" CQB="String" LD="String" DQB="String" MD="String" ND="String" OD="String" PD="String" QD="String" RD="String" SD="String"/>
+									<AMOUNT TD="String" VD="String"/>
+									<TIME WD="String" XD="String" YD="String" ZD="String" AE="String" BE="String" CE="String"/>
+									<NUMRECENCY IE="String" JE="String" KE="String" LE="String" ME="String"/>
+									<OTHER NE="String" OE="String" PE="String" QE="String" RE="String"/>
+								</PUBLIC>
+								<ER>
+									<Oia UMB="String" VMB="String"/>
+								</ER>
+								<FULL>
+									<HHO FG="String" GG="String" HG="String" IG="String" JG="String" KG="String"/>
+									<BOTH LG="String" MG="String" NG="String" OG="String" SPB="String" RDB="String" HDC="String" IDC="String"/>
+									<ALERT PG="String"/>
+									<EVENT RG="String" TG="String" OGC="String" PGC="String" QGC="String"/>
+									<TIME UG="String" VG="String" WG="String" XG="String" ZG="String" AH="String" BH="String" CH="String" JDC="String" KDC="String" GH="String" HH="String" IH="String" JH="String" SDB="String"/>
+									<OPENVAL KH="String" LH="String" MH="String" NH="String" OH="String" NDC="String" ARB="String" CRB="String" DRB="String" TDB="String" RRB="String"/>
+									<WORSTLESS2 PH="String" QH="String" RH="String" SH="String"/>
+									<WORSTLESS1 UH="String" VH="String" WH="String" XH="String"/>
+									<WORSTUNCLASS ZH="String" AI="String" BI="String" CI="String"/>
+									<WORST0 EI="String" FI="String" GI="String" HI="String"/>
+									<WORST3PLUS EJ="String" FJ="String"/>
+									<CODE1 HJ="String" TJ="String"/>
+									<CODE2 ZJ="String" FK="String" RGC="String"/>
+									<CODEDM LJ="String" MJ="String" NJ="String" OJ="String"/>
+									<TOTAL1 LK="String" WK="String"/>
+									<TOTAL2 CL="String" IL="String" SGC="String"/>
+									<TOTALDM PK="String" JCH="String" QK="String" RK="String"/>
+									<ACCOUNT OL="String" PL="String" QL="String" RL="String" SL="String" TL="String" UL="String" VL="String" WL="String" XL="String"/>
+									<VALUE DM="String" EM="String" FM="String" GM="String" HM="String" IM="String" JM="String" KM="String" LM="String" MM="String"/>
+									<ACCOUNTACT KHC="String" LHC="String" MHC="String" NHC="String" OHC="String"/>
+									<PERCUNSEC WZB="String" XZB="String" YZB="String" ZZB="String" MBC="String"/>
+									<DEBT SM="String" TM="String" UM="String" VM="String" WM="String" XM="String" MRB="String" POB="String"/>
+									<DEBTLIMIT ZM="String" AN="String" BN="String" ODC="String" PDC="String" QDC="String"/>
+									<DEBTXMTGREPAY HN="String" IN="String" JN="String" KN="String" LN="String" SDC="String" TDC="String"/>
+									<DEBTMISC MN="String" NN="String" ON="String" PN="String" QN="String" SJC="String"/>
+									<PAYMENTS RN="String" SN="String" TN="String" UN="String"/>
+									<DUE WN="String" XN="String" YN="String"/>
+									<PAYSTAT3PLUS PO="String" QO="String" RO="String" SO="String"/>
+									<WORSTPAY FRB="String" BQ="String" CQ="String" DQ="String" EQ="String" FQ="String"/>
+									<WORSTXHOME GRB="String" IRB="String"/>
+									<WORSTXUTIL NJC="String" OJC="String"/>
+									<COMPANIES HQ="String" IQ="String"/>
+									<OPENED412MNTH BRB="String"/>
+									<OPENED12MNTH JQ="String" KQ="String" LQ="String" MQ="String"/>
+									<OPENED12PLUSMNTH ERB="String"/>
+									<OPENED24MNTH NQ="String" OQ="String" PQ="String" QQ="String" RQ="String"/>
+									<OPENEDSETTLD ZQ="String" AR="String" BR="String"/>
+									<NOTICES DG="String" EG="String"/>
+									<CURRENT JRB="String" KRB="String" HRB="String"/>
+									<SETTLED0 LRB="String" YQB="String" ZQB="String"/>
+									<RUNAWAYS FYB="String" GYB="String"/>
+									<ALLHCSTATUS HYB="String" MYB="String" NYB="String" OYB="String"/>
+									<ACTHCSTATUS RYB="String"/>
+									<XHOMECREDIT SYB="String"/>
+									<HCBALANCES TYB="String" WYB="String" XYB="String" YYB="String"/>
+									<LNOPENED UDC="String" VDC="String" WDC="String" XDC="String"/>
+									<MTGOPENED YDC="String" ZDC="String" AEC="String" BEC="String"/>
+									<CCOPENED CEC="String" DEC="String" EEC="String" FEC="String"/>
+									<TELCOOPENED GEC="String" HEC="String" IEC="String" JEC="String"/>
+									<UTILOPENED KEC="String" LEC="String" MEC="String" NEC="String"/>
+									<HOMESHOPOPENED OEC="String" PEC="String" QEC="String" REC="String"/>
+									<BKOPENED SEC="String" TEC="String" UEC="String" VEC="String"/>
+									<MISCOPENED WEC="String" XEC="String" YEC="String" ZEC="String"/>
+									<INSOPENED AFC="String" BFC="String" CFC="String" DFC="String"/>
+									<HCNEWACCS WWB="String" XWB="String" YWB="String" ZWB="String"/>
+									<LNSETTLED EFC="String" FFC="String" GFC="String" HFC="String"/>
+									<MTGSETTLED IFC="String" JFC="String" KFC="String" LFC="String"/>
+									<CCSETTLED MFC="String" NFC="String" OFC="String" PFC="String"/>
+									<TELCOSETTLED QFC="String" RFC="String" SFC="String" TFC="String"/>
+									<UTILSETTLED UFC="String" VFC="String" WFC="String" XFC="String"/>
+									<HOMESHOPSETTLED YFC="String" ZFC="String" AGC="String" BGC="String"/>
+									<BKSETTLED CGC="String" DGC="String" EGC="String" FGC="String"/>
+									<MISCSETTLED GGC="String" HGC="String" IGC="String" JGC="String"/>
+									<INSSETTLED KGC="String" LGC="String" MGC="String" NGC="String"/>
+									<HCSETTLED BZB="String" CZB="String" DZB="String" FZB="String" NAC="String" OAC="String"/>
+									<REVOLVECRED MZB="String" RIC="String" SIC="String" TIC="String"/>
+									<HCWRSTSETT PAC="String" QAC="String"/>
+									<HCWRSTACT WAC="String"/>
+									<HCPAY RAC="String"/>
+									<HCAGE SAC="String" TAC="String"/>
+									<HCBALCHG UAC="String" VAC="String" XAC="String" YAC="String"/>
+									<WORSTPAYLOAN ABC="String" BBC="String" CBC="String"/>
+									<WORSTPAYCC DBC="String" EBC="String" FBC="String"/>
+									<WORSTPAYMTG GBC="String" HBC="String" IBC="String"/>
+									<WORSTPAYTELECO PCC="String" QCC="String" RCC="String"/>
+									<WORSTPAYUTIL SCC="String" TCC="String" UCC="String"/>
+									<WORSTPAYHOMESHOP VCC="String" WCC="String" XCC="String"/>
+									<WORSTPAYBNK JBC="String" KBC="String" LBC="String"/>
+									<WORSTPAYMISC YCC="String" ZCC="String" ADC="String"/>
+									<WORSTPAYINS BDC="String" CDC="String" DDC="String"/>
+									<WORSTPAYHOMECR EDC="String" FDC="String" GDC="String"/>
+									<OPENED12MTHXHISTORIC ZBC="String"/>
+									<OPENED24MTHXHISTORIC ACC="String"/>
+									<DUEXHISTORIC BCC="String" CCC="String" DCC="String"/>
+									<BOTHXHISTORIC UBC="String" VBC="String"/>
+									<WORSTPAYXHISTORIC WBC="String" XBC="String" YBC="String"/>
+									<UTILISATION OCC="String" PHC="String" QHC="String" RHC="String" SHC="String" THC="String"/>
+									<HIGHEST UHC="String" VHC="String"/>
+									<PAYDAY XHC="String" ZHC="String" LIC="String"/>
+									<PAYDAYOPENED BIC="String" CIC="String" DIC="String" MIC="String" EJC="String"/>
+									<PAYDAYWORST IIC="String" JIC="String" KIC="String"/>
+									<PAYDAYVALUE YHC="String" AIC="String" EIC="String" FIC="String" GIC="String" FJC="String" GJC="String" HJC="String" PJC="String"/>
+									<PAYDAYSETTLED HIC="String" JJC="String" KJC="String" IJC="String"/>
+								</FULL>
+								<PARTIAL>
+									<BOTH MR="String" NR="String" OR="String" PR="String" QR="String" RR="String" SR="String" TR="String" UT="String" UR="String" VR="String" TPB="String" TGC="String" UGC="String"/>
+									<ALERT WR="String"/>
+									<ALL XR="String" YR="String" ZR="String" ZS="String" AT="String" BT="String" CT="String" DT="String" ET="String" FT="String" GT="String" IT="String"/>
+									<VALDEFAULT AS="String" BS="String" CS="String" DS="String" ES="String" FS="String" GS="String" HS="String" JS="String"/>
+									<NOTICES WS="String"/>
+									<MISC XS="String" HZB="String" MJC="String"/>
+									<NUMDEFBAL PT="String" QT="String" RT="String" ST="String" TT="String"/>
+									<ENTERDEF PP="String" QP="String" RP="String" SP="String" TP="String"/>
+									<SETTLED UP="String" GAC="String" HAC="String" IAC="String" JAC="String" VP="String"/>
+									<RECOVERED GZB="String" NZB="String" ZP="String" UZB="String" VZB="String" AQ="String"/>
+									<HCDELQ AAC="String" BAC="String" CAC="String"/>
+									<HCVALDEF KAC="String" LAC="String" MAC="String"/>
+								</PARTIAL>
+								<OWN>
+									<TYPE AU="String" BU="String" CU="String" DU="String" EU="String" FU="String" GU="String" HU="String" KZB="String" IU="String" JU="String" KU="String" LU="String"/>
+									<TIME MU="String" NU="String" PU="String" QU="String" QZB="String"/>
+									<OPENED WW="String" XW="String" YW="String" ZW="String" AX="String" WGC="String"/>
+									<TOTDF MX="String"/>
+									<NUMDF BY="String"/>
+									<TOTNONDF QY="String"/>
+									<NUMNONDF FZ="String"/>
+									<VALSECTOR LZ="String" MZ="String" NZ="String"/>
+									<DEBT UZ="String" VZ="String"/>
+									<NOTICES TGB="String" UGB="String"/>
+									<WORST JQB="String" TZB="String"/>
+									<HCDELQ DAC="String" EAC="String" FAC="String"/>
+								</OWN>
+								<CIFAS>
+									<MAIN CAB="String" DAB="String" EAB="String" FAB="String" GAB="String" HAB="String" IAB="String" JAB="String" KAB="String" LAB="String" MAB="String" NAB="String" OAB="String"/>
+									<NOTICES KBB="String"/>
+								</CIFAS>
+								<SEARCH>
+									<MAIN UDB="String"/>
+									<DEBTCOLL KEB="String" LEB="String" MEB="String" NEB="String"/>
+									<ALLCA YGC="String" QEB="String" REB="String" SEB="String" TEB="String" UEB="String"/>
+									<OWNCA VEB="String" WEB="String" XEB="String" YEB="String" ZEB="String"/>
+									<HOMECREDIT MFB="String" NFB="String" OFB="String" PFB="String" QFB="String" RFB="String"/>
+									<TELECOM XGC="String"/>
+									<PAYDAY DJC="String" NIC="String" OIC="String" PIC="String" QIC="String"/>
+								</SEARCH>
+								<ADDRLINK>
+									<ADDMAIN VGB="String" WGB="String" ZAC="String" NBC="String"/>
+									<ADDRAW XGB="String" YGB="String" QOB="String" ZGB="String" AHB="String" ROB="String" BHB="String" CHB="String" SOB="String" DHB="String" EHB="String" TOB="String" FHB="String" GHB="String" JBB="String"/>
+									<ADDTIME HHB="String" IHB="String" JHB="String" KHB="String" LHB="String"/>
+									<NOTICES XPB="String" YPB="String"/>
+								</ADDRLINK>
+								<ACD>
+									<BALANCE AYB="String"/>
+									<PAYMENTS BYB="String" CYB="String" DYB="String" EYB="String" FHC="String" GHC="String" IYB="String" JYB="String" KYB="String" LYB="String" WHC="String"/>
+									<CASH_ADV_NUM PYB="String" QYB="String" ZGC="String" AHC="String"/>
+									<CASH_ADV_VAL UYB="String" VYB="String" BHC="String" CHC="String"/>
+									<CASH_ADV_BAL ZYB="String" AZB="String" DHC="String" EHC="String"/>
+									<CASH_ADV_BALTIME EZB="String"/>
+									<CASH_ADV_PAY IZB="String"/>
+								</ACD>
+							</OIAUNDEC>
+						</OIA>
+					</APPLICANT>
+				</BSB>
+			</SearchResult>
+		</Search07aResponse>
+	</Body>
+</Envelope>
