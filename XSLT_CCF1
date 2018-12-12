@@ -1,0 +1,1594 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	<xsl:output method="xml" indent="yes" />
+	<xsl:strip-space elements="*"/>
+	
+	<xsl:template match="@* | node()">
+		<xsl:copy>
+			<xsl:apply-templates select="@* | node()"/>
+		</xsl:copy>
+	</xsl:template>
+
+<!-- common template START --> 
+
+
+
+
+
+	<xsl:template match="@* | node()" mode="raw">
+		<xsl:value-of select="@* | node()"/>
+		<xsl:text> </xsl:text>
+	</xsl:template>
+
+	<xsl:template match="*" mode="addParent">
+		<xsl:param name="name" select="name(..)"/>
+		<xsl:element name="{concat($name,concat('_',name()))}">
+			<xsl:value-of select="."/>
+		</xsl:element>		
+	</xsl:template>
+	
+	
+		<xsl:template match="*" mode="addParentNo">
+		<xsl:param name="parent" select="name(..)"/>
+		<xsl:element name="{concat($parent,name())}">
+			<xsl:value-of select="."/>
+		</xsl:element>		
+	</xsl:template>
+	
+	
+	<xsl:template match="*" mode="addNoElementParent">
+		<xsl:param name="parent" select="name(..)"/>
+		<xsl:element name="{concat($parent,'')}">
+			<xsl:value-of select="."/>
+		</xsl:element>		
+	</xsl:template>
+	
+	
+	<xsl:template match="*" mode="addNoParent">
+		<xsl:param name="name" select="name(..)"/>
+		<xsl:element name="{name()}">
+			<xsl:value-of select="."/>
+		</xsl:element>		
+	</xsl:template>
+		
+	
+	
+   <xsl:template match="*" mode="addGrandParent">
+		  <xsl:param name="parentName" select="name(..)"/>
+		  <xsl:param name="grandParentName" select="name(../..)"/>
+		  <xsl:element name="{concat($grandParentName,concat('_',$parentName,concat('_',name())))}">
+				 <xsl:value-of select="."/>
+		  </xsl:element>             
+   </xsl:template>
+   
+	<xsl:template match="*" mode="addGreatGrandParent">
+		<xsl:param name="parentName" select="name(..)"/>
+		<xsl:param name="grandParentName" select="name(../..)"/>
+		<xsl:param name="greatGrandParentName" select="name(../../..)"/>
+		<xsl:element name="{concat($greatGrandParentName,concat('_',$grandParentName,concat('_',$parentName,concat('_',name()))))}">
+			 <xsl:value-of select="."/>
+		</xsl:element>             
+	</xsl:template>
+   
+   
+   
+   		<xsl:template match="@*" mode="AttraddParentNo">
+		<xsl:param name="parent" select="name(..)"/>
+		<xsl:element name="{concat($parent,name())}">
+			<xsl:value-of select="."/>
+		</xsl:element>		
+	</xsl:template>
+
+	 <xsl:template match="@*" mode="AttraddParent">
+	<xsl:param name="name" select="name(..)"/>
+		<xsl:element name="{concat($name,concat('_',name()))}">
+			<xsl:value-of select="."/>
+		</xsl:element>	            
+   </xsl:template>
+
+
+       <xsl:template match="@*" mode="AttrAddGrandParent">
+		  <xsl:param name="parentName" select="name(..)"/>
+		  <xsl:param name="grandParentName" select="name(../..)"/>
+		  <xsl:element name="{concat($grandParentName,concat('_',$parentName,concat('_',name())))}">
+				 <xsl:value-of select="."/>
+		  </xsl:element>             
+    </xsl:template>   
+   
+   
+
+		<xsl:template match="@*" mode="AttraddGreatGrandParent">
+		<xsl:param name="parentName" select="name(..)"/>
+		<xsl:param name="grandParentName" select="name(../..)"/>
+		<xsl:param name="greatGrandParentName" select="name(../../..)"/>
+		<xsl:element name="{concat($greatGrandParentName,concat('_',$grandParentName,concat('_',$parentName,concat('_',name()))))}">
+			 <xsl:value-of select="."/>
+		</xsl:element>             
+		</xsl:template>
+   
+   
+
+       <xsl:template match="@*" mode="AttraddGreatGreatGrandParent">
+              <xsl:param name="parentName" select="name(..)"/>
+              <xsl:param name="grandParentName" select="name(../..)"/>
+              <xsl:param name="greatGrandParentName" select="name(../../..)"/>
+              <xsl:param name="greatgreatGrandParentName" select="name(../../../..)"/>
+              <xsl:element name="{concat($greatgreatGrandParentName,concat('_',$greatGrandParentName,concat('_',$grandParentName,concat('_',$parentName,concat('_',name())))))}">
+                     <xsl:value-of select="."/>
+              </xsl:element>             
+       </xsl:template>	
+
+
+       <xsl:template match="*" mode="addGreatGrandParent">
+              <xsl:param name="parentName" select="name(..)"/>
+              <xsl:param name="grandParentName" select="name(../..)"/>
+              <xsl:param name="greatGrandParentName" select="name(../../..)"/>
+              <xsl:element name="{concat($greatGrandParentName,concat('_',$grandParentName,concat('_',$parentName,concat('_',name()))))}">
+                     <xsl:value-of select="."/>
+              </xsl:element>             
+       </xsl:template>
+
+	
+       <xsl:template match="*" mode="addGreatGreatGrandParent">
+              <xsl:param name="parentName" select="name(..)"/>
+              <xsl:param name="grandParentName" select="name(../..)"/>
+              <xsl:param name="greatGrandParentName" select="name(../../..)"/>
+              <xsl:param name="greatgreatGrandParentName" select="name(../../../..)"/>
+              <xsl:element name="{concat($greatgreatGrandParentName,concat('_',$greatGrandParentName,concat('_',$grandParentName,concat('_',$parentName,concat('_',name())))))}">
+                     <xsl:value-of select="."/>
+              </xsl:element>             
+       </xsl:template>	
+	
+
+	<xsl:template match="@*" mode="Attr2Node">
+
+	   <!-- Transformation applied to check if the node name eq {ND} change to -999997  -->
+              <xsl:choose>
+                <xsl:when test=" . ='{ND}'">
+					<xsl:element name="{name()}">-999997</xsl:element></xsl:when>
+                <xsl:otherwise>
+				   <xsl:element name="{name()}">
+					  <xsl:value-of select="." />
+					</xsl:element>              
+                </xsl:otherwise>
+            </xsl:choose>
+	</xsl:template>
+
+       <xsl:template match="@*" mode="AttrAddParent">
+              <xsl:param name="name" select="name(..)"/>
+              <xsl:element name="{concat($name,concat('_',name()))}">
+                     <xsl:value-of select="."/>
+              </xsl:element>             
+    </xsl:template>
+
+
+<!-- common template END --> 
+
+	<xsl:template match="SearchResult">
+		<Output_Shell>
+			<xsl:apply-templates select="@* | node()[not(
+				name() = 'jobdetails' or 
+				name() = 'payload' or 
+				name() = 'yourreference' or 
+				name() = 'linkrequest' or
+				name() = 'secondaryrequest' or 
+				name() = 'creditrequest' or 
+				name() = 'picklist' or 		
+				name() = 'VanquisCustomData' or 				
+				name() = 'creditreport' or 	
+				name() = 'BSB'
+			)]"/>
+		
+	<xsl:apply-templates select="BSB/OVERALL" /> <!-- t_bsb_Overall -->
+				
+	
+	<bsbApplicant>	
+		<Applicant_NiFiGroup>
+			<xsl:apply-templates select="BSB/APPLICANT" />  <!-- t_bsb_Applicant -->
+			<xsl:apply-templates select="BSB/APPLICANT/ASSLINK" />
+			<xsl:apply-templates select="BSB/APPLICANT/GEORISK2006" />
+			<xsl:apply-templates select="BSB/APPLICANT/CAMEO2006" />
+			<xsl:apply-templates select="BSB/APPLICANT/HHO" />
+			<xsl:apply-templates select="BSB/APPLICANT/ICH" />	
+			<xsl:apply-templates select="BSB/APPLICANT/ID" />	
+			<xsl:apply-templates select="BSB/APPLICANT/OIA/OIADEC" />	
+			<xsl:apply-templates select="BSB/APPLICANT/OIA/OIAUNDEC" />	
+			<xsl:apply-templates select="BSB/APPLICANT/SPA" />	
+			<xsl:apply-templates select="BSB/APPLICANT/USF" />	
+		</Applicant_NiFiGroup>
+	</bsbApplicant>	
+
+	
+	
+	<xsl:apply-templates select="jobdetails"/>
+
+	<xsl:apply-templates select="creditrequest"/>
+	
+	<xsl:apply-templates select="picklist"/>
+	
+<!-- pickApplicant XML Tree Structure  START  -->		
+		
+	<pickApplicant>
+		<Applicant_NiFiGroup>
+				<xsl:apply-templates select="picklist/applicant"  />
+			<Address_NiFiGroup>
+					<xsl:apply-templates select="picklist/applicant/address/addressinput" />
+			<FullMatch_NiFiGroup>
+					<xsl:apply-templates select="picklist/applicant/address/fullmatches" />
+				<Name_NiFiGroup>
+						<xsl:apply-templates select="picklist/applicant/address/fullmatches/fullmatch/name/nameinput" />
+				</Name_NiFiGroup>
+			</FullMatch_NiFiGroup>	
+			</Address_NiFiGroup> 	
+		</Applicant_NiFiGroup>		
+	</pickApplicant>	
+<!-- pickApplicant XML Tree Structure END  -->			
+	
+
+<!-- t_rep_Base  START  -->
+	<xsl:apply-templates select="creditreport" />
+<!-- t_rep_Base  END  -->
+	
+			
+			
+<!--   t_req_Applicant   CREDIT REQUEST APPLICANT creditrequest/applicant  START   -->
+	<ApplicantReq_NiFiGroup>
+	<Applicant_NiFiGroup>	
+				<xsl:apply-templates select="creditrequest/applicant" /> <!--   t_req_Applicant  creditrequest/applicant  -->
+		<Address_NiFiGroup>
+				<xsl:apply-templates select="creditrequest/applicant/address" /> <!-- t_req_ApplicantAddress  -->
+			</Address_NiFiGroup>
+		<Email_NiFiGroup>
+				<xsl:apply-templates select="creditrequest/applicant/applicantdemographics/contact/email" />	 <!-- t_req_ApplicantContactEmail  -->	
+		</Email_NiFiGroup>
+		<Telephone_NiFiGroup>
+				<xsl:apply-templates select="creditrequest/applicant/applicantdemographics/contact/telephone" /> <!--  t_req_ApplicantContactTelephone   -->		
+		</Telephone_NiFiGroup>
+		<Name_NiFiGroup>
+				<xsl:apply-templates select="creditrequest/applicant/name" />  <!--  t_req_ApplicantName   -->	
+		</Name_NiFiGroup>
+		<Identity_NiFiGroup>
+				<xsl:apply-templates select="creditrequest/applicant/applicantdemographics/person/identity" />	 <!-- t_req_ApplicantPersonIdentity    -->
+		</Identity_NiFiGroup>
+	</Applicant_NiFiGroup>		
+	</ApplicantReq_NiFiGroup>
+	
+<!--   t_req_Applicant   CREDIT REQUEST APPLICANT creditrequest/applicant  END   -->			
+			
+			
+		
+<!-- t_rep_Applicant   CREIT REPORT  Applicant START  -->
+
+	<Applicant_NiFiGroup>
+		<xsl:apply-templates select="creditreport/applicant" /> <!-- t_rep_Applicant  -->
+		<OIA_NiFiGroup>
+			<ACC_NiFiGroup>
+				<xsl:apply-templates select="creditreport/applicant/oias/oia/accs/acc" /> <!-- t_rep_ApplicantAccount  -->			
+				<AH_NiFiGroup>
+					<xsl:apply-templates select="creditreport/applicant/oias/oia/accs/acc/acchistory" />	  <!-- t_rep_ApplicantAccountHistory  OIAS OIA -->		
+				</AH_NiFiGroup>		
+				<Notice_NiFiGroup>
+					<xsl:apply-templates select="creditreport/applicant/oias/oia/accs/acc/notice" /> <!-- t_rep_ApplicantAccountNotice  OIAS/OIA  -->			
+				</Notice_NiFiGroup>		
+			</ACC_NiFiGroup>		
+			<AddressConf_NiFiGroup>
+				<xsl:apply-templates select="creditreport/applicant/oias/oia/addressconfs/addressconf/address" /> <!-- t_rep_ApplicantAddressConf OIASOIA -->
+				<Resident_NiFiGroup>
+						<xsl:apply-templates select="creditreport/applicant/oias/oia/addressconfs" />   <!-- t_rep_ApplicantAddressConfResident  --> 
+					<ERHistory_NiFiGroup>
+						<xsl:apply-templates select="creditreport/applicant/oias/oia/addressconfs/addressconf" /> <!-- t_rep_ApplicantAddressConfResidentER  -->			
+					</ERHistory_NiFiGroup>	
+					<Notice_NiFiGroup>
+																							<!--- t_rep_ApplicantAddressConfResidentERNotice  	  -->
+						<xsl:apply-templates select="creditreport/applicant/oias/oia/addressconfs/addressconf/resident/erhistory" />  
+						<!--- t_rep_ApplicantAddressConfResidentNotice   -->
+						<xsl:apply-templates select="/Envelope/Body/Search07aResponse/SearchResult/creditreport/applicant/addressconfs/addressconf/resident" />						
+					</Notice_NiFiGroup>					
+				</Resident_NiFiGroup>			
+			</AddressConf_NiFiGroup>	
+			<Address_NiFiGroup>
+					<xsl:apply-templates select="creditreport/applicant/oias/oia/addresslinks" /> <!-- t_rep_ApplicantAddressLinkAddress -->
+			</Address_NiFiGroup>
+			<Link_NiFiGroup>
+				<xsl:apply-templates select="creditreport/applicant/oias/oia/addresslinks/links" /> <!-- t_rep_ApplicantAddressLinkAddressLink  -->
+				<Notice_NiFiGroup>
+					<xsl:apply-templates select="creditreport/applicant/oias/oia/addresslinks/links/link" /><!-- t_rep_ApplicantAddressLinkAddressLinkNotice -->
+				</Notice_NiFiGroup>			
+			</Link_NiFiGroup>			
+			<AliasLink_NiFiGroup>   
+					<xsl:apply-templates select="creditreport/applicant/oias/oia/aliaslinks" />	 <!-- t_rep_ApplicantAliasLink -->
+				<Notice_NiFiGroup>
+					<xsl:apply-templates select="creditreport/applicant/oias/oia/aliaslinks/aliaslink" />	<!-- t_rep_ApplicantAssociateLinkNotice -->
+				</Notice_NiFiGroup>				
+			</AliasLink_NiFiGroup>
+			<AssociateLink_NiFiGroup>
+				<xsl:apply-templates select="creditreport/applicant/oias/oia/associatelinks" /> <!--  t_rep_ApplicantAssociateLink  -->
+				<Notice_NiFiGroup>
+					<xsl:apply-templates select="creditreport/applicant/oias/oia/associatelinks/associatelink" /> <!-- t_rep_ApplicantAssociateLinkNotice  -->	
+				</Notice_NiFiGroup>
+			</AssociateLink_NiFiGroup>		
+			<BAI_NiFiGroup>
+				<xsl:apply-templates select="creditreport/applicant/oias/oia/bais" /> <!--  t_rep_ApplicantBAI OIAS  -->		   
+				<Notice_NiFiGroup> 
+					<xsl:apply-templates select="creditreport/applicant/oias/oia/bais/bai" /> <!--  t_rep_ApplicantBAINotice OIAS  -->
+				</Notice_NiFiGroup>
+		   </BAI_NiFiGroup>
+			<xsl:apply-templates select="creditreport/applicant/oias/oia" /> <!--  t_rep_ApplicantOIA  credit applicant  OIAS TEMPLATE START -->   
+		<Search_NiFiGroup>
+			<xsl:apply-templates select="creditreport/applicant/oias/oia/searches" /> <!--   t_rep_ApplicantSearch   -->
+		</Search_NiFiGroup>
+		<Address_NiFiGroup>
+			<xsl:apply-templates select="creditreport/applicant/oias/oia/summary" /> <!--   t_rep_ApplicantOIASummaryAddress   -->		
+		</Address_NiFiGroup>
+		<Filing_NiFiGroup>
+			<xsl:apply-templates select="creditreport/applicant/oias/oia/cifas/filing" />	 <!--  t_rep_ApplicantCIFASFiling  -->
+		<Notice_NiFiGroup> 
+				<xsl:apply-templates select="creditreport/applicant/oias/oia/cifas/filing/notice" /> <!--  t_rep_ApplicantCIFASFilingNotice  -->		  
+		</Notice_NiFiGroup>
+		</Filing_NiFiGroup>	
+		<Judgment_NiFiGroup>
+				<xsl:apply-templates select="creditreport/applicant/oias/oia/judgments" />  <!-- t_rep_ApplicantJudgment -->
+		 <Notice_NiFiGroup>
+				<xsl:apply-templates select="creditreport/applicant/oias/oia/judgments/judgment/notice" />	 <!--  t_rep_ApplicantJudgmentNotice  -->   
+		 </Notice_NiFiGroup>  
+		</Judgment_NiFiGroup>
+		
+		<NOC_NiFiGroup>
+				<xsl:apply-templates select="creditreport/applicant/oias/oia/nocs" /> <!-- t_rep_ApplicantNOC  creditreport/applicant/oias/oia/nocs -->
+		</NOC_NiFiGroup>
+		
+		<Case_NiFiGroup>
+			<xsl:apply-templates select="creditreport/applicant/oias/oia/cifas/case" /> <!-- t_rep_ApplicantCIFASCase  -->
+			<DMR_NiFiGroup>
+				<xsl:apply-templates select="creditreport/applicant/oias/oia/cifas/case/dmrs" /> <!-- t_rep_ApplicantCIFASCaseDMR  -->
+			</DMR_NiFiGroup>	
+			<Notice_NiFiGroup>
+				<xsl:apply-templates select="creditreport/applicant/oias/oia/cifas/case/notice" /> <!-- t_rep_ApplicantCIFASCaseNotice -->
+			</Notice_NiFiGroup>
+			<FilingReason_NiFiGroup>
+				<xsl:apply-templates select="creditreport/applicant/oias/oia/cifas/case/details" />	<!-- t_rep_ApplicantCIFASCaseFilingReason  -->
+			</FilingReason_NiFiGroup>
+			<Subject_NiFiGroup>
+			<rep_ApplicantCIFASCaseSubject>  		
+				<xsl:apply-templates select="creditreport/applicant/oias/oia/cifas/case/details/subjects" />  <!--  t_rep_ApplicantCIFASCaseSubject  -->    
+			</rep_ApplicantCIFASCaseSubject> 
+		<AddressData_NiFiGroup>
+		<xsl:apply-templates select="creditreport/applicant/oias/oia/cifas/case/details/subjects/subject" /> <!-- t_rep_ApplicantCIFASCaseSubjectAddress  -->
+		</AddressData_NiFiGroup>   
+			</Subject_NiFiGroup>	
+		</Case_NiFiGroup>
+		
+		</OIA_NiFiGroup>	
+	
+		<AlertIndividual_NiFiGroup>
+			<xsl:apply-templates select="creditreport/applicant/tpd/decision" /><!-- t_rep_ApplicantAlertIndividual  -->				
+		<Notice_NiFiGroup>
+			<xsl:apply-templates select="creditreport/applicant/tpd/decision/alertindividual" /><!-- t_rep_ApplicantAlertIndividualNotice  -->	
+		</Notice_NiFiGroup>			
+		</AlertIndividual_NiFiGroup>
+	</Applicant_NiFiGroup>	
+			
+			
+<!-- t_rep_Applicant   CREIT REPORT  Applicant END  -->
+
+	
+<!--- END of OUTPUT_SHELL -->		
+		</Output_Shell>
+	</xsl:template>
+	
+
+	
+	<!-- JobDetails Fields START -->
+	<xsl:template match="jobdetails">
+	<JobDetails>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>
+		<xsl:apply-templates select= "searchid|cast|pstv|ls" />
+		<xsl:copy-of select= "../payload/anytext"  />					
+		<xsl:copy-of select= "../creditrequest/score"  />	
+		<xsl:copy-of select= "../creditrequest/purpose"  />					
+		<xsl:copy-of select= "../creditrequest/credittype"  />
+		<xsl:copy-of select= "../creditrequest/balorlim"  />
+		<xsl:copy-of select= "../creditrequest/term"  />
+		<xsl:copy-of select= "../creditrequest/transient"  />
+		<xsl:copy-of select= "../creditrequest/autosearch"  />
+		<xsl:copy-of select= "../creditrequest/autosearchmaximum"  />
+	</JobDetails>
+	</xsl:template>
+	<!-- JobDetails Fields END -->	
+
+
+	
+	<!-- t_req_Base Fields START -->
+	<xsl:template match="creditrequest">
+	<req_Base> 
+			<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+			<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>
+			<xsl:apply-templates select="score"/>
+			<xsl:apply-templates select="purpose"/>
+			<xsl:apply-templates select="credittype"/>
+			<xsl:apply-templates select="balorlim"/>
+			<xsl:apply-templates select="term"/>	
+			<xsl:apply-templates select="transient"/>
+			<xsl:apply-templates select="autosearch"/>	
+			<xsl:apply-templates select="autosearchmaximum"/>	
+			<xsl:element name="schemaversion"> <xsl:value-of select="@schemaversion"/></xsl:element>			
+			<xsl:element name="datasets"> <xsl:value-of select="@datasets"/></xsl:element>			
+	</req_Base> 			
+	</xsl:template>
+<!-- t_req_base Fields END -->
+
+
+<!-- pick base -->
+
+	<xsl:template match="picklist">
+		<pick_Base> 	
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>
+		<xsl:apply-templates select="@*" mode="Attr2Node"/>
+		</pick_Base>
+	</xsl:template>	
+
+<!-- pick base end -->
+
+<!-- t_pick_Applicant  START --> 
+	<xsl:template match="picklist/applicant">
+	<pick_Applicant> 
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>			
+		<xsl:apply-templates select="@*" mode="Attr2Node"  />		
+	</pick_Applicant>	
+	</xsl:template>
+<!-- t_pick_Applicant  END -->
+
+<!--  t_pick_ApplicantAddress   START  -->
+	<xsl:template match="picklist/applicant/address/addressinput">
+	<pick_ApplicantAddress> 
+			<xsl:apply-templates select="@* | node()[not(
+				name() = 'address' or
+				name() = 'addressid' or 
+				name() = 'fullmatches' or				
+				name() = 'addressinput'	or 
+				name() ='abodeno' or 
+				name() ='buildingno' or 
+				name() ='buildingname' or 
+				name() ='street1' or 
+				name() ='street2' or 
+				name() ='sublocality' or 
+				name() ='locality' or 
+				name() ='posttown' or 
+				name() ='postcode'				
+							
+			)]"/>
+			
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		
+			
+		<xsl:apply-templates select="../@*" mode="Attr2Node"  />	
+		<xsl:apply-templates select="../fullmatches/@*" mode="AttrAddParent"  />
+					
+		<addressinput_CT_address_abodeno><xsl:value-of select="abodeno"/></addressinput_CT_address_abodeno>
+		<addressinput_CT_address_buildingno><xsl:value-of select="buildingno"/>	</addressinput_CT_address_buildingno>		
+		<addressinput_CT_address_buildingname> <xsl:value-of select="buildingname"/>   </addressinput_CT_address_buildingname>
+		<addressinput_CT_address_street1>   <xsl:value-of select="street1"/></addressinput_CT_address_street1>
+		<addressinput_CT_address_street2> <xsl:value-of select="street2"/>   </addressinput_CT_address_street2>
+		<addressinput_CT_address_sublocality> <xsl:value-of select="sublocality"/>	</addressinput_CT_address_sublocality>
+		<addressinput_CT_address_locality> <xsl:value-of select="locality"/> </addressinput_CT_address_locality>
+		<addressinput_CT_address_posttown><xsl:value-of select="posttown"/>  </addressinput_CT_address_posttown>
+		<addressinput_CT_address_postcode><xsl:value-of select="postcode"/>  </addressinput_CT_address_postcode>	
+	</pick_ApplicantAddress>							
+	</xsl:template>
+<!--  t_pick_ApplicantAddress   END -->
+
+<!-- t_pick_ApplicantAddressFullMatch  START -->
+	<xsl:template match="picklist/applicant/address/fullmatches">
+	<pick_ApplicantAddressFullMatch>
+<!--			<xsl:apply-templates select="@* | node()[not(
+				name() = 'addressmatch' or
+				name() = 'name' or				
+				name() = 'nameinput' or 
+				name() ='abodeno' or 
+				name() ='buildingno' or 
+				name() ='buildingname' or 
+				name() ='street1' or 
+				name() ='street2' or 
+				name() ='sublocality' or 
+				name() ='locality' or 
+				name() ='posttown' or 
+				name() ='postcode'
+			)]"/>  -->
+			
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>		
+		<xsl:apply-templates select="fullmatch/@*" mode="Attr2Node"  />
+
+			
+	</pick_ApplicantAddressFullMatch>
+	</xsl:template>
+
+<!-- t_pick_ApplicantAddressFullMatch  END -->
+
+<!--  t_pick_ApplicantAddressFullMatchName   TEMPLATE START  --> 	  
+	<xsl:template match="picklist/applicant/address/fullmatches/fullmatch/name/nameinput">
+	<pick_ApplicantAddressFullMatchName>
+				<xsl:apply-templates select="@* | node()[not(
+				name() = 'title' or
+				name() = 'forename' or				
+				name() = 'othernames' or 
+				name() ='surname' or 
+				name() ='suffix'
+			)]"/>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+
+		<xsl:apply-templates select="../@*" mode="Attr2Node" />
+		<xsl:apply-templates select="../namematches/@*"  mode="AttrAddParent" />
+		
+		<nameinput_CT_inputname_title>  	<xsl:value-of select="title"/> </nameinput_CT_inputname_title>
+		<nameinput_CT_inputname_forename>  	<xsl:value-of select="forename"/> 	</nameinput_CT_inputname_forename>
+		<nameinput_CT_inputname_othernames> 	<xsl:value-of select="othernames"/>	</nameinput_CT_inputname_othernames>
+		<nameinput_CT_inputname_surname>  	<xsl:value-of select="surname"/></nameinput_CT_inputname_surname>
+		<nameinput_CT_inputname_suffix> 	<xsl:value-of select="suffix"/>  </nameinput_CT_inputname_suffix>
+	</pick_ApplicantAddressFullMatchName>
+	</xsl:template>
+	
+	
+<!--  t_pick_ApplicantAddressFullMatchName  TEMPLATE END  --> 	  	
+	  
+
+
+
+
+<!-- bsb tables TEMPLATE START  -->
+
+	<xsl:template match="BSB/OVERALL" >
+	<bsb_Overall>
+			<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+			<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>
+	<xsl:apply-templates select="*/@*" mode="Attr2Node" />	
+	</bsb_Overall>
+	</xsl:template>
+
+	<xsl:template match="BSB/APPLICANT" >
+	<bsb_Applicant>
+			<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+			<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>
+			<xsl:apply-templates select="APPLSUMMARY/*/@*" mode="Attr2Node"/>
+			<xsl:apply-templates select="ID/*/@*" mode="Attr2Node"/>			
+			<xsl:apply-templates select="PUBLIC/*/@*" mode="Attr2Node"/>						
+			<xsl:apply-templates select="ER/*/@*" mode="Attr2Node"/>
+			<xsl:apply-templates select="SCORE/*/@*" mode="Attr2Node"/>
+			<xsl:apply-templates select="FULL/*/@*" mode="Attr2Node"/>
+			<xsl:apply-templates select="PARTIAL/*/@*" mode="Attr2Node" />			
+			<xsl:apply-templates select="OWN/*/@*" mode="Attr2Node" />
+			<xsl:apply-templates select="CIFAS/*/@*" mode="Attr2Node" />
+			<xsl:apply-templates select="SEARCH/*/@*" mode="Attr2Node" />		
+			<xsl:apply-templates select="ADDRLINK/*/@*" mode="Attr2Node" />	
+			<xsl:apply-templates select="ACD/*/@*" mode="Attr2Node" />	
+	</bsb_Applicant>			
+	</xsl:template>
+
+	<xsl:template match="BSB/APPLICANT/ASSLINK" >
+	<bsb_Applicant_AssLink>
+			<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+			<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>
+		<xsl:apply-templates select="*/@*" mode="Attr2Node" />	
+	</bsb_Applicant_AssLink>		
+	</xsl:template>
+
+	<xsl:template match="BSB/APPLICANT/GEORISK2006" >
+	<bsb_Applicant_GEORISK2006>
+			<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+			<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>
+		<xsl:apply-templates select="*/@*" mode="Attr2Node" />	
+	</bsb_Applicant_GEORISK2006>		
+	</xsl:template>
+	
+	
+	<xsl:template match="BSB/APPLICANT/CAMEO2006" >
+	<bsb_Applicant_CAMEO2006>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>
+		<xsl:apply-templates select="*/@*" mode="Attr2Node" />	
+	</bsb_Applicant_CAMEO2006>		
+	</xsl:template>
+
+	
+	<xsl:template match="BSB/APPLICANT/HHO" >
+	<bsb_Applicant_HHO>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>
+		<xsl:apply-templates select="PUBLIC/*/@*" mode="Attr2Node"/>						
+		<xsl:apply-templates select="FULL/*/@*" mode="Attr2Node"/>
+		<xsl:apply-templates select="PARTIAL/*/@*" mode="Attr2Node" />			
+		<xsl:apply-templates select="OWN/*/@*" mode="Attr2Node" />
+	</bsb_Applicant_HHO>		
+	</xsl:template>
+
+
+	<xsl:template match="BSB/APPLICANT/ICH" >
+	<bsb_Applicant_ICH>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>
+		<xsl:apply-templates select="*/@*" mode="Attr2Node" />	
+	</bsb_Applicant_ICH>		
+	</xsl:template>
+
+
+	<xsl:template match="BSB/APPLICANT/ID" >
+	<bsb_Applicant_ID>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>
+		<xsl:apply-templates select="*/@*" mode="Attr2Node" />	
+	</bsb_Applicant_ID>		
+	</xsl:template>
+
+
+	<xsl:template match="BSB/APPLICANT/OIA/OIADEC" >
+	<bsb_Applicant_OIADEC>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>
+		<xsl:apply-templates select="APPLSUMMARY/*/@*" mode="Attr2Node"/>
+		<xsl:apply-templates select="PUBLIC/*/@*" mode="Attr2Node"/>						
+		<xsl:apply-templates select="ER/*/@*" mode="Attr2Node"/>
+		<xsl:apply-templates select="FULL/*/@*" mode="Attr2Node"/>
+		<xsl:apply-templates select="PARTIAL/*/@*" mode="Attr2Node" />			
+		<xsl:apply-templates select="OWN/*/@*" mode="Attr2Node" />
+		<xsl:apply-templates select="CIFAS/*/@*" mode="Attr2Node" />
+		<xsl:apply-templates select="SEARCH/*/@*" mode="Attr2Node" />		
+		<xsl:apply-templates select="ADDRLINK/*/@*" mode="Attr2Node" />	
+		<xsl:apply-templates select="ACD/*/@*" mode="Attr2Node" />	
+	</bsb_Applicant_OIADEC>
+	</xsl:template>
+
+	<xsl:template match="BSB/APPLICANT/OIA/OIAUNDEC" >
+	<bsb_Applicant_OIAUNDEC>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>
+		<xsl:apply-templates select="APPLSUMMARY/*/@*" mode="Attr2Node"/>
+		<xsl:apply-templates select="PUBLIC/*/@*" mode="Attr2Node"/>						
+		<xsl:apply-templates select="ER/*/@*" mode="Attr2Node"/>
+		<xsl:apply-templates select="FULL/*/@*" mode="Attr2Node"/>
+		<xsl:apply-templates select="PARTIAL/*/@*" mode="Attr2Node" />			
+		<xsl:apply-templates select="OWN/*/@*" mode="Attr2Node" />
+		<xsl:apply-templates select="CIFAS/*/@*" mode="Attr2Node" />
+		<xsl:apply-templates select="SEARCH/*/@*" mode="Attr2Node" />		
+		<xsl:apply-templates select="ADDRLINK/*/@*" mode="Attr2Node" />	
+		<xsl:apply-templates select="ACD/*/@*" mode="Attr2Node" />	
+	</bsb_Applicant_OIAUNDEC>		
+	</xsl:template>
+
+	<xsl:template match="BSB/APPLICANT/SPA" >
+	<bsb_Applicant_SPA>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>
+		<xsl:apply-templates select="APPLSUMMARY/*/@*" mode="Attr2Node"/>
+		<xsl:apply-templates select="PUBLIC/*/@*" mode="Attr2Node"/>						
+		<xsl:apply-templates select="FULL/*/@*" mode="Attr2Node"/>
+		<xsl:apply-templates select="PARTIAL/*/@*" mode="Attr2Node" />			
+		<xsl:apply-templates select="OWN/*/@*" mode="Attr2Node" />
+	</bsb_Applicant_SPA>		
+	</xsl:template>
+
+	<xsl:template match="BSB/APPLICANT/USF" >
+	<bsb_Applicant_USF>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>
+		<xsl:apply-templates select="APPLSUMMARY/*/@*" mode="Attr2Node"/>
+		<xsl:apply-templates select="PUBLIC/*/@*" mode="Attr2Node"/>						
+		<xsl:apply-templates select="FULL/*/@*" mode="Attr2Node"/>
+		<xsl:apply-templates select="PARTIAL/*/@*" mode="Attr2Node" />			
+		<xsl:apply-templates select="OWN/*/@*" mode="Attr2Node" />		
+	</bsb_Applicant_USF>		
+	</xsl:template>
+
+<!-- bsb tables TEMPLATE END -->	
+
+
+<!--  credit applicant TEMPLATE START -->
+
+	<xsl:template match="creditreport/applicant">
+	<rep_Applicant>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		
+		<xsl:apply-templates select="@*" mode="Attr2Node" />		
+					
+		<xsl:apply-templates select="summary/searches/*" mode="addGrandParent" />
+		<xsl:apply-templates select="summary/judgments/*" mode="addGrandParent" />
+		<xsl:apply-templates select="summary/bais/*" mode="addGrandParent" />
+		<xsl:apply-templates select="summary/notices/*" mode="addGrandParent" />
+		<xsl:apply-templates select="summary/links/*" mode="addGrandParent" />
+		<xsl:apply-templates select="summary/cifas/*" mode="addGrandParent" />
+		<xsl:apply-templates select="summary/share/*" mode="addGrandParent" />
+		<xsl:apply-templates select="summary/bds/*" mode="addGrandParent" />
+		<xsl:apply-templates select="summary/ich/*" mode="addGrandParent" />
+		<xsl:apply-templates select="summary/indebt/*" mode="addGrandParent" />
+		<xsl:apply-templates select="summary/tpd/*" mode="addGrandParent" />
+		<xsl:apply-templates select="summary/summaryaddress/*" mode="addGrandParent" />	
+		<xsl:apply-templates select="creditscore/score/@*" mode="AttrAddGrandParent"/> <!-- verify this column name -->
+		<xsl:apply-templates select="creditscore/reasons/code/*" mode="addGreatGrandParent" />	<!-- verify this column name -->
+		<xsl:apply-templates select="demographics/cameouk" mode="addParent" />
+		<xsl:apply-templates select="demographics/cameoinvestor" mode="addParent" />
+		<xsl:apply-templates select="demographics/cameoincome" mode="addParent" />
+		<xsl:apply-templates select="demographics/cameounemployment" mode="addParent" />
+		<xsl:apply-templates select="demographics/cameoproperty" mode="addParent" />
+		<xsl:apply-templates select="demographics/cameofinance" mode="addParent" />
+		<xsl:apply-templates select="demographics/*/*" mode="addGrandParent" />
+		<xsl:apply-templates select="demographics2006/cameouk" mode="addParent" />
+		<xsl:apply-templates select="demographics2006/cameoukg" mode="addParent" />
+		<xsl:apply-templates select="demographics2006/cameoincome" mode="addParent" />
+		<xsl:apply-templates select="demographics2006/cameoincg" mode="addParent" />
+		<xsl:apply-templates select="demographics2006/cameoinvestor" mode="addParent" />
+		<xsl:apply-templates select="demographics2006/cameoinvg" mode="addParent" />
+		<xsl:apply-templates select="demographics2006/cameoproperty" mode="addParent" />
+		<xsl:apply-templates select="demographics2006/cameofinance" mode="addParent" />
+		<xsl:apply-templates select="demographics2006/cameofing" mode="addParent" />
+		<xsl:apply-templates select="demographics2006/cameounemployment" mode="addParent" />
+		<xsl:apply-templates select="demographics2006/*/*" mode="addGrandParent" />			
+		<xsl:apply-templates select="tpd/decision/@*" mode="AttrAddGrandParent"/>	
+		<xsl:apply-templates select="tpd/decision/creditscore/score/@*" mode="AttraddGreatGreatGrandParent"  />	
+		<!-- verify the databas column creditscore score  -->
+		<tpd_decision_creditscore_score_score>
+			<xsl:value-of select="tdp/decision/creditscore/score"/>
+		</tpd_decision_creditscore_score_score>
+		<tpd_decision_creditscore_reason_codes_csv>
+			<xsl:value-of select="tpd/decision/creditscore/reasons/code"/>
+		</tpd_decision_creditscore_reason_codes_csv>
+		<xsl:apply-templates select="tpd/decision/summary/judgments/*" mode="addGreatGreatGrandParent" />			
+		<xsl:apply-templates select="tpd/decision/summary/bais/*" mode="addGreatGreatGrandParent" />
+		<xsl:apply-templates select="tpd/decision/summary/share/*" mode="addGreatGreatGrandParent" />
+		<xsl:apply-templates select="tpd/review/@*" mode="AttrAddGrandParent"/> 
+		<xsl:apply-templates select="tpd/review/creditscore/score/@*" mode="AttraddGreatGreatGrandParent"  />
+		<tpd_review_creditscore_score_score>
+			<xsl:value-of select="tpd/review/creditscore/score"/>
+		</tpd_review_creditscore_score_score>
+		<tpd_review_creditscore_reason_codes_csv>  	
+		<xsl:value-of select="tpd/review/creditscore/reasons/code"/>
+		</tpd_review_creditscore_reason_codes_csv>
+		<xsl:apply-templates select="tpd/review/summary/judgments/*" mode="addGreatGreatGrandParent" />			
+		<xsl:apply-templates select="tpd/review/summary/bais/*" mode="addGreatGreatGrandParent" />
+		<xsl:apply-templates select="tpd/review/summary/share/*" mode="addGreatGreatGrandParent" />		
+		<xsl:apply-templates select="tpd/hho/@*" mode="AttrAddGrandParent"/> 		
+		<xsl:apply-templates select="tpd/hho/creditscore/score/@*" mode="AttraddGreatGreatGrandParent"  />
+		<tpd_hho_creditscore_score_score>
+			<xsl:value-of select="tpd/hho/creditscore/score"/>
+		</tpd_hho_creditscore_score_score>
+		<tpd_hho_creditscore_reason_codes_csv>  	
+		<xsl:value-of select="tpd/hho/creditscore/reasons/code"/>
+		</tpd_hho_creditscore_reason_codes_csv>
+		<xsl:apply-templates select="tpd/hho/summary/judgments/*" mode="addGreatGreatGrandParent" />			
+		<xsl:apply-templates select="tpd/hho/summary/bais/*" mode="addGreatGreatGrandParent" />
+		<xsl:apply-templates select="tpd/hho/summary/share/*" mode="addGreatGreatGrandParent" />			
+		<xsl:apply-templates select="oias/@*" mode="AttraddParent"/> 
+	</rep_Applicant>		
+	</xsl:template>
+	
+<!--  credit applicant  TEMPLATE END -->	
+
+
+<!-- t_rep_ApplicantAccount TEMPLATE START --> 
+
+	<xsl:template match="creditreport/applicant/oias/oia/accs/acc" >
+	<rep_ApplicantAccount>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		<xsl:apply-templates select="supplierdetails/@*" mode="AttrAddParent" />
+		<xsl:apply-templates select="supplierdetails/*" mode="addParent" />
+		<xsl:apply-templates select="accholderdetails/*" mode="addParent" />		
+		<xsl:apply-templates select="defalut/*" mode="addParent" />
+		<xsl:apply-templates select="delinquent/*" mode="addParent" />
+		<xsl:apply-templates select="accdetails/*" mode="addParent" />				
+	</rep_ApplicantAccount>		
+	</xsl:template>
+<!-- t_rep_ApplicantAccount TEMPLATE END --> 
+
+
+<!-- t_rep_ApplicantAccountHistory  TEMPLATE START -->
+
+	<xsl:template match="creditreport/applicant/oias/oia/accs/acc/acchistory" >
+	<rep_ApplicantAccountHistory>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>		
+		<xsl:apply-templates select="ah/@*" mode="Attr2Node" />
+	</rep_ApplicantAccountHistory>		
+	</xsl:template>
+<!-- t_rep_ApplicantAccountHistory  TEMPLATE END -->	
+
+
+<!-- t_rep_ApplicantAccountNotice  TEMPLATE START -->  
+
+	<xsl:template match="creditreport/applicant/oias/oia/accs/acc/notice" >
+	<rep_ApplicantAccountNotice>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>		
+		<!--<xsl:apply-templates select="*[not(self::type | address | current | undeclaredaddresstype) ]"  />   NOT WORKING FOR ATTRIBUTES -->
+ 		<type0><xsl:value-of select="type" /> </type0>
+		<xsl:apply-templates select="refnum"  />
+		<xsl:apply-templates select="dateraised"  />
+		<xsl:apply-templates select="text"  />		
+		<xsl:apply-templates select="name"  />		
+	
+		<xsl:apply-templates select="address/@*"  mode="AttraddParent">
+			<xsl:with-param name="name">address_CT_outputaddress_current</xsl:with-param>
+		</xsl:apply-templates>	
+		
+		 <xsl:apply-templates select="address" mode="addParentNo">
+          <xsl:with-param name="parent">address_CT_outputaddress_CT_output</xsl:with-param>
+        </xsl:apply-templates>	
+	</rep_ApplicantAccountNotice>        	
+	</xsl:template>
+
+<!-- t_rep_ApplicantAccountNotice  TEMPLATE END -->
+
+<!-- t_rep_ApplicantAddressConf  PREMGC TEMPLATE START -->
+					    
+	<xsl:template match="creditreport/applicant/oias/oia/addressconfs/addressconf/address"> 
+	<rep_ApplicantAddressConf>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		<xsl:apply-templates select="../@*" mode="Attr2Node" /> 
+		<xsl:apply-templates select="@*"  mode="AttraddParent" />
+		<xsl:apply-templates select="../address"   mode="addNoParent" />
+	</rep_ApplicantAddressConf>  		
+	</xsl:template>
+
+
+<!-- t_rep_ApplicantAddressConfResident  -->
+
+
+	<xsl:template match="creditreport/applicant/oias/oia/addressconfs"> 
+	<rep_ApplicantAddressConfResident> 
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		
+			<xsl:apply-templates select="creditreport/applicant/oias/oia/addressconfs/addressconf/resident/@*" mode="Attr2Node" />	
+			<xsl:apply-templates select="addressconf/resident/@*"  mode="Attr2Node" />
+			<xsl:apply-templates select="addressconf/resident/name|
+										addressconf/resident/duration|
+										addressconf/resident/startdate | 
+										addressconf/resident/enddate | 
+										addressconf/resident/ervalid" />  
+										
+	</rep_ApplicantAddressConfResident>										
+	</xsl:template>
+
+
+
+<!--   ER History -->
+
+	<xsl:template match="creditreport/applicant/oias/oia/addressconfs/addressconf" >
+	<rep_ApplicantAddressConfResidentER>
+		
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>		
+		<xsl:apply-templates select="resident/erhistory/startdate  |
+								resident/erhistory/enddate |
+								resident/erhistory/optout |
+								resident/erhistory/rollingroll" />   
+								
+	</rep_ApplicantAddressConfResidentER>									
+	</xsl:template>
+	
+	
+<!--  t_rep_ApplicantAddressConfResidentNotice  --> 	
+	
+	<xsl:template match="creditreport/applicant/oias/oia/addressconfs/addressconf/resident" >	
+		<xsl:apply-templates select="notice/type | notice/refnum | notice/dateraised | notice/text | notice/name " />
+
+		<address_CT_outputaddress_current>
+		<xsl:value-of select="notice/address/@current" />
+		</address_CT_outputaddress_current>
+		
+		<address_CT_outputaddress_undeclaredaddresstype>
+		<xsl:value-of select="notice/address/@undeclaredaddresstype" />
+		</address_CT_outputaddress_undeclaredaddresstype>
+
+		<address_CT_outputaddress_CT_outputaddress>
+		<xsl:value-of select="notice/address" />
+		</address_CT_outputaddress_CT_outputaddress>	
+		
+	</xsl:template>	
+	
+	
+	
+<!--  t_rep_ApplicantAddressConfResidentERNotice  --> 	
+	
+	<xsl:template match="creditreport/applicant/oias/oia/addressconfs/addressconf/resident/erhistory" >	
+	<rep_ApplicantAddressConfResidentERNotice>						
+	
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		
+		<type0><xsl:value-of select="notice/type" />  </type0>
+		<xsl:apply-templates select="notice/refnum | notice/dateraised | notice/text | notice/name " />
+		
+		<address_CT_outputaddress_current>
+		<xsl:value-of select="notice/address/@current" />
+		</address_CT_outputaddress_current>
+		
+		<address_CT_outputaddress_undeclaredaddresstype>
+		<xsl:value-of select="notice/address/@undeclaredaddresstype" />
+		</address_CT_outputaddress_undeclaredaddresstype>
+
+		<address_CT_outputaddress_CT_outputaddress>
+		<xsl:value-of select="notice/address" />
+		</address_CT_outputaddress_CT_outputaddress>	
+	</rep_ApplicantAddressConfResidentERNotice>							
+	</xsl:template>	
+		
+
+<!-- t_rep_ApplicantAddressConfResident -->
+	<xsl:template match="/Envelope/Body/Search07aResponse/SearchResult/creditreport/applicant/addressconfs/addressconf/resident" >	
+	<rep_ApplicantAddressConfResidentNotice>	
+	<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+	<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+	<xsl:apply-templates select="/Envelope/Body/Search07aResponse/SearchResult/creditreport/applicant/oias/oia/addressconfs/addressconf/resident/@*" mode="Attr2Node" />	
+	<xsl:apply-templates select="name|duration|startdate|enddate|ervalid" />
+	</rep_ApplicantAddressConfResidentNotice>		
+	</xsl:template>	
+			
+		
+<!--  t_rep_ApplicantAddressLinkAddress   -->
+  <xsl:template match="creditreport/applicant/oias/oia/addresslinks" >
+	<rep_ApplicantAddressLinkAddress >
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		<xsl:apply-templates select="addresses/address/@*" mode="Attr2Node" />
+		<CT_outputlinkaddress>
+		<xsl:value-of select="addresses/address"  />
+		</CT_outputlinkaddress>	
+		</rep_ApplicantAddressLinkAddress>		
+	</xsl:template>	
+
+
+
+<!-- t_rep_ApplicantAddressLinkAddressLink  -->
+
+<!-- /SearchResult/creditreport/applicant/oias/oia/addresslinks/links/link -->
+
+	<xsl:template match="creditreport/applicant/oias/oia/addresslinks/links" >
+	<rep_ApplicantAddressLinkAddressLink>	
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		<xsl:apply-templates select="link/@*" mode="Attr2Node" />
+		<xsl:apply-templates select="link/creationdate|link/lastconfdate" />
+		<xsl:apply-templates select="link/supplierdetails/*" mode="addParent">
+		<xsl:with-param name="name">supplierdetails_C0T_supplierdetails</xsl:with-param>
+		</xsl:apply-templates>
+	</rep_ApplicantAddressLinkAddressLink>	
+	</xsl:template>
+
+
+<!--  t_rep_ApplicantAddressLinkAddressLinkNotice  -->
+	<xsl:template match="creditreport/applicant/oias/oia/addresslinks/links/link" >
+	<rep_ApplicantAddressLinkAddressLinkNotice>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		
+		<type0> <xsl:value-of select="notice/type" /> </type0>
+		<xsl:apply-templates select="notice/refnum | notice/dateraised | notice/text | notice/name " />
+		
+		<address_CT_outputaddress_current>
+		<xsl:value-of select="notice/address/@current" />
+		</address_CT_outputaddress_current>
+		
+		<address_CT_outputaddress_undeclaredaddresstype>
+		<xsl:value-of select="notice/address/@undeclaredaddresstype" />
+		</address_CT_outputaddress_undeclaredaddresstype>
+		
+		<address_CT_outputaddress_CT_outputaddress>
+		<xsl:value-of select="notice/address" />
+		</address_CT_outputaddress_CT_outputaddress>
+	</rep_ApplicantAddressLinkAddressLinkNotice>
+	</xsl:template>
+
+
+		<!-- t_rep_ApplicantAlertIndividual  -->
+		<xsl:template match="creditreport/applicant/tpd/decision" >
+		<rep_ApplicantAlertIndividual>
+				<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		
+		<xsl:apply-templates select="alertindividual/name" />
+		<tpdType>N/A</tpdType>
+		</rep_ApplicantAlertIndividual>
+		</xsl:template>
+
+		<!-- t_rep_ApplicantAlertIndividualNotice  -->	
+		<xsl:template match="creditreport/applicant/tpd/decision/alertindividual" >
+		<rep_ApplicantAlertIndividualNotice>						
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+				
+		<type0> <xsl:value-of select="notice/type" /> </type0>
+		<xsl:apply-templates select="notice/refnum | notice/dateraised | notice/text | notice/name " />
+		<address_CT_outputaddress_current>
+		<xsl:value-of select="notice/address/@current" />
+		</address_CT_outputaddress_current>
+		
+		<address_CT_outputaddress_undeclaredaddresstype>
+		<xsl:value-of select="notice/address/@undeclaredaddresstype" />
+		</address_CT_outputaddress_undeclaredaddresstype>
+
+		<address_CT_outputaddress_CT_outputaddress>
+		<xsl:value-of select="notice/address" />
+		</address_CT_outputaddress_CT_outputaddress>
+		</rep_ApplicantAlertIndividualNotice>					
+		</xsl:template>
+
+<!-- t_rep_ApplicantAliasLink -->
+
+	<xsl:template match="creditreport/applicant/oias/oia/aliaslinks" >
+	<rep_ApplicationAliasLink>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		<xsl:apply-templates select="aliaslink/@*" mode="Attr2Node" />	
+		<xsl:apply-templates select="aliaslink/name | aliaslink/alias | aliaslink/creationdate | aliaslink/lastconfdate " />
+		<supplierdetails_CT_supplierdetails_suppliername>
+		<xsl:value-of select="aliaslink/supplierdetails/suppliername"/>
+		</supplierdetails_CT_supplierdetails_suppliername>
+		<supplierdetails_CT_supplierdetails_suppliertypecode> 
+		<xsl:value-of select="aliaslink/supplierdetails/suppliertypecode" />
+		</supplierdetails_CT_supplierdetails_suppliertypecode>
+	</rep_ApplicationAliasLink>		
+	</xsl:template>
+
+
+<!-- t_rep_ApplicantAliasLinkNotice -->
+
+	<xsl:template match="creditreport/applicant/oias/oia/aliaslinks/aliaslink" >
+	
+	<rep_ApplicantAssociateLinkNotice>  
+		
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		<type0> <xsl:value-of select="notice/type" /> </type0>
+		<xsl:apply-templates select="notice/refnum | notice/dateraised | notice/text | notice/name " />
+		
+		<address_CT_outputaddress_current>
+		<xsl:value-of select="notice/address/@current" />
+		</address_CT_outputaddress_current>
+		
+		<address_CT_outputaddress_undeclaredaddresstype>
+		<xsl:value-of select="notice/address/@undeclaredaddresstype" />
+		</address_CT_outputaddress_undeclaredaddresstype>
+		
+		<address_CT_outputaddress_CT_outputaddress>
+		<xsl:value-of select="notice/address" />
+		</address_CT_outputaddress_CT_outputaddress>
+		
+	</rep_ApplicantAssociateLinkNotice> 
+	</xsl:template>
+
+<!--  t_rep_ApplicantAssociateLink  -->
+
+	<xsl:template match="creditreport/applicant/oias/oia/associatelinks" >
+	<rep_ApplicantAssociateLink>
+			<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+			<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+			
+			<xsl:apply-templates select="associatelink/@*" mode="Attr2Node" />	
+						
+			<xsl:apply-templates select="associatelink/navlinkid | associatelink/name | associatelink/creationdate | associatelink/lastconfdate " />
+				<supplierdetails_CT_supplierdetails_suppliername>
+					<xsl:value-of select="associatelink/supplierdetails/suppliername"/>
+				</supplierdetails_CT_supplierdetails_suppliername>
+				<supplierdetails_CT_supplierdetails_suppliertypecode> 
+					<xsl:value-of select="associatelink/supplierdetails/suppliertypecode" />
+				</supplierdetails_CT_supplierdetails_suppliertypecode>
+	</rep_ApplicantAssociateLink>			
+	</xsl:template>
+
+
+
+<!-- t_rep_ApplicantAssociateLinkNotice  --> 
+
+	<xsl:template match="creditreport/applicant/oias/oia/associatelinks/associatelink" >
+	<rep_ApplicantAssociateLinkNotice>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		
+		<type0> <xsl:value-of select="notice/type" /> </type0>
+		<xsl:apply-templates select="notice/refnum | notice/dateraised | notice/text | notice/name " />
+		
+		<address_CT_outputaddress_current>
+		<xsl:value-of select="notice/address/@current" />
+		</address_CT_outputaddress_current>
+		
+		<address_CT_outputaddress_undeclaredaddresstype>
+		<xsl:value-of select="notice/address/@undeclaredaddresstype" />
+		</address_CT_outputaddress_undeclaredaddresstype>
+
+		<address_CT_outputaddress_CT_outputaddress>
+		<xsl:value-of select="notice/address" />
+		</address_CT_outputaddress_CT_outputaddress>
+	</rep_ApplicantAssociateLinkNotice>		
+	</xsl:template>
+
+
+<!--  t_rep_ApplicantBAI OIAS  -->
+
+
+  <xsl:template match="creditreport/applicant/oias/oia/bais" >
+  <rep_ApplicantBAI>
+  		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		
+		<xsl:apply-templates select="bai/dischargedate | bai/lineofbusiness | bai/courtname | 
+									bai/currentstatus | bai/amount | bai/ordertype | bai/orderdate | 
+									bai/caseyear | bai/caseref  | bai/name | bai/tradingname" />
+		<restriction_type0><xsl:value-of select= "bai/restriction/type"> </xsl:value-of></restriction_type0>
+		
+		<xsl:apply-templates select="bai/restriction/startdate|bai/restriction/enddate"  mode="addParent">
+         <xsl:with-param name="name">restriction</xsl:with-param>
+        </xsl:apply-templates>	
+									
+			
+		<xsl:apply-templates select="bai/address/@*"  mode="AttraddParent">
+         <xsl:with-param name="name">address_CT_outputaddress</xsl:with-param>
+        </xsl:apply-templates>		
+										  
+		 <xsl:apply-templates select="bai/address" mode="addParentNo">
+          <xsl:with-param name="parent">address_CT_outputaddress_CT_output</xsl:with-param>
+        </xsl:apply-templates>
+	</rep_ApplicantBAI>        										  
+	</xsl:template>									  
+
+<!--  t_rep_ApplicantBAINotice OIAS  -->
+
+	<xsl:template match="creditreport/applicant/oias/oia/bais/bai" >
+	<rep_ApplicantBAINotice>	
+			<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		
+		<type0> <xsl:value-of select="notice/type" /> </type0>
+		<xsl:apply-templates select="notice/refnum | notice/dateraised | notice/text | notice/name " />
+		<xsl:apply-templates select="notice/address/@*"  mode="AttraddParent">
+         <xsl:with-param name="name">address_CT_outputaddress</xsl:with-param>
+        </xsl:apply-templates>			
+
+		 <xsl:apply-templates select="notice/address" mode="addParentNo">
+          <xsl:with-param name="parent">address_CT_outputaddress_CT_output</xsl:with-param>
+        </xsl:apply-templates>	
+	</rep_ApplicantBAINotice>	
+  </xsl:template>
+  
+  
+ <!-- t_rep_ApplicantCIFASCase -->
+ 
+	 <xsl:template match="creditreport/applicant/oias/oia/cifas/case" >
+	 <rep_ApplicantCIFASCase>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		<xsl:apply-templates select="details/owningmember|
+								  details/managingmember|
+								  details/casetype|
+								  details/productcode|
+								  details/facility|
+								  details/supplydate|
+								  details/expirydate|
+								  details/applicationdate" 	  mode="addParent" />
+	</rep_ApplicantCIFASCase>
+	</xsl:template>
+	 
+ 
+<!--  t_rep_ApplicantCIFASCaseDMR  -->
+	<xsl:template match="creditreport/applicant/oias/oia/cifas/case/dmrs" >
+	<rep_ApplicantCIFASCaseDMR>
+			<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+			<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+			
+		 <xsl:apply-templates select="dmr" />
+		 
+	</rep_ApplicantCIFASCaseDMR>	 
+	</xsl:template>
+  
+  
+  
+ <!-- t_rep_ApplicantCIFASCaseFilingReason  --> 
+	<xsl:template match="creditreport/applicant/oias/oia/cifas/case/details" >
+	<rep_ApplicantCIFASCaseFilingReason>		
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		
+		<xsl:apply-templates select="filingreasons/filingreason" />
+	</rep_ApplicantCIFASCaseFilingReason>		
+	</xsl:template>
+  
+  
+  
+ <!-- t_rep_ApplicantCIFASCaseNotice -->
+
+	<xsl:template match="creditreport/applicant/oias/oia/cifas/case/notice" >
+	<rep_ApplicantCIFASCaseNotice>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		
+		<type0><xsl:value-of select="type" />  </type0>
+		<xsl:apply-templates select="refnum|dateraised|text|name" />
+		<xsl:apply-templates select="address/@*"  mode="AttraddParent"> 
+		<xsl:with-param name="name">address_CT_outputaddress</xsl:with-param>
+		</xsl:apply-templates>	
+		
+		<xsl:apply-templates select="address" mode="addParentNo">
+		<xsl:with-param name="parent">address_CT_outputaddress_CT_output</xsl:with-param>
+		</xsl:apply-templates>	 
+	</rep_ApplicantCIFASCaseNotice>	
+	</xsl:template>
+
+
+
+<!--  t_rep_ApplicantCIFASCaseSubject  --> 
+  
+ <xsl:template match="creditreport/applicant/oias/oia/cifas/case/details/subjects" >
+ 
+ 
+ 		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		
+ <xsl:apply-templates select="subject/person/*" mode="addParent" />
+  <xsl:apply-templates select="subject/company/*" mode="addParent" />
+  <xsl:apply-templates select="subject/hometelephone |
+							   subject/hometelephone |
+							   subject/mobiletelephone |
+							   subject/email |
+							   subject/subjectrole |
+							   subject/subjectrolequalifier" />
+ 
+
+</xsl:template>
+  
+  
+<!-- t_rep_ApplicantCIFASCaseSubjectAddress  -->
+
+	<xsl:template  match="creditreport/applicant/oias/oia/cifas/case/details/subjects/subject" >
+	<rep_ApplicantCIFASCaseSubjectAddress>
+			<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+			<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+			
+	
+			<type0> <xsl:value-of select="addressdata/type" /> </type0>
+			<xsl:apply-templates select="addressdata/address/@*"  mode="AttraddParent">
+			 <xsl:with-param name="name">address_CT_outputaddress</xsl:with-param>
+			</xsl:apply-templates>			
+			
+			 <xsl:apply-templates select="addressdata/address" mode="addParentNo">
+			  <xsl:with-param name="parent">address_CT_outputaddress_CT_output</xsl:with-param>
+			</xsl:apply-templates>
+	</rep_ApplicantCIFASCaseSubjectAddress>
+	</xsl:template>
+
+
+
+<!--  t_rep_ApplicantCIFASFiling  -->
+
+<!--TBLL	look later	<person_address>PERSON ADDRESS</person_address>
+					<company_address>COMPANY ADDRESS</company_address>   -->
+					
+	<xsl:template match="creditreport/applicant/oias/oia/cifas/filing" >
+	<rep_ApplicantCIFASFiling>	
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		<xsl:apply-templates select="person/*" mode="addParent" />
+		<xsl:apply-templates select="company/*" mode="addParent" />
+		<xsl:apply-templates select="details/*" mode="addParent" />
+		
+		<xsl:apply-templates select="company/address" mode="addParentNo">
+		<xsl:with-param name="parent">company_address_CT_outputaddress_CT_output</xsl:with-param>
+		</xsl:apply-templates>		
+		
+		<xsl:apply-templates select="person/address" mode="addParentNo">
+		<xsl:with-param name="parent">person_address_CT_outputaddress_CT_output</xsl:with-param>
+		</xsl:apply-templates>		
+		
+		
+		<xsl:apply-templates select="company/address/@*"  mode="AttraddParent">
+		<xsl:with-param name="name">company_address_CT_outputaddress</xsl:with-param>
+		</xsl:apply-templates>	
+		
+		<xsl:apply-templates select="person/address/@*"  mode="AttraddParent">
+		<xsl:with-param name="name">person_address_CT_outputaddress</xsl:with-param>
+		</xsl:apply-templates>	
+	</rep_ApplicantCIFASFiling>	
+	</xsl:template>
+
+
+
+
+
+<!--  t_rep_ApplicantCIFASFilingNotice  -->
+
+	<xsl:template match="creditreport/applicant/oias/oia/cifas/filing/notice" >
+	<rep_ApplicantCIFASFilingNotice>	
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		
+		<type0> <xsl:value-of select="type" /> </type0>
+		<xsl:apply-templates select="refnum|dateraised|text|name" />
+		
+		<xsl:apply-templates select="address/@*"  mode="AttraddParent">
+		<xsl:with-param name="name">address_CT_outputaddress</xsl:with-param>
+		</xsl:apply-templates>			
+		
+		<xsl:apply-templates select="address" mode="addParentNo">
+		<xsl:with-param name="parent">address_CT_outputaddress_CT_output</xsl:with-param>
+		</xsl:apply-templates>
+	</rep_ApplicantCIFASFilingNotice>        
+	</xsl:template>
+
+
+
+<!-- t_rep_ApplicantJudgment -->
+	<xsl:template match="creditreport/applicant/oias/oia/judgments"  >
+		<rep_ApplicantJudgment>	
+			<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+			<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+				
+			<xsl:apply-templates select="judgment/name | 
+									 judgment/dob | 
+									 judgment/courttype |
+									 judgment/courtname |
+									 judgment/casenumber |
+									 judgment/status |
+									 judgment/amount |
+									 judgment/judgmentdate |
+									 judgment/datesatisfied"  />
+			
+			<xsl:apply-templates select="judgment/address/@*"  mode="AttraddParent">
+			 <xsl:with-param name="name">address_CT_outputaddress</xsl:with-param>
+			</xsl:apply-templates>			
+			
+			 <xsl:apply-templates select="judgment/address" mode="addParentNo">
+			  <xsl:with-param name="parent">address_CT_outputaddress_CT_output</xsl:with-param>
+			</xsl:apply-templates>
+		</rep_ApplicantJudgment>
+	</xsl:template>
+
+
+
+
+<!--  t_rep_ApplicantJudgmentNotice  -->
+
+	<xsl:template match="creditreport/applicant/oias/oia/judgments/judgment/notice" >
+	 <rep_ApplicantJudgmentNotice>	 
+			<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		
+		
+		<type0> <xsl:value-of select="type" /> </type0>
+		<xsl:apply-templates select="refnum|dateraised|text|name" />
+
+		<xsl:apply-templates select="address/@*"  mode="AttraddParent">
+         <xsl:with-param name="name">address_CT_outputaddress</xsl:with-param>
+        </xsl:apply-templates>			
+		
+		 <xsl:apply-templates select="address" mode="addParentNo">
+          <xsl:with-param name="parent">address_CT_outputaddress_CT_output</xsl:with-param>
+        </xsl:apply-templates>	
+	 </rep_ApplicantJudgmentNotice>	         
+	</xsl:template>
+  
+  
+  <!--   t_rep_ApplicantNOC  creditreport/applicant/oias/oia/nocs -->
+  
+	<xsl:template match="creditreport/applicant/oias/oia/nocs" > 
+	<rep_ApplicantNOC>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		
+		<type0> <xsl:value-of select="noc/type" /> </type0>
+		<xsl:apply-templates select="noc/refnum|noc/dateraised|noc/text|noc/name" />
+
+		<xsl:apply-templates select="noc/address/@*"  mode="AttraddParent">
+			<xsl:with-param name="name">address_CT_outputaddress</xsl:with-param>
+		</xsl:apply-templates>			
+		
+		<xsl:apply-templates select="noc/address" mode="addParentNo">
+			<xsl:with-param name="parent">address_CT_outputaddress_CT_output</xsl:with-param>
+		</xsl:apply-templates>	
+	</rep_ApplicantNOC>
+
+	</xsl:template>
+  
+<!--  credit applicant  OIAS TEMPLATE START -->
+		<xsl:template match="creditreport/applicant/oias/oia">
+		<rep_ApplicantOIA>	
+			<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+			<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+			<OIA_CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </OIA_CCReference>		
+	
+			<xsl:apply-templates select="summary/searches/*" mode="addGrandParent" />
+			<xsl:apply-templates select="summary/judgments/*" mode="addGrandParent" />
+			<xsl:apply-templates select="summary/bais/*" mode="addGrandParent" />
+			<xsl:apply-templates select="summary/notices/*" mode="addGrandParent" />
+			<xsl:apply-templates select="summary/links/*" mode="addGrandParent" />
+			<xsl:apply-templates select="summary/cifas/*" mode="addGrandParent" />
+			<xsl:apply-templates select="summary/share/*" mode="addGrandParent" />
+			<xsl:apply-templates select="summary/bds/*" mode="addGrandParent" />
+			<xsl:apply-templates select="summary/ich/*" mode="addGrandParent" />
+			<xsl:apply-templates select="summary/indebt/*" mode="addGrandParent" />
+			<xsl:apply-templates select="summary/tpd/*" mode="addGrandParent" />
+			<xsl:apply-templates select="summary/summaryaddress/*" mode="addGrandParent" />	
+			<xsl:apply-templates select="creditscore/score/@*" mode="AttrAddGrandParent"/> <!-- verify this column name -->
+			<xsl:apply-templates select="creditscore/reasons/code/*" mode="addGreatGrandParent" />	<!-- verify this column name -->
+			<xsl:apply-templates select="demographics/cameouk" mode="addParent" />
+			<xsl:apply-templates select="demographics/cameoinvestor" mode="addParent" />
+			<xsl:apply-templates select="demographics/cameoincome" mode="addParent" />
+			<xsl:apply-templates select="demographics/cameounemployment" mode="addParent" />
+			<xsl:apply-templates select="demographics/cameoproperty" mode="addParent" />
+			<xsl:apply-templates select="demographics/cameofinance" mode="addParent" />
+			<xsl:apply-templates select="demographics/*/*" mode="addGrandParent" />
+			<xsl:apply-templates select="demographics2006/cameouk" mode="addParent" />
+			<xsl:apply-templates select="demographics2006/cameoukg" mode="addParent" />
+			<xsl:apply-templates select="demographics2006/cameoincome" mode="addParent" />
+			<xsl:apply-templates select="demographics2006/cameoincg" mode="addParent" />
+			<xsl:apply-templates select="demographics2006/cameoinvestor" mode="addParent" />
+			<xsl:apply-templates select="demographics2006/cameoinvg" mode="addParent" />
+			<xsl:apply-templates select="demographics2006/cameoproperty" mode="addParent" />
+			<xsl:apply-templates select="demographics2006/cameofinance" mode="addParent" />
+			<xsl:apply-templates select="demographics2006/cameofing" mode="addParent" />
+			<xsl:apply-templates select="demographics2006/cameounemployment" mode="addParent" />
+			<xsl:apply-templates select="demographics2006/*/*" mode="addGrandParent" />		
+		</rep_ApplicantOIA>			
+	</xsl:template>
+	
+
+<!--   t_rep_ApplicantOIASummaryAddress  creditreport/applicant/oias/oia/summary/address  -->
+
+	<xsl:template match="creditreport/applicant/oias/oia/summary" >
+	<rep_ApplicantOIASummaryAddress>	
+			<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		
+		<xsl:apply-templates select="address/@*"  mode="Attr2Node" />
+		<CT_summaryresidency> <xsl:value-of select="address" />  </CT_summaryresidency>
+	</rep_ApplicantOIASummaryAddress>			
+	</xsl:template>
+  
+  
+  
+<!--   t_rep_ApplicantSearch   -->  
+
+	<xsl:template match="creditreport/applicant/oias/oia/searches" >
+	<rep_ApplicantSearch>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		
+		<!--<xsl:apply-templates select="search/*"  /> -->
+		<!--<xsl:apply-templates select="search/*[not(self::yourreference | searchorgtype)]"/>		NOT WORKING FOR MULTIPLE -->
+			<xsl:apply-templates select="search/searchref |
+										search/searchorgtype |
+										search/searchorgname |
+										search/searchunitname |
+										search/ownsearch |
+										search/subsequentenquiry |
+										search/username |
+										search/searchpurpose |
+										search/credittype |
+										search/balance |
+										search/term |
+										search/jointapplication |
+										search/name |
+										search/dob |
+										search/startdate |
+										search/enddate |
+										search/tpoptout |
+										search/transient |
+										search/linktype" /> 
+										
+			<xsl:apply-templates select="search/address/@*"  mode="AttraddParent">
+			 <xsl:with-param name="name">address_CT_outputaddress</xsl:with-param>
+			</xsl:apply-templates>			
+		
+			 <xsl:apply-templates select="search/address" mode="addParentNo">
+			  <xsl:with-param name="parent">address_CT_outputaddress_CT_output</xsl:with-param>
+			</xsl:apply-templates>
+			
+			<search_YourReference> <xsl:value-of select="search/yourreference" /></search_YourReference>
+			<search_SearchDate><xsl:value-of select="search/searchdate" /></search_SearchDate>
+			
+	</rep_ApplicantSearch>		
+	</xsl:template>
+
+
+<!-- t_rep_Base  -->
+	<xsl:template match="creditreport" >
+	<rep_Base>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		<creditreport_CCReference>
+		<xsl:value-of select="@searchid" />
+		</creditreport_CCReference>	
+		<linktype><xsl:value-of select="@linktype" /></linktype>
+	</rep_Base>		
+	</xsl:template>
+
+
+
+<!--   t_req_Applicant  creditrequest/applicant  -->
+
+	<xsl:template match="creditrequest/applicant" >
+	<req_Applicant>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		<xsl:apply-templates select="dob|hho|tpoptout" /> 
+		<xsl:apply-templates select="applicantdemographics/person/*[not(self::identity | searchorgtype)]"  mode="addGrandParent" />
+		<xsl:apply-templates select="applicantdemographics/accommodation/*"  mode="addGrandParent" />
+		<xsl:apply-templates select="applicantdemographics/employment/*"  mode="addGrandParent" />		
+		<xsl:apply-templates select="applicantdemographics/account/*"  mode="addGrandParent" />		
+		<xsl:apply-templates select="applicantdemographics/expenditure/*"  mode="addGrandParent" />		
+	<!-- special transformation -->
+		<applicantdemographics_income_primary_type0> 
+		<xsl:value-of select="applicantdemographics/income/primary/type" /> 
+		</applicantdemographics_income_primary_type0>
+		<xsl:apply-templates select="applicantdemographics/income/primary/*[not(self::additional | type )]"  mode="addGreatGrandParent" />								
+		
+	<!-- special tranformation -->
+	<applicantdemographics_income_additional_type0> 
+		<xsl:value-of select="applicantdemographics/income/additional/type" /> 	
+	</applicantdemographics_income_additional_type0>
+		<xsl:apply-templates select="applicantdemographics/income/additional/*[not(self:: type )]"  mode="addGreatGrandParent" />	
+									
+	</req_Applicant>		
+	</xsl:template>
+
+
+
+<!-- t_req_ApplicantAddress  --> 
+	<xsl:template match="creditrequest/applicant/address" >
+	<req_ApplicantAddress>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>		
+	<xsl:apply-templates select="*" /> 
+	</req_ApplicantAddress>
+	</xsl:template>
+
+<!-- t_req_ApplicantContactEmail  -->
+	<xsl:template match="creditrequest/applicant/applicantdemographics/contact/email" >
+	<req_ApplicantContactEmail>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		<type0><xsl:value-of select="type" />  </type0>
+		<xsl:apply-templates select="*[not(self:: type )]" />
+		<xsl:apply-templates select="*[not(self:: type )]" /> 
+	</req_ApplicantContactEmail>		
+	</xsl:template>
+
+<!--  t_req_ApplicantContactTelephone   -->
+	<xsl:template match="creditrequest/applicant/applicantdemographics/contact/telephone">
+	<req_ApplicantContactTelephone>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		<type0><xsl:value-of select="type" />  </type0>
+		<xsl:apply-templates select="*[not(self:: type )]" />
+	</req_ApplicantContactTelephone>		
+	</xsl:template>
+
+<!--  t_req_ApplicantName  -->
+	<xsl:template match="creditrequest/applicant/name">
+	<req_ApplicantName>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		<xsl:apply-templates select="*" mode="addParentNo">
+		<xsl:with-param name="parent">CT_inputname_</xsl:with-param>
+		</xsl:apply-templates>	
+	</req_ApplicantName>
+	</xsl:template>
+
+<!-- t_req_ApplicantPersonIdentity   -->   
+	<xsl:template match="creditrequest/applicant/applicantdemographics/person/identity" >
+	<req_ApplicantPersonIdentity>
+		<CCReference> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/yourreference" /> </CCReference>
+		<SearchDate> <xsl:value-of select= "/Envelope/Body/Search07aResponse/SearchResult/jobdetails/searchdate" /> </SearchDate>	
+		<type0><xsl:value-of select="type" />  </type0>
+		<xsl:apply-templates select="*[not(self:: type )]" /> 
+	</req_ApplicantPersonIdentity>		
+	</xsl:template>
+
+
+
+ <!--  THE END --> 
+</xsl:stylesheet>
+
