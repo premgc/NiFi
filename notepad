@@ -1,0 +1,12 @@
+SELECT * FROM information_schema.columns where TABLE_SCHEMA='cc' 
+and TABLE_NAME='t_bsb_Applicant' and column_name  in ('ICC','OD','PS','HHB','IHB'
+,'JHB','KHB','LHB')
+
+ICC_default
+OD_default
+PS_default
+HHB_default
+IHB_default
+JHB_default
+KHB_default
+LHB_default
