@@ -10,3 +10,32 @@ IHB_default
 JHB_default
 KHB_default
 LHB_default
+
+
+
+	<xsl:template match="@*" mode="Attr2Node">
+		<xsl:choose>
+		  <xsl:when test=" . ='{ND}'">
+			<xsl:choose>
+				<xsl:when  test="name(.) = 'ICC' or  
+						name(.) = 'HHB'  or 
+						name(.)='OD' or 
+						name(.)='PS' or  
+						name(.) ='IHB' or  
+						name(.) = 'JHB'  or  
+						name(.) = 'KHB'  or  
+						name(.) ='LHB'" >			
+					<xsl:element name="{name()}_default">-999997</xsl:element>
+			  </xsl:when>
+			  <xsl:otherwise>
+				<xsl:element name="{name()}">-999997</xsl:element> 
+			  </xsl:otherwise>
+			</xsl:choose>
+		  </xsl:when>
+			  <xsl:otherwise>
+				<xsl:element name="{name()}">
+					<xsl:value-of select="." />
+				</xsl:element>              
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
