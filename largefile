@@ -1,0 +1,2275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<Body>
+		<Search07aResponse xmlns:m="urn:callcredit.co.uk/soap:bsbandcreditreport7">
+			<SearchResult>
+				<jobdetails>
+					<searchid>{46BD6ECD-1785-43F2-B654-95B37B28CD79}</searchid>
+					<cast>003.001.7.2.1.2.0.43510975.0</cast>
+					<pstv>43510975</pstv>
+					<ls>0</ls>
+					<searchdate>2018-09-11T10:32:50</searchdate>
+				</jobdetails>
+				<payload/>
+				<yourreference>119658816</yourreference>
+				<creditrequest schemaversion="7.1" datasets="255">
+					<applicant>
+						<address>
+							<buildingno>22</buildingno>
+							<street1>SHORNCLIFFE ROAD</street1>
+							<posttown>COVENTRY</posttown>
+							<postcode>CV61GS</postcode>
+							<startdate>2015-09-11</startdate>
+							<enddate>2018-09-11</enddate>
+						</address>
+						<name>
+							<title>MISS</title>
+							<forename>HAYLEY</forename>
+							<surname>MCDOWALL</surname>
+						</name>
+						<dob>1988-10-16</dob>
+						<hho>1</hho>
+						<tpoptout>0</tpoptout>
+						<applicantdemographics>
+							<contact>
+								<email>
+									<address>@BULKLOAD.VANQUIS</address>
+								</email>
+								<telephone>
+									<std>02476</std>
+									<number>331509</number>
+								</telephone>
+								<telephone>
+									<std>07805</std>
+									<number>784789</number>
+								</telephone>
+							</contact>
+						</applicantdemographics>
+					</applicant>
+					<score>1</score>
+					<purpose>QS</purpose>
+					<autosearch>1</autosearch>
+					<autosearchmaximum>10</autosearchmaximum>
+				</creditrequest>
+				<picklist maxaddressitems="20" maxnameitems="9" picklist="0" regenerated="0">
+					<applicant id="1" reporttype="3">
+						<address addressid="1">
+							<addressinput>
+								<abodeno/>
+								<buildingno>22</buildingno>
+								<buildingname/>
+								<street1>SHORNCLIFFE ROAD</street1>
+								<street2/>
+								<sublocality/>
+								<locality/>
+								<posttown>COVENTRY</posttown>
+								<postcode>CV61GS</postcode>
+							</addressinput>
+							<fullmatches reporttype="3" matchstatus="2">
+								<fullmatch selected="1">
+									<addressmatch>
+										<buildingno>22</buildingno>
+										<street1>SHORNCLIFFE ROAD</street1>
+										<posttown>COVENTRY</posttown>
+										<postcode>CV6 1GS</postcode>
+										<domicileid>1301451</domicileid>
+									</addressmatch>
+									<name nameid="1">
+										<nameinput>
+											<title>MISS</title>
+											<forename>HAYLEY</forename>
+											<othernames/>
+											<surname>MCDOWALL</surname>
+										</nameinput>
+										<namematches reporttype="3" matchstatus="2">
+											<namematch selected="1">
+												<title>MISS</title>
+												<forename>HAYLEY</forename>
+												<surname>MCDOWALL</surname>
+												<residenceid>158641268</residenceid>
+												<dob>1988-10-16</dob>
+											</namematch>
+										</namematches>
+									</name>
+								</fullmatch>
+							</fullmatches>
+						</address>
+					</applicant>
+				</picklist>
+				<creditreport searchid="{46BD6ECD-1785-43F2-B654-95B37B28CD79}" linktype="0">
+					<applicant reporttype="3" tpoptout="0" autosearchmaxexceeded="0" ageflag="0" reporttitle="HAYLEY MCDOWALL ">
+						<summary>
+							<searches>
+								<totalsearches3months>0</totalsearches3months>
+								<totalsearches12months>0</totalsearches12months>
+								<totalhomecreditsearches3months>0</totalhomecreditsearches3months>
+							</searches>
+							<judgments>
+								<totalactive>1</totalactive>
+								<totalsatisfied>0</totalsatisfied>
+								<totalactiveamount>854</totalactiveamount>
+							</judgments>
+							<bais>
+								<totaldischarged>0</totaldischarged>
+								<currentlyinsolvent>0</currentlyinsolvent>
+								<restricted>0</restricted>
+							</bais>
+							<notices>
+								<nocflag>0</nocflag>
+								<totaldisputes>1</totaldisputes>
+							</notices>
+							<links>
+								<totalundecaddressessearched>1</totalundecaddressessearched>
+								<totalundecaddressesunsearched>0</totalundecaddressesunsearched>
+								<totalundecaliases>0</totalundecaliases>
+								<totalundecassociates>1</totalundecassociates>
+							</links>
+							<cifas>
+								<totalcifas>0</totalcifas>
+							</cifas>
+							<share>
+								<totalaccounts>21</totalaccounts>
+								<totalactiveaccs>9</totalactiveaccs>
+								<totalsettledaccs>6</totalsettledaccs>
+								<totalopened6months>0</totalopened6months>
+								<worsepaystatus12months>D</worsepaystatus12months>
+								<worsepaystatus36months>D</worsepaystatus36months>
+								<totaldelinqs12months>1</totaldelinqs12months>
+								<totaldefaults12months>0</totaldefaults12months>
+								<totaldefaults36months>2</totaldefaults36months>
+							</share>
+							<bds>
+								<totalminpayments12months>1</totalminpayments12months>
+								<totalminpayments36months>1</totalminpayments36months>
+								<totalvaluecashadvances12months>110</totalvaluecashadvances12months>
+								<totalvaluecashadvances36months>110</totalvaluecashadvances36months>
+							</bds>
+							<ich>
+								<impairedcredit>1</impairedcredit>
+								<secured>0</secured>
+								<unsecured>1</unsecured>
+								<judgment>1</judgment>
+								<iva>0</iva>
+								<boss>0</boss>
+							</ich>
+							<indebt>
+								<totalbalancesactive>10788</totalbalancesactive>
+								<totalbalancesrevolve>168</totalbalancesrevolve>
+								<balancelimitratiorevolve>67</balancelimitratiorevolve>
+								<totallimitsrevolve>250</totallimitsrevolve>
+								<totalbalancesloans>8896</totalbalancesloans>
+							</indebt>
+							<tpd>
+								<alertdecision>2</alertdecision>
+								<alertreview>3</alertreview>
+								<hho>4</hho>
+							</tpd>
+							<summaryaddress>
+								<pafvalid>1</pafvalid>
+								<rollingroll>0</rollingroll>
+								<messagecode>1</messagecode>
+							</summaryaddress>
+							<address messagecode="2" id="1" current="0" undeclaredaddresstype="2">225 TENNYSON ROAD, COVENTRY CV2 5JE</address>
+							<address messagecode="1" id="2" current="1">22 SHORNCLIFFE ROAD, COVENTRY CV6 1GS</address>
+						</summary>
+						<creditscore>
+							<score class="2">472</score>
+							<reasons>
+								<code>102</code>
+								<code>203</code>
+								<code>112</code>
+								<code>108</code>
+							</reasons>
+						</creditscore>
+						<addressconfs>
+							<addressconf pafvalid="1">
+								<address current="0" undeclaredaddresstype="2">225 TENNYSON ROAD, COVENTRY CV2 5JE</address>
+								<resident matchtype="IM" currentname="0" declaredalias="1">
+									<name>HAYLEY MCDOWALL</name>
+									<duration>P87M</duration>
+									<startdate>2008-10-28</startdate>
+									<enddate>2016-01-01</enddate>
+									<ervalid>3</ervalid>
+									<erhistory>
+										<startdate>2008-10-28</startdate>
+										<enddate>2016-01-01</enddate>
+										<optout>0</optout>
+										<rollingroll>0</rollingroll>
+									</erhistory>
+								</resident>
+								<resident matchtype="HM" currentname="0" declaredalias="0">
+									<name>DANIEL LUKE CLOVER</name>
+									<duration>P119M</duration>
+									<startdate>2008-10-28</startdate>
+									<ervalid>1</ervalid>
+									<erhistory>
+										<startdate>2016-07-01</startdate>
+										<optout>1</optout>
+										<rollingroll>0</rollingroll>
+									</erhistory>
+									<erhistory>
+										<startdate>2008-10-28</startdate>
+										<enddate>2016-07-01</enddate>
+										<optout>0</optout>
+										<rollingroll>0</rollingroll>
+									</erhistory>
+								</resident>
+								<resident matchtype="HM" currentname="0" declaredalias="0">
+									<name>SIMON CHARLES ROWSON</name>
+									<duration>P67M</duration>
+									<startdate>2002-10-28</startdate>
+									<enddate>2008-05-01</enddate>
+									<ervalid>3</ervalid>
+									<erhistory>
+										<startdate>2002-10-28</startdate>
+										<enddate>2008-05-01</enddate>
+										<optout>0</optout>
+										<rollingroll>0</rollingroll>
+									</erhistory>
+								</resident>
+								<resident matchtype="HM" currentname="0" declaredalias="0">
+									<name>JANINE C TURNER</name>
+									<duration>P12M</duration>
+									<startdate>1998-10-28</startdate>
+									<enddate>1999-10-28</enddate>
+									<ervalid>3</ervalid>
+									<erhistory>
+										<startdate>1998-10-28</startdate>
+										<enddate>1999-10-28</enddate>
+										<optout>0</optout>
+										<rollingroll>0</rollingroll>
+									</erhistory>
+								</resident>
+								<resident matchtype="HM" currentname="0" declaredalias="0">
+									<name>DEAN R TURNER</name>
+									<duration>P48M</duration>
+									<startdate>1998-10-28</startdate>
+									<enddate>2002-10-28</enddate>
+									<ervalid>3</ervalid>
+									<erhistory>
+										<startdate>1998-10-28</startdate>
+										<enddate>2002-10-28</enddate>
+										<optout>0</optout>
+										<rollingroll>0</rollingroll>
+									</erhistory>
+								</resident>
+								<resident matchtype="HM" currentname="0" declaredalias="0">
+									<name>PENELOPE SPITTLE</name>
+									<duration>P60M</duration>
+									<startdate>1993-10-28</startdate>
+									<enddate>1998-10-28</enddate>
+									<ervalid>3</ervalid>
+									<erhistory>
+										<startdate>1993-10-28</startdate>
+										<enddate>1998-10-28</enddate>
+										<optout>0</optout>
+										<rollingroll>0</rollingroll>
+									</erhistory>
+								</resident>
+							</addressconf>
+							<addressconf pafvalid="1">
+								<address current="1">22 SHORNCLIFFE ROAD, COVENTRY CV6 1GS</address>
+								<resident matchtype="IM" currentname="1" declaredalias="0">
+									<name>HAYLEY MCDOWALL</name>
+									<duration>P29M</duration>
+									<startdate>2016-04-01</startdate>
+									<ervalid>1</ervalid>
+									<erhistory>
+										<startdate>2016-04-01</startdate>
+										<optout>1</optout>
+										<rollingroll>0</rollingroll>
+									</erhistory>
+									<erhistory>
+										<startdate>2006-10-28</startdate>
+										<enddate>2008-10-28</enddate>
+										<optout>0</optout>
+										<rollingroll>0</rollingroll>
+									</erhistory>
+								</resident>
+								<resident matchtype="SM" currentname="0" declaredalias="0">
+									<name>GEORGINA MCDOWALL</name>
+									<duration>P155M</duration>
+									<startdate>2005-10-28</startdate>
+									<ervalid>1</ervalid>
+									<erhistory>
+										<startdate>2005-10-28</startdate>
+										<optout>0</optout>
+										<rollingroll>0</rollingroll>
+									</erhistory>
+									<erhistory>
+										<startdate>1996-10-28</startdate>
+										<enddate>2004-10-28</enddate>
+										<optout>0</optout>
+										<rollingroll>0</rollingroll>
+									</erhistory>
+								</resident>
+								<resident matchtype="SM" currentname="0" declaredalias="0">
+									<name>RONALD W MCDOWALL</name>
+									<duration>P263M</duration>
+									<startdate>1996-10-28</startdate>
+									<ervalid>1</ervalid>
+									<erhistory>
+										<startdate>1996-10-28</startdate>
+										<optout>0</optout>
+										<rollingroll>0</rollingroll>
+									</erhistory>
+								</resident>
+								<resident matchtype="HM" currentname="0" declaredalias="0">
+									<name>AINSLEY CARLINE-MCDOWALL</name>
+									<duration>P36M</duration>
+									<startdate>2009-10-28</startdate>
+									<enddate>2012-10-28</enddate>
+									<ervalid>3</ervalid>
+									<erhistory>
+										<startdate>2009-10-28</startdate>
+										<enddate>2012-10-28</enddate>
+										<optout>0</optout>
+										<rollingroll>0</rollingroll>
+									</erhistory>
+									<erhistory>
+										<startdate>1996-10-28</startdate>
+										<enddate>2004-10-28</enddate>
+										<optout>0</optout>
+										<rollingroll>0</rollingroll>
+									</erhistory>
+								</resident>
+								<resident matchtype="HM" currentname="0" declaredalias="0">
+									<name>AINSLEY LAPWORTH</name>
+									<duration>P24M</duration>
+									<startdate>2007-10-28</startdate>
+									<enddate>2009-10-28</enddate>
+									<ervalid>3</ervalid>
+									<erhistory>
+										<startdate>2007-10-28</startdate>
+										<enddate>2009-10-28</enddate>
+										<optout>0</optout>
+										<rollingroll>0</rollingroll>
+									</erhistory>
+								</resident>
+							</addressconf>
+						</addressconfs>
+						<judgments>
+							<judgment>
+								<name>MISS HAYLEY MCDOWALL</name>
+								<address current="0" undeclaredaddresstype="2">225 TENNYSON ROAD, COVENTRY, CV2 5JE</address>
+								<courtname>COUNTY COURT BUSINESS CENTRE</courtname>
+								<courttype>0</courttype>
+								<casenumber>C7AW6J8Q</casenumber>
+								<status>JG</status>
+								<amount>854</amount>
+								<judgmentdate>2017-01-06</judgmentdate>
+							</judgment>
+						</judgments>
+						<bais/>
+						<addresslinks>
+							<addresses>
+								<address addressid="1" declared="0" current="0" undeclaredaddresstype="2">225 TENNYSON ROAD, COVENTRY, CV2 5JE</address>
+								<address addressid="2" declared="1" current="1">22 SHORNCLIFFE ROAD, COVENTRY, CV6 1GS</address>
+							</addresses>
+							<links>
+								<link from="2" to="1">
+									<creationdate>2008-10-10</creationdate>
+									<lastconfdate>2016-08-23</lastconfdate>
+									<supplierdetails>
+										<suppliertypecode>BK</suppliertypecode>
+									</supplierdetails>
+								</link>
+								<link from="1" to="2">
+									<creationdate>2008-10-10</creationdate>
+									<lastconfdate>2016-08-23</lastconfdate>
+									<supplierdetails>
+										<suppliertypecode>BK</suppliertypecode>
+									</supplierdetails>
+								</link>
+							</links>
+						</addresslinks>
+						<aliaslinks/>
+						<associatelinks>
+							<associatelink declaredaddress="0" oiaid="1">
+								<navlinkid>{436833A2-05CB-4D08-B4F5-52DB5BBA7DA7}</navlinkid>
+								<name>MR DANIEL LUKE CLOVER</name>
+								<creationdate>2011-02-01</creationdate>
+								<lastconfdate>2014-09-13</lastconfdate>
+								<supplierdetails>
+									<suppliertypecode>BK</suppliertypecode>
+								</supplierdetails>
+							</associatelink>
+						</associatelinks>
+						<cifas/>
+						<accs>
+							<acc>
+								<supplierdetails apacs="0">
+									<suppliertypecode>FN</suppliertypecode>
+								</supplierdetails>
+								<accholderdetails>
+									<name>MISS HAYLEY MCDOWALL</name>
+									<address current="1">22 SHORNCLIFFE ROAD;;COVENTRY;WEST MIDLANDS CV61GS</address>
+									<dob>1988-10-16</dob>
+									<statuscode>N</statuscode>
+									<startdate>2011-06-21</startdate>
+									<enddate>2014-08-11</enddate>
+								</accholderdetails>
+								<acchistory>
+									<ah m="2014-10" bal="0" acc="ST" pay="U"/>
+									<ah m="2014-09" bal="2066" acc="OK" pay="0"/>
+									<ah m="2014-08" bal="2121" acc="OK" pay="0"/>
+									<ah m="2014-07" bal="2177" acc="OK" pay="0"/>
+									<ah m="2014-06" bal="2229" acc="OK" pay="0"/>
+									<ah m="2014-05" bal="2281" acc="OK" pay="0"/>
+									<ah m="2014-04" bal="2330" acc="OK" pay="0"/>
+									<ah m="2014-03" bal="2384" acc="OK" pay="0"/>
+									<ah m="2014-02" bal="2430" acc="OK" pay="0"/>
+									<ah m="2014-01" bal="2475" acc="OK" pay="0"/>
+									<ah m="2013-12" bal="2508" acc="OK" pay="0"/>
+									<ah m="2013-11" bal="2549" acc="OK" pay="0"/>
+									<ah m="2013-10" bal="2592" acc="OK" pay="0"/>
+									<ah m="2013-09" bal="2631" acc="OK" pay="0"/>
+									<ah m="2013-08" bal="2669" acc="OK" pay="0"/>
+									<ah m="2013-07" bal="2709" acc="OK" pay="0"/>
+									<ah m="2013-06" bal="2744" acc="OK" pay="0"/>
+									<ah m="2013-05" bal="2781" acc="OK" pay="0"/>
+									<ah m="2013-04" bal="2815" acc="OK" pay="0"/>
+									<ah m="2013-03" bal="2855" acc="OK" pay="0"/>
+									<ah m="2013-02" bal="2892" acc="OK" pay="0"/>
+									<ah m="2013-01" bal="2806" acc="OK" pay="0"/>
+									<ah m="2012-12" bal="2723" acc="OK" pay="0"/>
+									<ah m="2012-11" bal="2751" acc="OK" pay="0"/>
+									<ah m="2012-10" bal="3020" acc="OK" pay="0"/>
+								</acchistory>
+								<accdetails>
+									<joint>0</joint>
+									<status>S</status>
+									<dateupdated>2014-10-01</dateupdated>
+									<acctypecode>UL</acctypecode>
+									<accgroupid>1</accgroupid>
+									<currencycode>GBP</currencycode>
+									<balance>0</balance>
+									<openbalance>3300</openbalance>
+									<paystartdate>2011-06-21</paystartdate>
+									<accstartdate>2011-06-21</accstartdate>
+									<accenddate>2014-08-11</accenddate>
+									<regpayment>119</regpayment>
+									<repayperiod>60</repayperiod>
+									<repayfreqcode>M</repayfreqcode>
+									<lumppayment>0</lumppayment>
+								</accdetails>
+							</acc>
+							<acc>
+								<supplierdetails apacs="0">
+									<suppliertypecode>FN</suppliertypecode>
+								</supplierdetails>
+								<accholderdetails>
+									<name>MISS HAYLEY MCDOWALL</name>
+									<address current="1">22 SHORNCLIFFE ROAD;COVENTRY;WEST MIDLANDS; CV61GS</address>
+									<dob>1988-10-16</dob>
+									<statuscode>N</statuscode>
+									<startdate>2014-08-11</startdate>
+									<enddate>2016-06-08</enddate>
+								</accholderdetails>
+								<acchistory>
+									<ah m="2016-07" bal="0" acc="ST" pay="U"/>
+									<ah m="2016-06" bal="4124" acc="OK" pay="0"/>
+									<ah m="2016-05" bal="4183" acc="OK" pay="0"/>
+									<ah m="2016-04" bal="4235" acc="OK" pay="0"/>
+									<ah m="2016-03" bal="4294" acc="OK" pay="0"/>
+									<ah m="2016-02" bal="4343" acc="OK" pay="0"/>
+									<ah m="2016-01" bal="4391" acc="OK" pay="0"/>
+									<ah m="2015-12" bal="4440" acc="OK" pay="0"/>
+									<ah m="2015-11" bal="4482" acc="OK" pay="0"/>
+									<ah m="2015-10" bal="4528" acc="OK" pay="0"/>
+									<ah m="2015-09" bal="4562" acc="OK" pay="0"/>
+									<ah m="2015-08" bal="4600" acc="OK" pay="0"/>
+									<ah m="2015-07" bal="4645" acc="OK" pay="0"/>
+									<ah m="2015-06" bal="4682" acc="OK" pay="0"/>
+									<ah m="2015-05" bal="4722" acc="OK" pay="0"/>
+									<ah m="2015-04" bal="4756" acc="OK" pay="0"/>
+									<ah m="2015-03" bal="4804" acc="OK" pay="0"/>
+									<ah m="2015-02" bal="4834" acc="OK" pay="0"/>
+									<ah m="2015-01" bal="4866" acc="OK" pay="0"/>
+									<ah m="2014-12" bal="4889" acc="OK" pay="0"/>
+									<ah m="2014-11" bal="4917" acc="OK" pay="0"/>
+									<ah m="2014-10" bal="4948" acc="OK" pay="0"/>
+									<ah m="2014-09" bal="5000" acc="UC" pay="U"/>
+								</acchistory>
+								<accdetails>
+									<joint>0</joint>
+									<status>S</status>
+									<dateupdated>2016-07-01</dateupdated>
+									<acctypecode>UL</acctypecode>
+									<accgroupid>1</accgroupid>
+									<currencycode>GBP</currencycode>
+									<balance>0</balance>
+									<openbalance>5000</openbalance>
+									<paystartdate>2014-08-11</paystartdate>
+									<accstartdate>2014-08-11</accstartdate>
+									<accenddate>2016-06-08</accenddate>
+									<regpayment>197</regpayment>
+									<repayperiod>60</repayperiod>
+									<repayfreqcode>M</repayfreqcode>
+									<lumppayment>0</lumppayment>
+								</accdetails>
+							</acc>
+							<acc>
+								<supplierdetails apacs="0">
+									<suppliertypecode>FN</suppliertypecode>
+								</supplierdetails>
+								<accholderdetails>
+									<name>MISS HAYLEY MCDOWALL</name>
+									<address current="1">22 SHORNCLIFFE ROAD;COVENTRY;WEST MIDLANDS; CV61GS</address>
+									<dob>1988-10-16</dob>
+									<statuscode>N</statuscode>
+									<startdate>2016-06-08</startdate>
+								</accholderdetails>
+								<acchistory>
+									<ah m="2018-04" bal="7292" acc="OK" pay="0"/>
+									<ah m="2018-03" bal="7359" acc="OK" pay="0"/>
+									<ah m="2018-02" bal="7399" acc="OK" pay="0"/>
+									<ah m="2018-01" bal="7441" acc="OK" pay="0"/>
+									<ah m="2017-12" bal="7487" acc="OK" pay="0"/>
+									<ah m="2017-11" bal="7523" acc="OK" pay="0"/>
+									<ah m="2017-10" bal="7566" acc="OK" pay="0"/>
+									<ah m="2017-09" bal="7600" acc="OK" pay="0"/>
+									<ah m="2017-08" bal="7600" acc="OK" pay="0"/>
+									<ah m="2017-07" bal="7609" acc="OK" pay="0"/>
+									<ah m="2017-06" bal="7642" acc="OK" pay="0"/>
+									<ah m="2017-05" bal="7682" acc="OK" pay="0"/>
+									<ah m="2017-04" bal="7713" acc="OK" pay="0"/>
+									<ah m="2017-03" bal="7767" acc="OK" pay="0"/>
+									<ah m="2017-02" bal="7795" acc="OK" pay="0"/>
+									<ah m="2017-01" bal="7821" acc="OK" pay="0"/>
+									<ah m="2016-12" bal="8042" acc="AA" pay="1"/>
+									<ah m="2016-11" bal="7771" acc="OK" pay="0"/>
+									<ah m="2016-10" bal="7947" acc="OK" pay="0"/>
+									<ah m="2016-09" bal="7647" acc="OK" pay="0"/>
+									<ah m="2016-08" bal="7678" acc="OK" pay="0"/>
+									<ah m="2016-07" bal="7500" acc="UC" pay="U"/>
+								</acchistory>
+								<accdetails>
+									<joint>0</joint>
+									<status>N</status>
+									<dateupdated>2018-04-01</dateupdated>
+									<acctypecode>UL</acctypecode>
+									<accgroupid>1</accgroupid>
+									<currencycode>GBP</currencycode>
+									<balance>7292</balance>
+									<openbalance>7500</openbalance>
+									<paystartdate>2016-06-08</paystartdate>
+									<accstartdate>2016-06-08</accstartdate>
+									<regpayment>296</regpayment>
+									<repayperiod>60</repayperiod>
+									<repayfreqcode>M</repayfreqcode>
+									<lumppayment>0</lumppayment>
+								</accdetails>
+							</acc>
+							<acc>
+								<supplierdetails apacs="1">
+									<suppliername>Vanquis Bank Limited</suppliername>
+									<suppliertypecode>CC</suppliertypecode>
+								</supplierdetails>
+								<accholderdetails>
+									<name>MISS HAYLEY MCDOWALL</name>
+									<address current="1">22 SHORNCLIFFE ROAD;COVENTRY;;;;;; CV61GS</address>
+									<dob>1988-10-16</dob>
+									<statuscode>N</statuscode>
+									<startdate>2017-09-04</startdate>
+								</accholderdetails>
+								<acchistory>
+									<ah m="2018-04" bal="168" limit="250" acc="OK" pay="0" stmtbal="215" payamt="68" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2018-03" bal="171" limit="250" acc="OK" pay="0" stmtbal="221" payamt="56" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2018-02" bal="205" limit="250" acc="OK" pay="0" stmtbal="234" payamt="98" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2018-01" bal="214" limit="250" acc="OK" pay="0" stmtbal="283" payamt="67" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2017-12" bal="215" limit="250" acc="OK" pay="0" stmtbal="223" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2017-11" bal="249" limit="250" acc="OK" pay="0" stmtbal="230" payamt="50" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2017-10" bal="199" limit="250" acc="OK" pay="0" stmtbal="0" payamt="20" cashadvcount="3" cashadvtotal="110"/>
+									<ah m="2017-09" bal="248" limit="250" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+								</acchistory>
+								<accdetails>
+									<accno>01134000027809836</accno>
+									<accsuffix>0</accsuffix>
+									<joint>0</joint>
+									<status>N</status>
+									<dateupdated>2018-04-30</dateupdated>
+									<acctypecode>CC</acctypecode>
+									<accgroupid>3</accgroupid>
+									<currencycode>GBP</currencycode>
+									<balance>168</balance>
+									<limit>250</limit>
+									<openbalance>248</openbalance>
+									<paystartdate>2017-09-04</paystartdate>
+									<accstartdate>2017-09-04</accstartdate>
+									<repayfreqcode>M</repayfreqcode>
+									<lumppayment>0</lumppayment>
+									<promotionalrate>0</promotionalrate>
+									<statementbalance>215</statementbalance>
+								</accdetails>
+							</acc>
+							<acc>
+								<supplierdetails apacs="0">
+									<suppliertypecode>BK</suppliertypecode>
+								</supplierdetails>
+								<accholderdetails>
+									<name>MISS HAYLEY MCDOWALL</name>
+									<address current="1">22 SHORNCLIFFE ROAD;COVENTRY;WEST MIDLANDS;;;;; CV6 1GS</address>
+									<dob>1988-10-16</dob>
+									<statuscode>N</statuscode>
+									<startdate>2014-11-03</startdate>
+								</accholderdetails>
+								<acchistory>
+									<ah m="2018-03" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2018-02" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2018-01" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2017-12" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2017-11" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2017-10" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2017-09" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2017-08" bal="0" limit="0" acc="OK" pay="0"/>
+								</acchistory>
+								<accdetails>
+									<joint>0</joint>
+									<status>N</status>
+									<dateupdated>2018-03-31</dateupdated>
+									<acctypecode>CA</acctypecode>
+									<accgroupid>7</accgroupid>
+									<currencycode>GBP</currencycode>
+									<balance>0</balance>
+									<limit>0</limit>
+									<openbalance>0</openbalance>
+									<paystartdate>2014-11-03</paystartdate>
+									<accstartdate>2014-11-03</accstartdate>
+									<repayfreqcode>M</repayfreqcode>
+									<lumppayment>0</lumppayment>
+								</accdetails>
+							</acc>
+							<acc>
+								<supplierdetails apacs="0">
+									<suppliertypecode>BK</suppliertypecode>
+								</supplierdetails>
+								<accholderdetails>
+									<name>MISS HAYLEY MCDOWALL</name>
+									<address current="1">22 SHORNCLIFFE ROAD;COVENTRY;WEST MIDLANDS;;;;; CV6 1GS</address>
+									<dob>1988-10-16</dob>
+									<statuscode>N</statuscode>
+									<startdate>2011-03-08</startdate>
+									<enddate>2015-10-31</enddate>
+								</accholderdetails>
+								<default>
+									<defdate>2015-08-06</defdate>
+									<origdefbal>187</origdefbal>
+									<termbal>0</termbal>
+									<defsatdate>2015-10-31</defsatdate>
+								</default>
+								<acchistory>
+									<ah m="2015-10" bal="0" limit="0" acc="SF" pay="D"/>
+									<ah m="2015-09" bal="88" limit="0" acc="DF" pay="D"/>
+									<ah m="2015-08" bal="188" limit="0" acc="DF" pay="D"/>
+									<ah m="2015-07" bal="185" limit="0" acc="OK" pay="0"/>
+									<ah m="2015-06" bal="182" limit="0" acc="BB" pay="3"/>
+									<ah m="2015-05" bal="180" limit="0" acc="AA" pay="2"/>
+									<ah m="2015-04" bal="177" limit="2" acc="AA" pay="1"/>
+									<ah m="2015-03" bal="175" limit="88" acc="OK" pay="0"/>
+									<ah m="2015-02" bal="172" limit="174" acc="AR" pay="0"/>
+									<ah m="2015-01" bal="240" limit="260" acc="AR" pay="0"/>
+									<ah m="2014-12" bal="140" limit="0" acc="AA" pay="1"/>
+									<ah m="2014-11" bal="68" limit="0" acc="OK" pay="0"/>
+									<ah m="2014-10" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2014-09" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2014-08" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2014-07" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2014-06" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2014-05" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2014-04" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2014-03" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2014-02" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2014-01" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2013-12" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2013-11" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2013-10" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2013-09" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2013-08" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2013-07" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2013-06" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2013-05" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2013-04" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2013-03" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2013-02" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2013-01" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2012-12" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2012-11" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2012-10" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2012-09" bal="0" limit="0" acc="OK" pay="0"/>
+								</acchistory>
+								<accdetails>
+									<joint>0</joint>
+									<status>F</status>
+									<dateupdated>2015-10-31</dateupdated>
+									<acctypecode>CA</acctypecode>
+									<accgroupid>7</accgroupid>
+									<currencycode>GBP</currencycode>
+									<balance>0</balance>
+									<limit>0</limit>
+									<openbalance>0</openbalance>
+									<accstartdate>2011-03-08</accstartdate>
+									<accenddate>2015-10-31</accenddate>
+									<repayfreqcode>M</repayfreqcode>
+								</accdetails>
+							</acc>
+							<acc>
+								<supplierdetails apacs="1">
+									<suppliertypecode>CC</suppliertypecode>
+								</supplierdetails>
+								<accholderdetails>
+									<name>MISS HAYLEY MCDOWALL</name>
+									<address current="1">22 SHORNCLIFFE ROAD;;;COVENTRY WEST MIDLANDS;;;; CV6 1GS</address>
+									<dob>1988-10-16</dob>
+									<statuscode>N</statuscode>
+									<startdate>2014-07-14</startdate>
+									<enddate>2016-07-04</enddate>
+								</accholderdetails>
+								<acchistory>
+									<ah m="2016-07" bal="0" acc="ST" pay="0" stmtbal="4" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2016-06" bal="4" limit="200" acc="OK" pay="0" stmtbal="194" payamt="199" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2016-05" bal="193" limit="200" acc="OK" pay="0" stmtbal="204" payamt="20" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2016-04" bal="184" limit="200" acc="OK" pay="0" stmtbal="200" payamt="20" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2016-03" bal="180" limit="200" acc="OK" pay="0" stmtbal="215" payamt="20" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2016-02" bal="195" limit="200" acc="OK" pay="0" stmtbal="224" payamt="26" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2016-01" bal="236" limit="200" acc="AA" pay="1" stmtbal="207" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2015-12" bal="207" limit="200" acc="OK" pay="0" stmtbal="215" payamt="18" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2015-11" bal="196" limit="200" acc="OK" pay="0" stmtbal="191" payamt="50" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2015-10" bal="163" limit="200" acc="OK" pay="0" stmtbal="197" payamt="50" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2015-09" bal="149" limit="200" acc="OK" pay="0" stmtbal="210" payamt="50" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2015-08" bal="160" limit="200" acc="OK" pay="0" stmtbal="250" payamt="57" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2015-07" bal="262" limit="200" acc="AA" pay="2" stmtbal="221" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2015-06" bal="233" limit="200" acc="AA" pay="1" stmtbal="204" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2015-05" bal="204" limit="200" acc="OK" pay="0" stmtbal="204" payamt="20" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2015-04" bal="184" limit="200" acc="OK" pay="0" stmtbal="230" payamt="49" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2015-03" bal="193" limit="200" acc="OK" pay="0" stmtbal="198" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2015-02" bal="214" limit="200" acc="OK" pay="0" stmtbal="251" payamt="69" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2015-01" bal="193" limit="200" acc="OK" pay="0" stmtbal="222" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2014-12" bal="234" limit="200" acc="AA" pay="1" stmtbal="205" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2014-11" bal="205" limit="200" acc="OK" pay="0" stmtbal="214" payamt="26" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2014-10" bal="200" limit="200" acc="OK" pay="0" stmtbal="197" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2014-09" bal="197" limit="200" acc="OK" pay="0" stmtbal="197" payamt="5" cashadvcount="0" cashadvtotal="0"/>
+									<ah m="2014-08" bal="197" limit="200" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="1" cashadvtotal="50"/>
+									<ah m="2014-07" bal="196" limit="200" acc="OK" pay="0" stmtbal="0" payamt="0" cashadvcount="0" cashadvtotal="0"/>
+								</acchistory>
+								<accdetails>
+									<joint>0</joint>
+									<status>S</status>
+									<dateupdated>2016-07-31</dateupdated>
+									<acctypecode>CC</acctypecode>
+									<accgroupid>3</accgroupid>
+									<currencycode>GBP</currencycode>
+									<balance>0</balance>
+									<openbalance>196</openbalance>
+									<paystartdate>2014-07-14</paystartdate>
+									<accstartdate>2014-07-14</accstartdate>
+									<accenddate>2016-07-04</accenddate>
+									<repayfreqcode>M</repayfreqcode>
+									<lumppayment>0</lumppayment>
+									<promotionalrate>0</promotionalrate>
+									<statementbalance>4</statementbalance>
+								</accdetails>
+							</acc>
+							<acc>
+								<supplierdetails apacs="0">
+									<suppliertypecode>BK</suppliertypecode>
+								</supplierdetails>
+								<accholderdetails>
+									<name>MISS HAYLEY MCDOWALL</name>
+									<address current="1">;22 SHORNCLIFFE ROAD;;COVENTRY;;;; CV6 1GS</address>
+									<dob>1988-10-16</dob>
+									<statuscode>N</statuscode>
+									<startdate>2014-08-09</startdate>
+									<enddate>2016-07-09</enddate>
+								</accholderdetails>
+								<default>
+									<defdate>2016-05-10</defdate>
+									<origdefbal>404</origdefbal>
+									<termbal>0</termbal>
+									<defsatdate>2016-07-09</defsatdate>
+								</default>
+								<acchistory>
+									<ah m="2016-07" bal="0" limit="0" acc="SF" pay="D"/>
+									<ah m="2016-06" bal="404" limit="0" acc="DF" pay="D"/>
+									<ah m="2016-05" bal="404" limit="0" acc="DF" pay="D"/>
+									<ah m="2016-04" bal="404" limit="0" acc="BB" pay="6"/>
+									<ah m="2016-03" bal="409" limit="0" acc="BB" pay="6"/>
+									<ah m="2016-02" bal="398" limit="0" acc="BB" pay="5"/>
+									<ah m="2016-01" bal="303" limit="0" acc="AR" pay="4"/>
+									<ah m="2015-12" bal="208" limit="0" acc="BB" pay="3"/>
+									<ah m="2015-11" bal="119" limit="0" acc="AA" pay="2"/>
+									<ah m="2015-10" bal="107" limit="0" acc="AA" pay="1"/>
+									<ah m="2015-09" bal="93" limit="0" acc="OK" pay="0"/>
+									<ah m="2015-08" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2015-07" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2015-06" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2015-05" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2015-04" bal="31" limit="0" acc="OK" pay="0"/>
+									<ah m="2015-03" bal="14" limit="0" acc="OK" pay="0"/>
+									<ah m="2015-02" bal="6" limit="0" acc="OK" pay="0"/>
+									<ah m="2015-01" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2014-12" bal="7" limit="0" acc="OK" pay="0"/>
+									<ah m="2014-11" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2014-10" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2014-09" bal="0" limit="0" acc="OK" pay="0"/>
+								</acchistory>
+								<accdetails>
+									<joint>0</joint>
+									<status>F</status>
+									<dateupdated>2016-07-19</dateupdated>
+									<acctypecode>CA</acctypecode>
+									<accgroupid>7</accgroupid>
+									<currencycode>GBP</currencycode>
+									<balance>0</balance>
+									<limit>0</limit>
+									<openbalance>0</openbalance>
+									<accstartdate>2014-08-09</accstartdate>
+									<accenddate>2016-07-09</accenddate>
+									<repayfreqcode>M</repayfreqcode>
+								</accdetails>
+							</acc>
+							<acc>
+								<supplierdetails apacs="0">
+									<suppliertypecode>BK</suppliertypecode>
+								</supplierdetails>
+								<accholderdetails>
+									<name>MISS HAYLEY MCDOWALL</name>
+									<address current="1">;22 SHORNCLIFFE ROAD;;COVENTRY;;;; CV6 1GS</address>
+									<dob>1988-10-16</dob>
+									<statuscode>N</statuscode>
+									<startdate>2015-07-24</startdate>
+								</accholderdetails>
+								<acchistory>
+									<ah m="2018-04" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2018-03" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2018-02" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2018-01" bal="25" limit="0" acc="OK" pay="0"/>
+									<ah m="2017-12" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2017-11" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2017-10" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2017-09" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2017-08" bal="19" limit="0" acc="OK" pay="0"/>
+									<ah m="2017-07" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2017-06" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2017-05" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2017-04" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2017-03" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2017-02" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2017-01" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2016-12" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2016-11" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2016-10" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2016-09" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2016-08" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2016-07" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2016-06" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2016-05" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2016-04" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2016-03" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2016-02" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2016-01" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2015-12" bal="4" limit="0" acc="OK" pay="0"/>
+									<ah m="2015-11" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2015-10" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2015-09" bal="0" limit="0" acc="OK" pay="0"/>
+									<ah m="2015-08" bal="0" limit="0" acc="UC" pay="U"/>
+								</acchistory>
+								<accdetails>
+									<joint>0</joint>
+									<status>N</status>
+									<dateupdated>2018-04-14</dateupdated>
+									<acctypecode>CA</acctypecode>
+									<accgroupid>7</accgroupid>
+									<currencycode>GBP</currencycode>
+									<balance>0</balance>
+									<limit>0</limit>
+									<openbalance>0</openbalance>
+									<paystartdate>2015-07-24</paystartdate>
+									<accstartdate>2015-07-24</accstartdate>
+									<repayfreqcode>M</repayfreqcode>
+									<lumppayment>0</lumppayment>
+								</accdetails>
+							</acc>
+							<acc>
+								<supplierdetails apacs="0">
+									<suppliertypecode>DC</suppliertypecode>
+								</supplierdetails>
+								<accholderdetails>
+									<name>MISS HAYLEY MCDOWALL</name>
+									<address current="1">22 SHORNCLIFFE ROAD;;COVENTRY;;;;; CV6 1GS</address>
+									<dob>1988-10-16</dob>
+									<statuscode>N</statuscode>
+									<startdate>2013-09-01</startdate>
+									<enddate>2016-06-09</enddate>
+								</accholderdetails>
+								<default>
+									<defdate>2014-02-19</defdate>
+									<origdefbal>286</origdefbal>
+									<termbal>0</termbal>
+									<defsatdate>2016-06-09</defsatdate>
+								</default>
+								<acchistory>
+									<ah m="2016-05" bal="0" limit="0" acc="SF" pay="D"/>
+									<ah m="2016-04" bal="159" limit="0" acc="DF" pay="D"/>
+									<ah m="2016-03" bal="212" limit="0" acc="DF" pay="D"/>
+									<ah m="2016-02" bal="266" limit="0" acc="DF" pay="D"/>
+									<ah m="2016-01" bal="286" limit="0" acc=".." pay="D"/>
+									<ah m="2015-12" bal="286" limit="0" acc=".." pay="D"/>
+									<ah m="2015-11" bal="286" limit="0" acc=".." pay="D"/>
+									<ah m="2015-10" bal="286" limit="0" acc=".." pay="D"/>
+									<ah m="2015-09" bal="286" limit="0" acc=".." pay="D"/>
+									<ah m="2015-08" bal="286" limit="0" acc=".." pay="D"/>
+									<ah m="2015-07" bal="286" limit="0" acc="DF" pay="D"/>
+								</acchistory>
+								<accdetails>
+									<joint>0</joint>
+									<status>F</status>
+									<dateupdated>2016-05-14</dateupdated>
+									<acctypecode>MO</acctypecode>
+									<accgroupid>6</accgroupid>
+									<currencycode>GBP</currencycode>
+									<balance>0</balance>
+									<limit>0</limit>
+									<openbalance>286</openbalance>
+									<accstartdate>2013-09-01</accstartdate>
+									<accenddate>2016-06-09</accenddate>
+									<repayfreqcode>M</repayfreqcode>
+								</accdetails>
+							</acc>
+							<acc>
+								<supplierdetails apacs="0">
+									<suppliertypecode>TC</suppliertypecode>
+								</supplierdetails>
+								<accholderdetails>
+									<name>HAYLEY MCDOWALL</name>
+									<address current="1">22 SHORNCLIFFE RD;;COVENTRY; CV61GS</address>
+									<dob>1988-10-16</dob>
+									<statuscode>N</statuscode>
+									<startdate>2015-09-30</startdate>
+									<enddate>2017-09-21</enddate>
+								</accholderdetails>
+								<acchistory>
+									<ah m="2017-10" bal="0" acc="ST" pay="U"/>
+									<ah m="2017-09" bal="0" acc="OK" pay="0"/>
+									<ah m="2017-08" bal="0" acc="OK" pay="0"/>
+									<ah m="2017-07" bal="0" acc="OK" pay="0"/>
+									<ah m="2017-06" bal="0" acc="OK" pay="0"/>
+									<ah m="2017-05" bal="0" acc="OK" pay="0"/>
+									<ah m="2017-04" bal="0" acc="OK" pay="0"/>
+									<ah m="2017-03" bal="0" acc="OK" pay="0"/>
+									<ah m="2017-02" bal="0" acc="OK" pay="0"/>
+									<ah m="2017-01" bal="0" acc="OK" pay="0"/>
+									<ah m="2016-12" bal="0" acc="OK" pay="0"/>
+									<ah m="2016-11" bal="0" acc="OK" pay="0"/>
+									<ah m="2016-10" bal="51" acc="OK" pay="0"/>
+									<ah m="2016-09" bal="0" acc="OK" pay="0"/>
+									<ah m="2016-08" bal="0" acc="OK" pay="0"/>
+									<ah m="2016-07" bal="0" acc="OK" pay="0"/>
+									<ah m="2016-06" bal="0" acc="OK" pay="0"/>
+									<ah m="2016-05" bal="0" acc="OK" pay="0"/>
+									<ah m="2016-04" bal="0" acc="OK" pay="0"/>
+									<ah m="2016-03" bal="0" acc="OK" pay="0"/>
+									<ah m="2016-02" bal="0" acc="OK" pay="0"/>
+									<ah m="2016-01" bal="39" acc="OK" pay="0"/>
+									<ah m="2015-12" bal="0" acc="OK" pay="0"/>
+									<ah m="2015-11" bal="0" acc="OK" pay="0"/>
+									<ah m="2015-10" bal="0" acc="OK" pay="0"/>
+								</acchistory>
+								<accdetails>
+									<joint>0</joint>
+									<status>S</status>
+									<dateupdated>2017-10-01</dateupdated>
+									<acctypecode>TM</acctypecode>
+									<accgroupid>4</accgroupid>
+									<currencycode>GBP</currencycode>
+									<balance>0</balance>
+									<paystartdate>2015-09-30</paystartdate>
+									<accstartdate>2015-09-30</accstartdate>
+									<accenddate>2017-09-21</accenddate>
+									<repayfreqcode>M</repayfreqcode>
+									<lumppayment>0</lumppayment>
+								</accdetails>
+							</acc>
+							<acc>
+								<supplierdetails apacs="0">
+									<suppliertypecode>TC</suppliertypecode>
+								</supplierdetails>
+								<accholderdetails>
+									<name>MISS HAYLEY MCDOWALL</name>
+									<address current="1">22 SHORNCLIFFE ROAD;;COVENTRY;WEST MIDLANDS CV61GS</address>
+									<dob>1988-10-16</dob>
+									<statuscode>N</statuscode>
+									<startdate>2017-12-26</startdate>
+								</accholderdetails>
+								<acchistory>
+									<ah m="2018-05" bal="0" acc="OK" pay="0"/>
+									<ah m="2018-04" bal="0" acc="OK" pay="0"/>
+									<ah m="2018-03" bal="0" acc="OK" pay="0"/>
+									<ah m="2018-02" bal="0" acc="OK" pay="0"/>
+									<ah m="2018-01" bal="0" acc="OK" pay="0"/>
+								</acchistory>
+								<accdetails>
+									<joint>0</joint>
+									<status>N</status>
+									<dateupdated>2018-05-01</dateupdated>
+									<acctypecode>TM</acctypecode>
+									<accgroupid>4</accgroupid>
+									<currencycode>GBP</currencycode>
+									<balance>0</balance>
+									<paystartdate>2017-12-26</paystartdate>
+									<accstartdate>2017-12-26</accstartdate>
+									<repayfreqcode>M</repayfreqcode>
+									<lumppayment>0</lumppayment>
+								</accdetails>
+							</acc>
+							<acc>
+								<supplierdetails apacs="0">
+									<suppliertypecode>MO</suppliertypecode>
+								</supplierdetails>
+								<accholderdetails>
+									<name>MISS HAYLEY MCDOWALL</name>
+									<address current="1">22;SHORNCLIFFE ROAD;;COVENTRY;;;; CV6 1GS</address>
+									<dob>1988-10-16</dob>
+									<statuscode>N</statuscode>
+									<startdate>2018-02-22</startdate>
+								</accholderdetails>
+								<acchistory>
+									<ah m="2018-04" bal="126" limit="350" acc="OK" pay="0"/>
+									<ah m="2018-03" bal="105" limit="250" acc="OK" pay="0"/>
+								</acchistory>
+								<accdetails>
+									<joint>0</joint>
+									<status>N</status>
+									<dateupdated>2018-04-20</dateupdated>
+									<acctypecode>MO</acctypecode>
+									<accgroupid>6</accgroupid>
+									<currencycode>GBP</currencycode>
+									<balance>126</balance>
+									<limit>350</limit>
+									<openbalance>105</openbalance>
+									<paystartdate>2018-02-22</paystartdate>
+									<accstartdate>2018-02-22</accstartdate>
+									<regpayment>6</regpayment>
+									<repayfreqcode>M</repayfreqcode>
+									<lumppayment>0</lumppayment>
+								</accdetails>
+							</acc>
+							<acc>
+								<supplierdetails apacs="0">
+									<suppliertypecode>TC</suppliertypecode>
+								</supplierdetails>
+								<accholderdetails>
+									<name>HAYLEY MCDOWALL</name>
+									<address current="1">22 SHORNCLIFFE RD;;COVENTRY; CV61GS</address>
+									<dob>1988-10-16</dob>
+									<statuscode>N</statuscode>
+									<startdate>2015-09-30</startdate>
+									<enddate>2017-09-14</enddate>
+								</accholderdetails>
+								<acchistory>
+									<ah m="2017-10" bal="0" acc="ST" pay="U"/>
+									<ah m="2017-09" bal="60" acc="OK" pay="0"/>
+									<ah m="2017-08" bal="60" acc="OK" pay="0"/>
+									<ah m="2017-07" bal="90" acc="OK" pay="0"/>
+									<ah m="2017-06" bal="120" acc="OK" pay="0"/>
+									<ah m="2017-05" bal="150" acc="OK" pay="0"/>
+									<ah m="2017-04" bal="180" acc="OK" pay="0"/>
+									<ah m="2017-03" bal="210" acc="OK" pay="0"/>
+									<ah m="2017-02" bal="240" acc="OK" pay="0"/>
+									<ah m="2017-01" bal="270" acc="OK" pay="0"/>
+									<ah m="2016-12" bal="300" acc="OK" pay="0"/>
+									<ah m="2016-11" bal="330" acc="OK" pay="0"/>
+									<ah m="2016-10" bal="390" acc="OK" pay="0"/>
+									<ah m="2016-09" bal="420" acc="OK" pay="0"/>
+									<ah m="2016-08" bal="420" acc="OK" pay="0"/>
+									<ah m="2016-07" bal="450" acc="OK" pay="0"/>
+									<ah m="2016-06" bal="480" acc="OK" pay="0"/>
+									<ah m="2016-05" bal="510" acc="OK" pay="0"/>
+									<ah m="2016-04" bal="540" acc="OK" pay="0"/>
+									<ah m="2016-03" bal="570" acc="OK" pay="0"/>
+									<ah m="2016-02" bal="600" acc="OK" pay="0"/>
+									<ah m="2016-01" bal="630" acc="OK" pay="0"/>
+									<ah m="2015-12" bal="660" acc="OK" pay="0"/>
+									<ah m="2015-11" bal="690" acc="OK" pay="0"/>
+									<ah m="2015-10" bal="720" acc="UC" pay="U"/>
+								</acchistory>
+								<accdetails>
+									<joint>0</joint>
+									<status>S</status>
+									<dateupdated>2017-10-01</dateupdated>
+									<acctypecode>UL</acctypecode>
+									<accgroupid>1</accgroupid>
+									<currencycode>GBP</currencycode>
+									<balance>0</balance>
+									<openbalance>720</openbalance>
+									<paystartdate>2015-09-30</paystartdate>
+									<accstartdate>2015-09-30</accstartdate>
+									<accenddate>2017-09-14</accenddate>
+									<regpayment>30</regpayment>
+									<repayperiod>24</repayperiod>
+									<repayfreqcode>M</repayfreqcode>
+									<lumppayment>0</lumppayment>
+								</accdetails>
+							</acc>
+							<acc>
+								<supplierdetails apacs="0">
+									<suppliertypecode>TC</suppliertypecode>
+								</supplierdetails>
+								<accholderdetails>
+									<name>MISS HAYLEY MCDOWALL</name>
+									<address current="1">22 SHORNCLIFFE ROAD;;COVENTRY; CV61GS</address>
+									<dob>1988-10-16</dob>
+									<statuscode>N</statuscode>
+									<startdate>2017-08-28</startdate>
+								</accholderdetails>
+								<acchistory>
+									<ah m="2018-04" bal="0" acc="OK" pay="0"/>
+									<ah m="2018-03" bal="0" acc="OK" pay="0"/>
+									<ah m="2018-02" bal="0" acc="OK" pay="0"/>
+									<ah m="2018-01" bal="0" acc="OK" pay="0"/>
+									<ah m="2017-12" bal="0" acc="OK" pay="0"/>
+									<ah m="2017-11" bal="0" acc="OK" pay="0"/>
+									<ah m="2017-10" bal="0" acc="OK" pay="0"/>
+									<ah m="2017-09" bal="-50" acc="OK" pay="0"/>
+								</acchistory>
+								<accdetails>
+									<joint>0</joint>
+									<status>N</status>
+									<dateupdated>2018-04-01</dateupdated>
+									<acctypecode>TM</acctypecode>
+									<accgroupid>4</accgroupid>
+									<currencycode>GBP</currencycode>
+									<balance>0</balance>
+									<paystartdate>2017-08-28</paystartdate>
+									<accstartdate>2017-08-28</accstartdate>
+									<repayfreqcode>M</repayfreqcode>
+									<lumppayment>0</lumppayment>
+								</accdetails>
+							</acc>
+							<acc>
+								<supplierdetails apacs="0">
+									<suppliertypecode>FN</suppliertypecode>
+								</supplierdetails>
+								<accholderdetails>
+									<name>MISS HAYLEY MCDOWALL</name>
+									<address current="0" undeclaredaddresstype="2">225 TENNYSON ROAD;;COVENTRY; CV2 5JE</address>
+									<dob>1988-10-16</dob>
+									<statuscode>N</statuscode>
+									<startdate>2011-02-25</startdate>
+								</accholderdetails>
+								<default>
+									<defdate>2013-01-30</defdate>
+									<origdefbal>2496</origdefbal>
+								</default>
+								<acchistory>
+									<ah m="2018-04" bal="1604" acc="DF" pay="D"/>
+									<ah m="2018-03" bal="1644" acc="DF" pay="D"/>
+									<ah m="2018-02" bal="1684" acc="DF" pay="D"/>
+									<ah m="2018-01" bal="1724" acc="DF" pay="D"/>
+									<ah m="2017-12" bal="1764" acc="DF" pay="D"/>
+									<ah m="2017-11" bal="1804" acc="DF" pay="D"/>
+									<ah m="2017-10" bal="1844" acc="DF" pay="D"/>
+									<ah m="2017-09" bal="1924" acc="DF" pay="D"/>
+									<ah m="2017-08" bal="1924" acc="DF" pay="D"/>
+									<ah m="2017-07" bal="1964" acc="DF" pay="D"/>
+									<ah m="2017-06" bal="2004" acc="DF" pay="D"/>
+									<ah m="2017-05" bal="2044" acc="DF" pay="D"/>
+									<ah m="2017-04" bal="2084" acc="DF" pay="D"/>
+									<ah m="2017-03" bal="2124" acc="DF" pay="D"/>
+									<ah m="2017-02" bal="2124" acc="DF" pay="D"/>
+									<ah m="2017-01" bal="2124" acc="DF" pay="D"/>
+									<ah m="2016-12" bal="2124" acc="DF" pay="D"/>
+									<ah m="2016-11" bal="2124" acc="DF" pay="D"/>
+									<ah m="2016-10" bal="2124" acc="DF" pay="D"/>
+									<ah m="2016-09" bal="2164" acc="DF" pay="D"/>
+									<ah m="2016-08" bal="2204" acc="DF" pay="D"/>
+									<ah m="2016-07" bal="2244" acc="DF" pay="D"/>
+									<ah m="2016-06" bal="2324" acc="DF" pay="D"/>
+									<ah m="2016-05" bal="2324" acc="DF" pay="D"/>
+									<ah m="2016-04" bal="2324" acc="DF" pay="D"/>
+									<ah m="2016-03" bal="2364" acc="DF" pay="D"/>
+									<ah m="2016-02" bal="2404" acc="DF" pay="D"/>
+									<ah m="2016-01" bal="2444" acc="DF" pay="D"/>
+									<ah m="2015-12" bal="2444" acc="DF" pay="D"/>
+									<ah m="2015-11" bal="2444" acc="DF" pay="D"/>
+									<ah m="2015-10" bal="2444" acc="DF" pay="D"/>
+									<ah m="2015-09" bal="2484" acc="DF" pay="D"/>
+									<ah m="2015-08" bal="2504" acc="DF" pay="D"/>
+									<ah m="2015-07" bal="2504" acc="DF" pay="D"/>
+									<ah m="2015-06" bal="2504" acc="DF" pay="D"/>
+									<ah m="2015-05" bal="2504" acc="DF" pay="D"/>
+									<ah m="2015-04" bal="2504" acc="DF" pay="D"/>
+									<ah m="2015-03" bal="2504" acc="DF" pay="D"/>
+									<ah m="2015-02" bal="2504" acc="DF" pay="D"/>
+									<ah m="2015-01" bal="2504" acc="DF" pay="D"/>
+									<ah m="2014-12" bal="2504" acc="DF" pay="D"/>
+									<ah m="2014-11" bal="2504" acc="DF" pay="D"/>
+									<ah m="2014-10" bal="2504" acc="DF" pay="D"/>
+									<ah m="2014-09" bal="2524" acc="DF" pay="D"/>
+									<ah m="2014-08" bal="2544" acc="DF" pay="D"/>
+									<ah m="2014-07" bal="2564" acc="DF" pay="D"/>
+									<ah m="2014-06" bal="2584" acc="DF" pay="D"/>
+									<ah m="2014-05" bal="2604" acc="DF" pay="D"/>
+									<ah m="2014-04" bal="2624" acc="DF" pay="D"/>
+									<ah m="2014-03" bal="2624" acc="DF" pay="D"/>
+									<ah m="2014-02" bal="2644" acc="DF" pay="D"/>
+									<ah m="2014-01" bal="2644" acc="DF" pay="D"/>
+									<ah m="2013-12" bal="2234" acc="DF" pay="D"/>
+									<ah m="2013-11" bal="2234" acc="DF" pay="D"/>
+									<ah m="2013-10" bal="2234" acc="DF" pay="D"/>
+									<ah m="2013-09" bal="2283" acc="DF" pay="D"/>
+									<ah m="2013-08" bal="2331" acc="DF" pay="D"/>
+									<ah m="2013-07" bal="2380" acc="DF" pay="D"/>
+									<ah m="2013-06" bal="2402" acc="DF" pay="D"/>
+									<ah m="2013-05" bal="2402" acc="DF" pay="D"/>
+									<ah m="2013-04" bal="2425" acc="DF" pay="D"/>
+									<ah m="2013-03" bal="2425" acc="DF" pay="D"/>
+									<ah m="2013-02" bal="2473" acc="DF" pay="D"/>
+									<ah m="2013-01" bal="2496" acc="DF" pay="D"/>
+									<ah m="2012-12" bal="2210" acc="AR" pay="U"/>
+									<ah m="2012-11" bal="2232" acc="AR" pay="U"/>
+									<ah m="2012-10" bal="2232" acc="AR" pay="U"/>
+								</acchistory>
+								<accdetails>
+									<joint>1</joint>
+									<status>D</status>
+									<dateupdated>2018-04-01</dateupdated>
+									<acctypecode>UL</acctypecode>
+									<accgroupid>1</accgroupid>
+									<currencycode>GBP</currencycode>
+									<balance>1604</balance>
+									<openbalance>2462</openbalance>
+									<accstartdate>2011-02-25</accstartdate>
+									<regpayment>85</regpayment>
+									<repayperiod>58</repayperiod>
+									<repayfreqcode>M</repayfreqcode>
+								</accdetails>
+								<notice>
+									<type>D</type>
+									<refnum>BD2553457</refnum>
+									<dateraised>2018-05-11</dateraised>
+								</notice>
+							</acc>
+							<acc>
+								<supplierdetails apacs="0">
+									<suppliertypecode>UT</suppliertypecode>
+								</supplierdetails>
+								<accholderdetails>
+									<name>MISS HAYLEY MCDOWALL</name>
+									<address current="0" undeclaredaddresstype="2">225 TENNYSON ROAD;COVENTRY;; CV2 5JE</address>
+									<dob>1988-10-16</dob>
+									<statuscode>N</statuscode>
+									<startdate>2015-05-29</startdate>
+								</accholderdetails>
+								<delinquent>
+									<delinqdate>2017-11-01</delinqdate>
+									<delinqbal>1239</delinqbal>
+								</delinquent>
+								<acchistory>
+									<ah m="2018-04" bal="1598" acc="AR" pay="U"/>
+									<ah m="2018-03" bal="1598" acc="AR" pay="U"/>
+									<ah m="2018-02" bal="1234" acc="AR" pay="U"/>
+									<ah m="2018-01" bal="1239" acc="BB" pay="6"/>
+									<ah m="2017-12" bal="1239" acc="BB" pay="6"/>
+									<ah m="2017-11" bal="1239" acc="BB" pay="6"/>
+									<ah m="2017-10" bal="1239" acc="AR" pay="U"/>
+									<ah m="2017-09" bal="1239" acc="AR" pay="U"/>
+									<ah m="2017-08" bal="1239" acc="AR" pay="U"/>
+									<ah m="2017-07" bal="1239" acc="AR" pay="U"/>
+								</acchistory>
+								<accdetails>
+									<joint>0</joint>
+									<status>Q</status>
+									<dateupdated>2018-04-01</dateupdated>
+									<acctypecode>UT</acctypecode>
+									<accgroupid>5</accgroupid>
+									<currencycode>GBP</currencycode>
+									<balance>1598</balance>
+									<accstartdate>2015-05-29</accstartdate>
+									<regpayment>51</regpayment>
+									<repayfreqcode>P</repayfreqcode>
+								</accdetails>
+							</acc>
+							<acc>
+								<supplierdetails apacs="0">
+									<suppliertypecode>TC</suppliertypecode>
+								</supplierdetails>
+								<accholderdetails>
+									<name>MISS HAYLEY MCDOWALL</name>
+									<address current="0" undeclaredaddresstype="2">225 TENNYSON ROAD;;COVENTRY;WEST MIDLANDS CV25JE</address>
+									<dob>1988-10-16</dob>
+									<statuscode>N</statuscode>
+									<startdate>2013-09-20</startdate>
+									<enddate>2016-06-15</enddate>
+								</accholderdetails>
+								<default>
+									<defdate>2016-06-05</defdate>
+									<origdefbal>270</origdefbal>
+									<termbal>0</termbal>
+									<defsatdate>2016-06-15</defsatdate>
+								</default>
+								<acchistory>
+									<ah m="2016-07" bal="0" acc="SF" pay="D"/>
+									<ah m="2016-06" bal="270" acc="DF" pay="D"/>
+									<ah m="2016-05" bal="270" acc="BB" pay="5"/>
+									<ah m="2016-04" bal="126" acc="BB" pay="4"/>
+									<ah m="2016-03" bal="123" acc="BB" pay="3"/>
+									<ah m="2016-02" bal="119" acc="AA" pay="2"/>
+									<ah m="2016-01" bal="100" acc="AA" pay="1"/>
+									<ah m="2015-12" bal="0" acc="OK" pay="0"/>
+									<ah m="2015-11" bal="0" acc="OK" pay="0"/>
+									<ah m="2015-10" bal="0" acc="OK" pay="0"/>
+									<ah m="2015-09" bal="0" acc="OK" pay="0"/>
+									<ah m="2015-08" bal="0" acc="OK" pay="0"/>
+									<ah m="2015-07" bal="0" acc="OK" pay="0"/>
+									<ah m="2015-06" bal="181" acc="AA" pay="1"/>
+									<ah m="2015-05" bal="0" acc="OK" pay="0"/>
+									<ah m="2015-04" bal="0" acc="OK" pay="0"/>
+									<ah m="2015-03" bal="0" acc="OK" pay="0"/>
+									<ah m="2015-02" bal="179" acc="AA" pay="1"/>
+									<ah m="2015-01" bal="0" acc="OK" pay="0"/>
+									<ah m="2014-12" bal="0" acc="OK" pay="0"/>
+									<ah m="2014-11" bal="0" acc="OK" pay="0"/>
+									<ah m="2014-10" bal="0" acc="OK" pay="0"/>
+									<ah m="2014-09" bal="0" acc="OK" pay="0"/>
+									<ah m="2014-08" bal="0" acc="OK" pay="0"/>
+									<ah m="2014-07" bal="-8" acc="OK" pay="0"/>
+									<ah m="2014-06" bal="0" acc="OK" pay="0"/>
+									<ah m="2014-05" bal="0" acc="OK" pay="0"/>
+									<ah m="2014-04" bal="0" acc="OK" pay="0"/>
+									<ah m="2014-03" bal="8" acc="OK" pay="0"/>
+									<ah m="2014-02" bal="0" acc="OK" pay="0"/>
+									<ah m="2014-01" bal="30" acc="OK" pay="0"/>
+									<ah m="2013-12" bal="0" acc="OK" pay="0"/>
+									<ah m="2013-11" bal="18" acc="OK" pay="0"/>
+									<ah m="2013-10" bal="89" acc="UC" pay="U"/>
+								</acchistory>
+								<accdetails>
+									<joint>0</joint>
+									<status>F</status>
+									<dateupdated>2016-07-01</dateupdated>
+									<acctypecode>TM</acctypecode>
+									<accgroupid>4</accgroupid>
+									<currencycode>GBP</currencycode>
+									<balance>0</balance>
+									<accstartdate>2013-09-20</accstartdate>
+									<accenddate>2016-06-15</accenddate>
+									<repayfreqcode>M</repayfreqcode>
+								</accdetails>
+							</acc>
+							<acc>
+								<supplierdetails apacs="0">
+									<suppliertypecode>TC</suppliertypecode>
+								</supplierdetails>
+								<accholderdetails>
+									<name>MISS HAYLEY MCDOWALL</name>
+									<address current="0" undeclaredaddresstype="2">225 TENNYSON ROAD;COVENTRY;;;;;; CV2 5JE</address>
+									<dob>1988-10-16</dob>
+									<statuscode>N</statuscode>
+									<startdate>2008-05-05</startdate>
+									<enddate>2013-11-04</enddate>
+								</accholderdetails>
+								<default>
+									<defdate>2012-12-12</defdate>
+									<origdefbal>287</origdefbal>
+									<termbal>0</termbal>
+									<defsatdate>2013-11-04</defsatdate>
+								</default>
+								<acchistory>
+									<ah m="2013-11" bal="0" acc="SF" pay="D"/>
+									<ah m="2013-10" bal="40" acc="DF" pay="D"/>
+									<ah m="2013-09" bal="68" acc="DF" pay="D"/>
+									<ah m="2013-08" bal="30" acc="DF" pay="D"/>
+									<ah m="2013-07" bal="32" acc="DF" pay="D"/>
+									<ah m="2013-06" bal="3" acc="DF" pay="D"/>
+									<ah m="2013-05" bal="14" acc="DF" pay="D"/>
+									<ah m="2013-04" bal="26" acc="DF" pay="D"/>
+									<ah m="2013-03" bal="39" acc="DF" pay="D"/>
+									<ah m="2013-02" bal="287" acc=".." pay="D"/>
+									<ah m="2013-01" bal="287" acc="DF" pay="D"/>
+									<ah m="2012-12" bal="287" acc="BB" pay="5"/>
+									<ah m="2012-11" bal="287" acc="BB" pay="4"/>
+									<ah m="2012-10" bal="287" acc="BB" pay="3"/>
+								</acchistory>
+								<accdetails>
+									<joint>0</joint>
+									<status>F</status>
+									<dateupdated>2013-11-04</dateupdated>
+									<acctypecode>TM</acctypecode>
+									<accgroupid>4</accgroupid>
+									<currencycode>GBP</currencycode>
+									<balance>0</balance>
+									<openbalance>74</openbalance>
+									<accstartdate>2008-05-05</accstartdate>
+									<accenddate>2013-11-04</accenddate>
+									<repayfreqcode>M</repayfreqcode>
+								</accdetails>
+							</acc>
+							<acc>
+								<supplierdetails apacs="0">
+									<suppliertypecode>DC</suppliertypecode>
+								</supplierdetails>
+								<accholderdetails>
+									<name>MISS HAYLEY MCDOWALL</name>
+									<address current="0" undeclaredaddresstype="2">225 TENNYSON ROAD;COVENTRY;;;;;; CV2 5JE</address>
+									<dob>1988-10-16</dob>
+									<statuscode>N</statuscode>
+									<startdate>2011-11-30</startdate>
+									<enddate>2013-09-16</enddate>
+								</accholderdetails>
+								<default>
+									<defdate>2013-01-23</defdate>
+									<origdefbal>206</origdefbal>
+									<termbal>0</termbal>
+									<defsatdate>2013-09-16</defsatdate>
+								</default>
+								<acchistory>
+									<ah m="2013-09" bal="0" limit="0" acc="SF" pay="D"/>
+									<ah m="2013-08" bal="46" limit="0" acc="DF" pay="D"/>
+									<ah m="2013-07" bal="92" limit="0" acc="DF" pay="D"/>
+									<ah m="2013-06" bal="138" limit="0" acc="DF" pay="D"/>
+									<ah m="2013-05" bal="173" limit="0" acc="DF" pay="D"/>
+									<ah m="2013-04" bal="208" limit="0" acc="DF" pay="D"/>
+									<ah m="2013-03" bal="416" limit="0" acc=".." pay="D"/>
+									<ah m="2013-02" bal="416" limit="0" acc="DF" pay="D"/>
+								</acchistory>
+								<accdetails>
+									<joint>0</joint>
+									<status>F</status>
+									<dateupdated>2013-09-16</dateupdated>
+									<acctypecode>MO</acctypecode>
+									<accgroupid>6</accgroupid>
+									<currencycode>GBP</currencycode>
+									<balance>0</balance>
+									<limit>0</limit>
+									<openbalance>206</openbalance>
+									<accstartdate>2011-11-30</accstartdate>
+									<accenddate>2013-09-16</accenddate>
+									<repayfreqcode>M</repayfreqcode>
+								</accdetails>
+							</acc>
+							<acc>
+								<supplierdetails apacs="0">
+									<suppliertypecode>BK</suppliertypecode>
+								</supplierdetails>
+								<accholderdetails>
+									<name>MISS HAYLEY MCDOWALL</name>
+									<address current="0" undeclaredaddresstype="2">225 TENNYSON ROAD;COVENTRY;;;;;; CV2 5JE</address>
+									<dob>1988-10-16</dob>
+									<statuscode>N</statuscode>
+									<startdate>2008-09-09</startdate>
+									<enddate>2012-10-31</enddate>
+								</accholderdetails>
+								<acchistory>
+									<ah m="2012-11" bal="0" limit="0" acc="ST" pay="0"/>
+									<ah m="2012-10" bal="1175" limit="500" acc="AR" pay="3"/>
+								</acchistory>
+								<accdetails>
+									<joint>0</joint>
+									<status>S</status>
+									<dateupdated>2012-11-07</dateupdated>
+									<acctypecode>CA</acctypecode>
+									<accgroupid>7</accgroupid>
+									<currencycode>GBP</currencycode>
+									<balance>0</balance>
+									<limit>0</limit>
+									<openbalance>0</openbalance>
+									<accstartdate>2008-09-09</accstartdate>
+									<accenddate>2012-10-31</accenddate>
+									<repayfreqcode>M</repayfreqcode>
+								</accdetails>
+							</acc>
+						</accs>
+						<demographics2006>
+							<cameouk>05G</cameouk>
+							<cameoincome>63</cameoincome>
+							<cameoinvestor>43</cameoinvestor>
+							<cameoproperty>13</cameoproperty>
+							<cameofing>5</cameofing>
+							<property>
+								<ctaxband>C</ctaxband>
+								<priceindex>55</priceindex>
+							</property>
+						</demographics2006>
+						<tpd>
+							<decision total="1">
+								<alertindividual>
+									<name>DANIEL LUKE CLOVER</name>
+								</alertindividual>
+								<creditscore>
+									<score class="2">482</score>
+								</creditscore>
+								<summary>
+									<judgments>
+										<total36m>1</total36m>
+										<total>2</total>
+										<totalactiveamount>854</totalactiveamount>
+									</judgments>
+									<bais>
+										<currentlyinsolvent>0</currentlyinsolvent>
+										<restricted>0</restricted>
+									</bais>
+									<share>
+										<worsepaystatus12m>D</worsepaystatus12m>
+										<worsepaystatus24m>D</worsepaystatus24m>
+										<totaldefaults>9</totaldefaults>
+										<totaldefaults12m>1</totaldefaults12m>
+										<totalsettleddefaults>3</totalsettleddefaults>
+										<totaldefaultsamount>3383</totaldefaultsamount>
+										<totalwriteoffs>0</totalwriteoffs>
+										<totalwriteoffsamount>0</totalwriteoffsamount>
+										<totaldelinqs>1</totaldelinqs>
+										<totaldelinqsamount>1598</totaldelinqsamount>
+									</share>
+								</summary>
+							</decision>
+							<review total="0"/>
+							<hho thinfile="0" total="0"/>
+						</tpd>
+						<oias total="1">
+							<oia searchid="{A1B367C9-D815-4E41-BEFC-862151B507EC}" oiaid="1" reporttype="3" ageflag="0">
+								<summary>
+									<searches>
+										<totalsearches3months>0</totalsearches3months>
+										<totalsearches12months>0</totalsearches12months>
+										<totalhomecreditsearches3months>0</totalhomecreditsearches3months>
+									</searches>
+									<judgments>
+										<totalactive>1</totalactive>
+										<totalsatisfied>1</totalsatisfied>
+										<totalactiveamount>854</totalactiveamount>
+									</judgments>
+									<bais>
+										<totaldischarged>0</totaldischarged>
+										<currentlyinsolvent>0</currentlyinsolvent>
+										<restricted>0</restricted>
+									</bais>
+									<notices>
+										<nocflag>0</nocflag>
+										<totaldisputes>0</totaldisputes>
+									</notices>
+									<links>
+										<totalundecaddressessearched>0</totalundecaddressessearched>
+										<totalundecaddressesunsearched>1</totalundecaddressesunsearched>
+										<totalundecaliases>0</totalundecaliases>
+									</links>
+									<cifas>
+										<totalcifas>0</totalcifas>
+									</cifas>
+									<share>
+										<totalaccounts>18</totalaccounts>
+										<totalactiveaccs>9</totalactiveaccs>
+										<totalsettledaccs>6</totalsettledaccs>
+										<totalopened6months>0</totalopened6months>
+										<worsepaystatus12months>D</worsepaystatus12months>
+										<worsepaystatus36months>D</worsepaystatus36months>
+										<totaldelinqs12months>1</totaldelinqs12months>
+										<totaldefaults12months>1</totaldefaults12months>
+										<totaldefaults36months>3</totaldefaults36months>
+									</share>
+									<bds>
+										<totalvaluecashadvances12months>171</totalvaluecashadvances12months>
+										<totalvaluecashadvances36months>281</totalvaluecashadvances36months>
+									</bds>
+									<indebt>
+										<totalbalancesactive>5184</totalbalancesactive>
+										<totalbalancesrevolve>777</totalbalancesrevolve>
+										<balancelimitratiorevolve>388</balancelimitratiorevolve>
+										<totallimitsrevolve>200</totallimitsrevolve>
+										<totalbalancesloans>1825</totalbalancesloans>
+									</indebt>
+									<summaryaddress>
+										<pafvalid>1</pafvalid>
+										<rollingroll>0</rollingroll>
+										<messagecode>1</messagecode>
+									</summaryaddress>
+									<address messagecode="1" id="1" current="1">225 TENNYSON ROAD, COVENTRY CV2 5JE</address>
+								</summary>
+								<creditscore>
+									<score class="2">9999</score>
+								</creditscore>
+								<addressconfs>
+									<addressconf pafvalid="1">
+										<address current="1">225 TENNYSON ROAD, COVENTRY CV2 5JE</address>
+										<resident matchtype="IM" currentname="0" declaredalias="0">
+											<name>DANIEL LUKE CLOVER</name>
+											<duration>P119M</duration>
+											<startdate>2008-10-28</startdate>
+											<ervalid>1</ervalid>
+											<erhistory>
+												<startdate>2016-07-01</startdate>
+												<optout>1</optout>
+												<rollingroll>0</rollingroll>
+											</erhistory>
+											<erhistory>
+												<startdate>2008-10-28</startdate>
+												<enddate>2016-07-01</enddate>
+												<optout>0</optout>
+												<rollingroll>0</rollingroll>
+											</erhistory>
+										</resident>
+										<resident matchtype="HM" currentname="0" declaredalias="0">
+											<name>HAYLEY MCDOWALL</name>
+											<duration>P87M</duration>
+											<startdate>2008-10-28</startdate>
+											<enddate>2016-01-01</enddate>
+											<ervalid>3</ervalid>
+											<erhistory>
+												<startdate>2008-10-28</startdate>
+												<enddate>2016-01-01</enddate>
+												<optout>0</optout>
+												<rollingroll>0</rollingroll>
+											</erhistory>
+										</resident>
+										<resident matchtype="HM" currentname="0" declaredalias="0">
+											<name>SIMON CHARLES ROWSON</name>
+											<duration>P67M</duration>
+											<startdate>2002-10-28</startdate>
+											<enddate>2008-05-01</enddate>
+											<ervalid>3</ervalid>
+											<erhistory>
+												<startdate>2002-10-28</startdate>
+												<enddate>2008-05-01</enddate>
+												<optout>0</optout>
+												<rollingroll>0</rollingroll>
+											</erhistory>
+										</resident>
+										<resident matchtype="HM" currentname="0" declaredalias="0">
+											<name>JANINE C TURNER</name>
+											<duration>P12M</duration>
+											<startdate>1998-10-28</startdate>
+											<enddate>1999-10-28</enddate>
+											<ervalid>3</ervalid>
+											<erhistory>
+												<startdate>1998-10-28</startdate>
+												<enddate>1999-10-28</enddate>
+												<optout>0</optout>
+												<rollingroll>0</rollingroll>
+											</erhistory>
+										</resident>
+										<resident matchtype="HM" currentname="0" declaredalias="0">
+											<name>DEAN R TURNER</name>
+											<duration>P48M</duration>
+											<startdate>1998-10-28</startdate>
+											<enddate>2002-10-28</enddate>
+											<ervalid>3</ervalid>
+											<erhistory>
+												<startdate>1998-10-28</startdate>
+												<enddate>2002-10-28</enddate>
+												<optout>0</optout>
+												<rollingroll>0</rollingroll>
+											</erhistory>
+										</resident>
+										<resident matchtype="HM" currentname="0" declaredalias="0">
+											<name>PENELOPE SPITTLE</name>
+											<duration>P60M</duration>
+											<startdate>1993-10-28</startdate>
+											<enddate>1998-10-28</enddate>
+											<ervalid>3</ervalid>
+											<erhistory>
+												<startdate>1993-10-28</startdate>
+												<enddate>1998-10-28</enddate>
+												<optout>0</optout>
+												<rollingroll>0</rollingroll>
+											</erhistory>
+										</resident>
+									</addressconf>
+								</addressconfs>
+								<judgments>
+									<judgment>
+										<name>MR DANIEL CLOVER</name>
+										<address current="1">225 TENNYSON ROAD, COVENTRY, CV2 5JE</address>
+										<courtname>COUNTY COURT BUSINESS CENTRE</courtname>
+										<courttype>0</courttype>
+										<casenumber>C7AW6J8Q</casenumber>
+										<status>JG</status>
+										<amount>854</amount>
+										<judgmentdate>2017-01-06</judgmentdate>
+									</judgment>
+									<judgment>
+										<name>MR DANIEL CLOVER</name>
+										<address current="1">225 TENNYSON ROAD, COVENTRY, CV2 5JE</address>
+										<courtname>COUNTY COURT BUSINESS CENTRE</courtname>
+										<courttype>0</courttype>
+										<casenumber>B3FW05F5</casenumber>
+										<status>SS</status>
+										<amount>428</amount>
+										<judgmentdate>2015-07-29</judgmentdate>
+										<datesatisfied>2017-01-31</datesatisfied>
+									</judgment>
+								</judgments>
+								<bais/>
+								<addresslinks>
+									<addresses>
+										<address addressid="1" declared="1" current="1">225 TENNYSON ROAD, COVENTRY, CV2 5JE</address>
+										<address addressid="2" declared="0" navlinkid="{447106C3-07C0-48F7-89F9-BABA08083851}" current="0" undeclaredaddresstype="5">97 RICHMOND STREET, COVENTRY, CV2 4JA</address>
+									</addresses>
+									<links>
+										<link from="2" to="1">
+											<creationdate>2008-03-08</creationdate>
+											<lastconfdate>2008-03-08</lastconfdate>
+											<supplierdetails>
+												<suppliertypecode>BS</suppliertypecode>
+											</supplierdetails>
+										</link>
+									</links>
+								</addresslinks>
+								<aliaslinks/>
+								<cifas/>
+								<accs>
+									<acc>
+										<supplierdetails apacs="0">
+											<suppliertypecode>FN</suppliertypecode>
+											<suppliername>String</suppliername>
+										</supplierdetails>
+										<accholderdetails>
+											<name>MR DANIEL CLOVER</name>
+											<address current="1">225 TENNYSON ROAD;;COVENTRY; CV2 5JE</address>
+											<dob>1988-05-30</dob>
+											<statuscode>N</statuscode>
+											<startdate>2011-02-25</startdate>
+										</accholderdetails>
+										<default>
+											<defdate>1957-08-13</defdate>
+											<origdefbal>0</origdefbal>
+											<termbal>0</termbal>
+											<defsatdate>1957-08-13</defsatdate>
+											<repodate>1957-08-13</repodate>
+										</default>
+										<acchistory>
+											<ah m="2018-04" bal="1604" acc="DF" pay="D"/>
+										</acchistory>
+										<accdetails>
+											<joint>1</joint>
+											<status>D</status>
+											<dateupdated>2018-04-01</dateupdated>
+											<acctypecode>UL</acctypecode>
+											<accgroupid>1</accgroupid>
+											<currencycode>GBP</currencycode>
+											<balance>1604</balance>
+											<openbalance>2462</openbalance>
+											<accstartdate>2011-02-25</accstartdate>
+											<regpayment>85</regpayment>
+											<repayperiod>58</repayperiod>
+											<repayfreqcode>M</repayfreqcode>
+										</accdetails>
+									</acc>
+									</accs>
+								<demographics2006>
+									<cameouk>05G</cameouk>
+									<cameoincome>63</cameoincome>
+									<cameoinvestor>43</cameoinvestor>
+									<cameoproperty>13</cameoproperty>
+									<cameofing>5</cameofing>
+									<property>
+										<ctaxband>C</ctaxband>
+										<priceindex>55</priceindex>
+									</property>
+								</demographics2006>
+							</oia>
+						</oias>
+					</applicant>
+				</creditreport>
+				<BSB searchid="{46BD6ECD-1785-43F2-B654-95B37B28CD79}" linktype="0">
+					<OVERALL>
+						<MAIN B="0"/>
+						<CUGMEMB K="F" L="1"/>
+					</OVERALL>
+					<APPLICANT app_no="1">
+						<APPLSUMMARY>
+							<MAIN W="P1" X="29"/>
+							<COUNTS Z="1" AB="0" BB="1" CB="0" DB="1" EB="21" FB="9" GB="1"/>
+							<SCOTDEBT OQB="{ND}"/>
+							<NOTICES HB="1" IB="0"/>
+							<SUB_BLOCKS C="2" D="3" E="4" F="1"/>
+							<ALIAS_NO UPB="0" VPB="{ND}" WPB="0"/>
+							<ASSOC_NO DD="0" ED="1" AC="1"/>
+							<ALERTSUMM PB="0" QB="1" RB="{ND}" SB="{ND}" TB="482" UB="{ND}"/>
+							<HHOSUMM BC="{ND}" RGB="{ND}"/>
+							<TPD INB="{ND}" JNB="{ND}" KNB="{ND}" LNB="{ND}"/>
+							<OCCUPANCY AD="1"/>
+							<DECEASED LQB="0" FCC="{ND}" GCC="{ND}" HCC="{ND}" ICC="{ND}"/>
+							<IMPAIRED MQB="1" LJC="1"/>
+							<ACTIVITY JCC="{ND}" KCC="{ND}" LCC="{ND}"/>
+							<ADVERSE MCC="{ND}" HHC="{ND}"/>
+						</APPLSUMMARY>
+						<ID>
+							<APPL DC="{ND}" EC="{ND}" FC="{ND}" GC="I1" HC="IM" IC="{ND}"/>
+						</ID>
+						<PUBLIC>
+							<BOTH FD="1" GD="1" HD="854" ID="0" JD="{ND}" QDB="{ND}" TQB="854" KD="0" CQB="{ND}" LD="1" DQB="{ND}" MD="854" ND="20" OD="2017-01-06" PD="0" QD="0" RD="{ND}" SD="0"/>
+							<AMOUNT TD="0" VD="0"/>
+							<TIME WD="20" XD="{ND}" YD="{ND}" ZD="854" AE="20" BE="854" CE="20"/>
+							<NUMRECENCY IE="0" JE="0" KE="1" LE="0" ME="0"/>
+							<OTHER NE="20" OE="C" PE="0" QE="0" RE="{ND}"/>
+						</PUBLIC>
+						<ER>
+							<ADDRESS WE="{ND}" XE="29" YE="263" ZE="{ND}" AF="{ND}" BF="B" CF="{ND}" DF="{ND}" KQB="{ND}" WQB="1"/>
+							<OCCUPANCY EF="4" GF="0"/>
+							<NOTICES HF="0" IF="0"/>
+							<TURNOVER NCC="{ND}"/>
+						</ER>
+						<SCORE>
+							<MAIN JF="472" KF="102,203,112,108" MF="102" NF="203" OF="112" PF="108" QF="{ND}" SF="{ND}" TF="{ND}" UF="{ND}" VF="{ND}" WF="{ND}" YF="{ND}" ZF="{ND}" AG="{ND}" CG="{ND}"/>
+						</SCORE>
+						<FULL>
+							<HHO FG="20" GG="91" HG="8" IG="4" JG="10620" KG="0"/>
+							<BOTH LG="{ND}" MG="D" NG="D" OG="D" SPB="D" RDB="D" HDC="{ND}" IDC="{ND}"/>
+							<ALERT PG="{ND}"/>
+							<EVENT RG="0" TG="1" OGC="{ND}" PGC="{ND}" QGC="{ND}"/>
+							<TIME UG="0" VG="0" WG="2" XG="3" ZG="0" AH="0" BH="2" CH="2" JDC="{ND}" KDC="{ND}" GH="7" HH="30" IH="{ND}" JH="0" SDB="0"/>
+							<OPENVAL KH="{ND}" LH="{ND}" MH="126" NH="{ND}" OH="{ND}" NDC="{ND}" ARB="{ND}" CRB="{ND}" DRB="10494" TDB="{ND}" RRB="{ND}"/>
+							<WORSTLESS2 PH="0" QH="6" RH="6" SH="{ND}"/>
+							<WORSTLESS1 UH="0" VH="6" WH="5" XH="{ND}"/>
+							<WORSTUNCLASS ZH="0" AI="0" BI="0" CI="{ND}"/>
+							<WORST0 EI="0" FI="6" GI="5" HI="{ND}"/>
+							<WORST3PLUS EJ="2" FJ="2"/>
+							<CODE1 HJ="{ND}" TJ="{ND}"/>
+							<CODE2 ZJ="{ND}" FK="{ND}" RGC="{ND}"/>
+							<CODEDM LJ="{ND}" MJ="{ND}" NJ="{ND}" OJ="{ND}"/>
+							<TOTAL1 LK="{ND}" WK="{ND}"/>
+							<TOTAL2 CL="{ND}" IL="{ND}" SGC="{ND}"/>
+							<TOTALDM PK="{ND}" JCH="{ND}" QK="{ND}" RK="{ND}"/>
+							<ACCOUNT OL="5" PL="0" QL="1" RL="{ND}" SL="{ND}" TL="{ND}" UL="5" VL="{ND}" WL="{ND}" XL="0"/>
+							<VALUE DM="8896" EM="{ND}" FM="0" GM="{ND}" HM="{ND}" IM="{ND}" JM="{ND}" KM="{ND}" LM="{ND}" MM="{ND}"/>
+							<ACCOUNTACT KHC="{ND}" LHC="{ND}" MHC="0" NHC="{ND}" OHC="{ND}"/>
+							<PERCUNSEC WZB="83" XZB="0" YZB="0" ZZB="0" MBC="0"/>
+							<DEBT SM="10620" TM="10620" UM="10494" VM="{ND}" WM="99" XM="99" MRB="0" POB="0"/>
+							<DEBTLIMIT ZM="{ND}" AN="140" BN="{ND}" ODC="{ND}" PDC="{ND}" QDC="{ND}"/>
+							<DEBTXMTGREPAY HN="3034" IN="{ND}" JN="4282" KN="{ND}" LN="{ND}" SDC="{ND}" TDC="{ND}"/>
+							<DEBTMISC MN="0" NN="{ND}" ON="381" PN="346" QN="8896" SJC="381"/>
+							<PAYMENTS RN="438" SN="{ND}" TN="438" UN="462"/>
+							<DUE WN="5" XN="5" YN="5"/>
+							<PAYSTAT3PLUS PO="{ND}" QO="2" RO="{ND}" SO="6"/>
+							<WORSTPAY FRB="D" BQ="D" CQ="D" DQ="D" EQ="D" FQ="{ND}"/>
+							<WORSTXHOME GRB="D" IRB="D"/>
+							<WORSTXUTIL NJC="D" OJC="D"/>
+							<COMPANIES HQ="8" IQ="8"/>
+							<OPENED412MNTH BRB="0"/>
+							<OPENED12MNTH JQ="{ND}" KQ="{ND}" LQ="{ND}" MQ="{ND}"/>
+							<OPENED12PLUSMNTH ERB="{ND}"/>
+							<OPENED24MNTH NQ="{ND}" OQ="{ND}" PQ="0" QQ="{ND}" RQ="{ND}"/>
+							<OPENEDSETTLD ZQ="{ND}" AR="{ND}" BR="{ND}"/>
+							<INDEBT NMB="1" OMB="1" RMB="0" SMB="1" TMB="1" WMB="35" RUB="0" XMB="1"/>
+							<NOTICES DG="1" EG="0"/>
+							<CURRENT JRB="0" KRB="7" HRB="D"/>
+							<SETTLED0 LRB="2" YQB="2" ZQB="0"/>
+							<RUNAWAYS FYB="0" GYB="0"/>
+							<ALLHCSTATUS HYB="{ND}" MYB="{ND}" NYB="{ND}" OYB="{ND}"/>
+							<ACTHCSTATUS RYB="{ND}"/>
+							<XHOMECREDIT SYB="D"/>
+							<HCBALANCES TYB="{ND}" WYB="{ND}" XYB="{ND}" YYB="{ND}"/>
+							<LNOPENED UDC="{ND}" VDC="{ND}" WDC="{ND}" XDC="{ND}"/>
+							<MTGOPENED YDC="{ND}" ZDC="{ND}" AEC="{ND}" BEC="{ND}"/>
+							<CCOPENED CEC="{ND}" DEC="{ND}" EEC="{ND}" FEC="{ND}"/>
+							<TELCOOPENED GEC="{ND}" HEC="{ND}" IEC="{ND}" JEC="{ND}"/>
+							<UTILOPENED KEC="{ND}" LEC="{ND}" MEC="{ND}" NEC="{ND}"/>
+							<HOMESHOPOPENED OEC="{ND}" PEC="{ND}" QEC="{ND}" REC="{ND}"/>
+							<BKOPENED SEC="{ND}" TEC="{ND}" UEC="{ND}" VEC="{ND}"/>
+							<MISCOPENED WEC="{ND}" XEC="{ND}" YEC="{ND}" ZEC="{ND}"/>
+							<INSOPENED AFC="{ND}" BFC="{ND}" CFC="{ND}" DFC="{ND}"/>
+							<HCNEWACCS WWB="0" XWB="0" YWB="0" ZWB="0"/>
+							<LNSETTLED EFC="{ND}" FFC="{ND}" GFC="{ND}" HFC="{ND}"/>
+							<MTGSETTLED IFC="{ND}" JFC="{ND}" KFC="{ND}" LFC="{ND}"/>
+							<CCSETTLED MFC="{ND}" NFC="{ND}" OFC="{ND}" PFC="{ND}"/>
+							<TELCOSETTLED QFC="{ND}" RFC="{ND}" SFC="{ND}" TFC="{ND}"/>
+							<UTILSETTLED UFC="{ND}" VFC="{ND}" WFC="{ND}" XFC="{ND}"/>
+							<HOMESHOPSETTLED YFC="{ND}" ZFC="{ND}" AGC="{ND}" BGC="{ND}"/>
+							<BKSETTLED CGC="{ND}" DGC="{ND}" EGC="{ND}" FGC="{ND}"/>
+							<MISCSETTLED GGC="{ND}" HGC="{ND}" IGC="{ND}" JGC="{ND}"/>
+							<INSSETTLED KGC="{ND}" LGC="{ND}" MGC="{ND}" NGC="{ND}"/>
+							<HCSETTLED BZB="0" CZB="0" DZB="0" FZB="0" NAC="{ND}" OAC="0"/>
+							<REVOLVECRED MZB="{ND}" RIC="{ND}" SIC="{ND}" TIC="{ND}"/>
+							<HCWRSTSETT PAC="{ND}" QAC="{ND}"/>
+							<HCWRSTACT WAC="{ND}"/>
+							<HCPAY RAC="{ND}"/>
+							<HCAGE SAC="{ND}" TAC="{ND}"/>
+							<HCBALCHG UAC="{ND}" VAC="{ND}" XAC="{ND}" YAC="{ND}"/>
+							<WORSTPAYLOAN ABC="D" BBC="D" CBC="D"/>
+							<WORSTPAYCC DBC="{ND}" EBC="{ND}" FBC="{ND}"/>
+							<WORSTPAYMTG GBC="{ND}" HBC="{ND}" IBC="{ND}"/>
+							<WORSTPAYTELECO PCC="{ND}" QCC="{ND}" RCC="{ND}"/>
+							<WORSTPAYUTIL SCC="{ND}" TCC="{ND}" UCC="{ND}"/>
+							<WORSTPAYHOMESHOP VCC="{ND}" WCC="{ND}" XCC="{ND}"/>
+							<WORSTPAYBNK JBC="0" KBC="0" LBC="0"/>
+							<WORSTPAYMISC YCC="{ND}" ZCC="{ND}" ADC="{ND}"/>
+							<WORSTPAYINS BDC="{ND}" CDC="{ND}" DDC="{ND}"/>
+							<WORSTPAYHOMECR EDC="{ND}" FDC="{ND}" GDC="{ND}"/>
+							<OPENED12MTHXHISTORIC ZBC="{ND}"/>
+							<OPENED24MTHXHISTORIC ACC="0"/>
+							<DUEXHISTORIC BCC="8" CCC="8" DCC="8"/>
+							<BOTHXHISTORIC UBC="{ND}" VBC="6"/>
+							<WORSTPAYXHISTORIC WBC="U" XBC="6" YBC="6"/>
+							<UTILISATION OCC="{ND}" PHC="{ND}" QHC="{ND}" RHC="{ND}" SHC="{ND}" THC="{ND}"/>
+							<HIGHEST UHC="{ND}" VHC="{ND}"/>
+							<PAYDAY XHC="0" ZHC="0" LIC="0"/>
+							<PAYDAYOPENED BIC="0" CIC="0" DIC="0" MIC="{ND}" EJC="{ND}"/>
+							<PAYDAYWORST IIC="{ND}" JIC="{ND}" KIC="{ND}"/>
+							<PAYDAYVALUE YHC="{ND}" AIC="{ND}" EIC="{ND}" FIC="{ND}" GIC="{ND}" FJC="{ND}" GJC="{ND}" HJC="{ND}" PJC="{ND}"/>
+							<PAYDAYSETTLED HIC="0" JJC="0" KJC="{ND}" IJC="{ND}"/>
+						</FULL>
+						<PARTIAL>
+							<BOTH MR="6" NR="0" OR="7" PR="8" QR="{ND}" RR="1604" SR="3202" TR="27" UT="5" UR="0" VR="0" TPB="2" TGC="{ND}" UGC="{ND}"/>
+							<ALERT WR="0"/>
+							<ALL XR="N" YR="0" ZR="3" ZS="1" AT="0" BT="0" CT="2" DT="0" ET="2" FT="2" GT="0" IT="0"/>
+							<VALDEFAULT AS="1604" BS="{ND}" CS="{ND}" DS="0" ES="{ND}" FS="0" GS="0" HS="{ND}" JS="{ND}"/>
+							<DOB PS="1988-10-16"/>
+							<NOTICES WS="1"/>
+							<MISC XS="5" HZB="{ND}" MJC="27"/>
+							<NUMDEFBAL PT="0" QT="0" RT="0" ST="0" TT="1"/>
+							<ENTERDEF PP="0" QP="0" RP="0" SP="3" TP="4"/>
+							<SETTLED UP="6" GAC="{ND}" HAC="{ND}" IAC="{ND}" JAC="{ND}" VP="0"/>
+							<RECOVERED GZB="{ND}" NZB="{ND}" ZP="{ND}" UZB="{ND}" VZB="{ND}" AQ="1239"/>
+							<HCDELQ AAC="0" BAC="{ND}" CAC="{ND}"/>
+							<HCVALDEF KAC="{ND}" LAC="{ND}" MAC="{ND}"/>
+						</PARTIAL>
+						<OWN>
+							<TYPE AU="1" BU="1" CU="0" DU="0" EU="0" FU="0" GU="0" HU="168" KZB="168" IU="{ND}" JU="{ND}" KU="{ND}" LU="{ND}"/>
+							<TIME MU="12" NU="{ND}" PU="{ND}" QU="{ND}" QZB="{ND}"/>
+							<OPENED WW="{ND}" XW="{ND}" YW="168" ZW="{ND}" AX="{ND}" WGC="{ND}"/>
+							<TOTDF MX="{ND}"/>
+							<NUMDF BY="0"/>
+							<TOTNONDF QY="{ND}"/>
+							<NUMNONDF FZ="0"/>
+							<VALSECTOR LZ="168" MZ="{ND}" NZ="{ND}"/>
+							<DEBT UZ="250" VZ="{ND}"/>
+							<INDEBT YMB="0" ZMB="0" CNB="0" DNB="0" ENB="0" FNB="0" GNB="1" EQB="67"/>
+							<NOTICES TGB="1" UGB="0"/>
+							<WORST JQB="0" TZB="{ND}"/>
+							<HCDELQ DAC="0" EAC="{ND}" FAC="{ND}"/>
+						</OWN>
+						<CIFAS>
+							<MAIN CAB="0" DAB="0" EAB="{ND}" FAB="{ND}" GAB="{ND}" HAB="{ND}" IAB="{ND}" JAB="{ND}" KAB="{ND}" LAB="{ND}" MAB="{ND}" NAB="{ND}" OAB="{ND}"/>
+							<NOTICES KBB="0"/>
+						</CIFAS>
+						<CAMEO2006>
+							<MAIN GCB="{ND}" HCB="{ND}" TRB="{ND}" ICB="{ND}" FWB="{ND}" KCB="{ND}" URB="6" MOB="{ND}" VRB="4" NOB="13" OOB="{ND}" WRB="5" CSB="{ND}"/>
+							<AGE DSB="{ND}" ESB="{ND}"/>
+							<TENURE FSB="{ND}" GSB="11"/>
+							<HHCOMP HSB="{ND}" LCB="{ND}"/>
+							<ECONOMIC MCB="{ND}" NCB="{ND}"/>
+							<LIFESTAGE OCB="{ND}" PCB="{ND}"/>
+							<SOCIAL DDB="{ND}" EDB="{ND}" FDB="{ND}" GDB="{ND}"/>
+							<OCCUPATION QCB="{ND}" RCB="{ND}"/>
+							<MORTGAGE XCB="{ND}" YCB="{ND}"/>
+							<SHAREHLD SCB="{ND}" TCB="{ND}" UCB="{ND}" VCB="{ND}" WCB="{ND}"/>
+							<UNEMPLOY ZCB="{ND}" ADB="{ND}" BDB="{ND}" CDB="{ND}" HDB="{ND}" IDB="{ND}"/>
+							<UNEMPRATE HWB="{ND}" IWB="{ND}" JWB="{ND}" KWB="{ND}" LWB="{ND}"/>
+							<PROPERTY JDB="{ND}" KDB="{ND}" LDB="{ND}" MDB="{ND}" NDB="{ND}" ODB="{ND}" ISB="{ND}" GWB="{ND}" JSB="{ND}" KSB="{ND}" LSB="{ND}" MSB="{ND}" NSB="{ND}" OSB="{ND}" PSB="{ND}" QSB="{ND}" RSB="{ND}" SSB="{ND}" TSB="{ND}" USB="{ND}"/>
+							<INTERNATIONAL PDB="{ND}"/>
+						</CAMEO2006>
+						<SEARCH>
+							<MAIN UDB="0"/>
+							<DEBTCOLL KEB="0" LEB="0" MEB="0" NEB="0"/>
+							<ALLCA YGC="0" QEB="0" REB="0" SEB="0" TEB="0" UEB="0"/>
+							<OWNCA VEB="0" WEB="0" XEB="0" YEB="0" ZEB="0"/>
+							<HOMECREDIT MFB="0" NFB="0" OFB="0" PFB="0" QFB="0" RFB="0"/>
+							<TELECOM XGC="{ND}"/>
+							<PAYDAY DJC="0" NIC="0" OIC="0" PIC="0" QIC="0"/>
+						</SEARCH>
+						<ADDRLINK>
+							<ADDMAIN VGB="1" WGB="1" ZAC="0" NBC="{ND}"/>
+							<ADDRAW XGB="{ND}" YGB="{ND}" QOB="{ND}" ZGB="{ND}" AHB="{ND}" ROB="{ND}" BHB="{ND}" CHB="{ND}" SOB="{ND}" DHB="{ND}" EHB="{ND}" TOB="{ND}" FHB="{ND}" GHB="{ND}" JBB="{ND}"/>
+							<ADDTIME HHB="{ND}" IHB="{ND}" JHB="{ND}" KHB="{ND}" LHB="{ND}"/>
+							<NOTICES XPB="0" YPB="0"/>
+						</ADDRLINK>
+						<ASSLINK>
+							<MAIN VOB="1" WOB="0" XOB="1"/>
+							<DECASSRAW YOB="{ND}" ZOB="{ND}" APB="{ND}" BPB="{ND}" CPB="{ND}" DPB="{ND}" EPB="{ND}" FPB="{ND}" GPB="{ND}" HPB="{ND}"/>
+							<UNDECASSRAW IPB="MR DANIEL LUKE CLOVER" JPB="{436833A2-05CB-4D08-B4F5-52DB5BBA7DA7}" KPB="{ND}" LPB="{ND}" MPB="{ND}" NPB="{ND}" OPB="{ND}" PPB="{ND}" QPB="{ND}" RPB="{ND}"/>
+							<NOTICES ZPB="0" AQB="0"/>
+						</ASSLINK>
+						<GEORISK2006>
+							<MAIN VSB="1" WSB="CV6 1GS" XSB="43128" YSB="28085" ZSB="CV6 1" ATB="CV6" BTB="CV" CTB="1"/>
+							<CCJ DTB="0.12" ETB="72" FTB="-0.03" NWB="7558" GTB="178" OWB="737.37" HTB="140" PWB="46.5" ITB="101" MWB="112" JTB="98" KTB="0" LTB="0" MTB="96" NTB="354" OTB="0" PTB="101" QTB="103"/>
+							<INSOLVENCY RTB="0" STB="0" TTB="0"/>
+							<FAMILY UTB="75" VTB="136" WTB="107" XTB="133" YTB="150" ZTB="92" AUB="167" BUB="0"/>
+							<HH DUB="92" EUB="65" FUB="119" GUB="145" HUB="221" IUB="0" JUB="0" KUB="0"/>
+							<HIST LUB="105" MUB="162" NUB="0" OUB="0" PUB="0" QUB="139"/>
+							<GD1 SUB="5"/>
+							<PARTSHARE TUB="54" UUB="51" VUB="57" WUB="55" XUB="54" YUB="52" ZUB="42" AVB="41"/>
+							<FULLSHARE CVB="0" DVB="114" EVB="115" FVB="129" GVB="106" HVB="125" IVB="100" JVB="165" KVB="134" LVB="101" MVB="0" NVB="0" OVB="30" PVB="140" QVB="97" RVB="144" SVB="96" TVB="63" UVB="94" VVB="184" WVB="138" XVB="80" YVB="132" ZVB="214" AWB="129" BWB="167" CWB="99" DWB="179"/>
+							<SEARCH EWB="123"/>
+						</GEORISK2006>
+						<ICH>
+							<PUBLIC FQB="1" GQB="0" NQB="0"/>
+							<SHARE HQB="{ND}" IQB="1"/>
+						</ICH>
+						<ACD>
+							<BALANCE AYB="0"/>
+							<PAYMENTS BYB="0" CYB="{ND}" DYB="{ND}" EYB="{ND}" FHC="{ND}" GHC="{ND}" IYB="{ND}" JYB="{ND}" KYB="{ND}" LYB="{ND}" WHC="0"/>
+							<CASH_ADV_NUM PYB="0" QYB="0" ZGC="{ND}" AHC="{ND}"/>
+							<CASH_ADV_VAL UYB="{ND}" VYB="{ND}" BHC="{ND}" CHC="{ND}"/>
+							<CASH_ADV_BAL ZYB="{ND}" AZB="{ND}" DHC="{ND}" EHC="{ND}"/>
+							<CASH_ADV_BALTIME EZB="{ND}"/>
+							<CASH_ADV_PAY IZB="{ND}"/>
+						</ACD>
+						<SPA>
+							<APPLSUMMARY>
+								<COUNTS Z="2" AB="0" BB="2" CB="1" DB="1" EB="18" FB="9" GB="1"/>
+								<NOTICES HB="0" IB="0"/>
+							</APPLSUMMARY>
+							<PUBLIC>
+								<BOTH FD="1" GD="2" HD="854" ID="1" JD="428" QDB="{ND}" TQB="1282" KD="0" CQB="{ND}" LD="1" DQB="{ND}" MD="854" ND="20" OD="2017-01-06" PD="0" QD="0" RD="{ND}" SD="0"/>
+								<AMOUNT TD="0" VD="0"/>
+								<TIME WD="20" XD="428" YD="38" ZD="428" AE="38" BE="854" CE="20"/>
+								<NUMRECENCY IE="0" JE="0" KE="1" LE="1" ME="0"/>
+							</PUBLIC>
+							<FULL>
+								<BOTH LG="{ND}" MG="D" NG="D" OG="D" SPB="D" RDB="D" HDC="{ND}" IDC="{ND}"/>
+								<WORSTPAY FRB="D" BQ="D" CQ="D" DQ="D" EQ="D" FQ="{ND}"/>
+								<BOTHXHISTORIC UBC="{ND}" VBC="D"/>
+								<WORSTPAYXHISTORIC WBC="U" XBC="D" YBC="D"/>
+							</FULL>
+							<PARTIAL>
+								<BOTH MR="3" NR="0" OR="9" PR="10" QR="{ND}" RR="3383" SR="4981" TR="12" UT="4" UR="0" VR="1" TPB="3" TGC="{ND}" UGC="{ND}"/>
+								<ALERT WR="0"/>
+							</PARTIAL>
+							<OWN>
+								<TYPE AU="0" BU="0" CU="0" DU="0" EU="0" FU="0" GU="0" HU="{ND}" KZB="{ND}" IU="{ND}" JU="{ND}" KU="{ND}" LU="{ND}"/>
+							</OWN>
+						</SPA>
+						<OIA>
+							<OIAUNDEC>
+								<APPLSUMMARY>
+									<COUNTS Z="2" AB="0" BB="2" CB="1" DB="1" EB="18" FB="9" GB="1"/>
+									<SCOTDEBT OQB="{ND}"/>
+									<NOTICES HB="{ND}" IB="0"/>
+									<ALIAS_NO UPB="0" VPB="{ND}" WPB="0"/>
+								</APPLSUMMARY>
+								<PUBLIC>
+									<BOTH FD="1" GD="2" HD="854" ID="1" JD="428" QDB="{ND}" TQB="1282" KD="0" CQB="{ND}" LD="1" DQB="{ND}" MD="854" ND="20" OD="2017-01-06" PD="0" QD="0" RD="{ND}" SD="0"/>
+									<AMOUNT TD="0" VD="0"/>
+									<TIME WD="20" XD="428" YD="38" ZD="428" AE="38" BE="854" CE="20"/>
+									<NUMRECENCY IE="0" JE="0" KE="1" LE="1" ME="0"/>
+									<OTHER NE="20" OE="C" PE="0" QE="0" RE="{ND}"/>
+								</PUBLIC>
+								<ER>
+									<OIA UMB="P1" VMB="P1"/>
+								</ER>
+								<FULL>
+									<HHO FG="18" GG="168" HG="9" IG="1" JG="5184" KG="0"/>
+									<BOTH LG="{ND}" MG="D" NG="D" OG="D" SPB="D" RDB="D" HDC="{ND}" IDC="{ND}"/>
+									<ALERT PG="{ND}"/>
+									<EVENT RG="1" TG="1" OGC="{ND}" PGC="{ND}" QGC="{ND}"/>
+									<TIME UG="0" VG="0" WG="0" XG="1" ZG="0" AH="0" BH="0" CH="2" JDC="{ND}" KDC="{ND}" GH="19" HH="16" IH="{ND}" JH="0" SDB="0"/>
+									<OPENVAL KH="{ND}" LH="{ND}" MH="{ND}" NH="{ND}" OH="{ND}" NDC="{ND}" ARB="{ND}" CRB="{ND}" DRB="5184" TDB="{ND}" RRB="{ND}"/>
+									<WORSTLESS2 PH="0" QH="2" RH="2" SH="{ND}"/>
+									<WORSTLESS1 UH="0" VH="2" WH="1" XH="{ND}"/>
+									<WORSTUNCLASS ZH="0" AI="0" BI="0" CI="{ND}"/>
+									<WORST0 EI="0" FI="2" GI="1" HI="{ND}"/>
+									<WORST3PLUS EJ="7" FJ="7"/>
+									<CODE1 HJ="{ND}" TJ="{ND}"/>
+									<CODE2 ZJ="{ND}" FK="{ND}" RGC="{ND}"/>
+									<CODEDM LJ="{ND}" MJ="{ND}" NJ="{ND}" OJ="{ND}"/>
+									<TOTAL1 LK="{ND}" WK="{ND}"/>
+									<TOTAL2 CL="{ND}" IL="{ND}" SGC="{ND}"/>
+									<TOTALDM PK="{ND}" JCH="{ND}" QK="{ND}" RK="{ND}"/>
+									<ACCOUNT OL="5" PL="0" QL="0" RL="{ND}" SL="{ND}" TL="{ND}" UL="2" VL="{ND}" WL="{ND}" XL="5"/>
+									<VALUE DM="1825" EM="{ND}" FM="777" GM="{ND}" HM="{ND}" IM="{ND}" JM="{ND}" KM="{ND}" LM="{ND}" MM="129"/>
+									<ACCOUNTACT KHC="{ND}" LHC="{ND}" MHC="2" NHC="{ND}" OHC="{ND}"/>
+									<PERCUNSEC WZB="35" XZB="14" YZB="0" ZZB="27" MBC="2"/>
+									<DEBT SM="5184" TM="5184" UM="5055" VM="{ND}" WM="103" XM="100" MRB="0" POB="0"/>
+									<DEBTLIMIT ZM="{ND}" AN="100" BN="100" ODC="{ND}" PDC="{ND}" QDC="{ND}"/>
+									<DEBTXMTGREPAY HN="2592" IN="{ND}" JN="2511" KN="2573" LN="{ND}" SDC="{ND}" TDC="{ND}"/>
+									<DEBTMISC MN="{ND}" NN="200" ON="85" PN="0" QN="1825" SJC="85"/>
+									<PAYMENTS RN="171" SN="{ND}" TN="171" UN="171"/>
+									<DUE WN="4" XN="4" YN="4"/>
+									<PAYSTAT3PLUS PO="{ND}" QO="7" RO="{ND}" SO="10"/>
+									<WORSTPAY FRB="D" BQ="D" CQ="D" DQ="D" EQ="D" FQ="{ND}"/>
+									<WORSTXHOME GRB="D" IRB="D"/>
+									<WORSTXUTIL NJC="D" OJC="D"/>
+									<COMPANIES HQ="9" IQ="9"/>
+									<OPENED412MNTH BRB="{ND}"/>
+									<OPENED12MNTH JQ="{ND}" KQ="{ND}" LQ="{ND}" MQ="{ND}"/>
+									<OPENED12PLUSMNTH ERB="{ND}"/>
+									<OPENED24MNTH NQ="{ND}" OQ="{ND}" PQ="0" QQ="{ND}" RQ="{ND}"/>
+									<OPENEDSETTLD ZQ="{ND}" AR="{ND}" BR="{ND}"/>
+									<NOTICES DG="0" EG="0"/>
+									<CURRENT JRB="0" KRB="{ND}" HRB="D"/>
+									<SETTLED0 LRB="6" YQB="2" ZQB="0"/>
+									<RUNAWAYS FYB="0" GYB="0"/>
+									<ALLHCSTATUS HYB="D" MYB="{ND}" NYB="D" OYB="D"/>
+									<ACTHCSTATUS RYB="D"/>
+									<XHOMECREDIT SYB="D"/>
+									<HCBALANCES TYB="{ND}" WYB="{ND}" XYB="100" YYB="100"/>
+									<LNOPENED UDC="{ND}" VDC="{ND}" WDC="{ND}" XDC="{ND}"/>
+									<MTGOPENED YDC="{ND}" ZDC="{ND}" AEC="{ND}" BEC="{ND}"/>
+									<CCOPENED CEC="{ND}" DEC="{ND}" EEC="{ND}" FEC="{ND}"/>
+									<TELCOOPENED GEC="{ND}" HEC="{ND}" IEC="{ND}" JEC="{ND}"/>
+									<UTILOPENED KEC="{ND}" LEC="{ND}" MEC="{ND}" NEC="{ND}"/>
+									<HOMESHOPOPENED OEC="{ND}" PEC="{ND}" QEC="{ND}" REC="{ND}"/>
+									<BKOPENED SEC="{ND}" TEC="{ND}" UEC="{ND}" VEC="{ND}"/>
+									<MISCOPENED WEC="{ND}" XEC="{ND}" YEC="{ND}" ZEC="{ND}"/>
+									<INSOPENED AFC="{ND}" BFC="{ND}" CFC="{ND}" DFC="{ND}"/>
+									<HCNEWACCS WWB="0" XWB="0" YWB="0" ZWB="0"/>
+									<LNSETTLED EFC="{ND}" FFC="{ND}" GFC="{ND}" HFC="{ND}"/>
+									<MTGSETTLED IFC="{ND}" JFC="{ND}" KFC="{ND}" LFC="{ND}"/>
+									<CCSETTLED MFC="{ND}" NFC="{ND}" OFC="{ND}" PFC="{ND}"/>
+									<TELCOSETTLED QFC="{ND}" RFC="{ND}" SFC="{ND}" TFC="{ND}"/>
+									<UTILSETTLED UFC="{ND}" VFC="{ND}" WFC="{ND}" XFC="{ND}"/>
+									<HOMESHOPSETTLED YFC="{ND}" ZFC="{ND}" AGC="{ND}" BGC="{ND}"/>
+									<BKSETTLED CGC="{ND}" DGC="{ND}" EGC="{ND}" FGC="{ND}"/>
+									<MISCSETTLED GGC="{ND}" HGC="{ND}" IGC="{ND}" JGC="{ND}"/>
+									<INSSETTLED KGC="{ND}" LGC="{ND}" MGC="{ND}" NGC="{ND}"/>
+									<HCSETTLED BZB="0" CZB="0" DZB="0" FZB="0" NAC="45" OAC="0"/>
+									<REVOLVECRED MZB="388" RIC="{ND}" SIC="287" TIC="389"/>
+									<HCWRSTSETT PAC="{ND}" QAC="{ND}"/>
+									<HCWRSTACT WAC="{ND}"/>
+									<HCPAY RAC="35"/>
+									<HCAGE SAC="83" TAC="83"/>
+									<HCBALCHG UAC="{ND}" VAC="{ND}" XAC="{ND}" YAC="{ND}"/>
+									<WORSTPAYLOAN ABC="D" BBC="D" CBC="D"/>
+									<WORSTPAYCC DBC="D" EBC="D" FBC="D"/>
+									<WORSTPAYMTG GBC="{ND}" HBC="{ND}" IBC="{ND}"/>
+									<WORSTPAYTELECO PCC="{ND}" QCC="{ND}" RCC="{ND}"/>
+									<WORSTPAYUTIL SCC="{ND}" TCC="{ND}" UCC="{ND}"/>
+									<WORSTPAYHOMESHOP VCC="{ND}" WCC="{ND}" XCC="{ND}"/>
+									<WORSTPAYBNK JBC="0" KBC="0" LBC="0"/>
+									<WORSTPAYMISC YCC="{ND}" ZCC="{ND}" ADC="{ND}"/>
+									<WORSTPAYINS BDC="{ND}" CDC="{ND}" DDC="{ND}"/>
+									<WORSTPAYHOMECR EDC="{ND}" FDC="{ND}" GDC="D"/>
+									<OPENED12MTHXHISTORIC ZBC="{ND}"/>
+									<OPENED24MTHXHISTORIC ACC="0"/>
+									<DUEXHISTORIC BCC="{ND}" CCC="{ND}" DCC="{ND}"/>
+									<BOTHXHISTORIC UBC="{ND}" VBC="D"/>
+									<WORSTPAYXHISTORIC WBC="U" XBC="D" YBC="D"/>
+									<UTILISATION OCC="{ND}" PHC="{ND}" QHC="{ND}" RHC="{ND}" SHC="1" THC="1"/>
+									<HIGHEST UHC="{ND}" VHC="{ND}"/>
+									<PAYDAY XHC="3" ZHC="0" LIC="1"/>
+									<PAYDAYOPENED BIC="0" CIC="0" DIC="0" MIC="71" EJC="72"/>
+									<PAYDAYWORST IIC="D" JIC="{ND}" KIC="{ND}"/>
+									<PAYDAYVALUE YHC="425" AIC="{ND}" EIC="{ND}" FIC="{ND}" GIC="{ND}" FJC="{ND}" GJC="{ND}" HJC="{ND}" PJC="0"/>
+									<PAYDAYSETTLED HIC="2" JJC="0" KJC="{ND}" IJC="71"/>
+								</FULL>
+								<PARTIAL>
+									<BOTH MR="3" NR="0" OR="9" PR="10" QR="{ND}" RR="3383" SR="4981" TR="12" UT="4" UR="0" VR="1" TPB="3" TGC="{ND}" UGC="{ND}"/>
+									<ALERT WR="0"/>
+									<ALL XR="N" YR="1" ZR="3" ZS="3" AT="0" BT="2" CT="2" DT="0" ET="0" FT="1" GT="0" IT="1"/>
+									<VALDEFAULT AS="1825" BS="{ND}" CS="574" DS="855" ES="{ND}" FS="{ND}" GS="0" HS="{ND}" JS="129"/>
+									<NOTICES WS="0"/>
+									<MISC XS="4" HZB="73" MJC="12"/>
+									<NUMDEFBAL PT="1" QT="0" RT="2" ST="0" TT="3"/>
+									<ENTERDEF PP="0" QP="1" RP="0" SP="2" TP="6"/>
+									<SETTLED UP="3" GAC="{ND}" HAC="{ND}" IAC="{ND}" JAC="{ND}" VP="0"/>
+									<RECOVERED GZB="{ND}" NZB="{ND}" ZP="{ND}" UZB="{ND}" VZB="{ND}" AQ="1239"/>
+									<HCDELQ AAC="1" BAC="129" CAC="73"/>
+									<HCVALDEF KAC="0" LAC="0" MAC="0"/>
+								</PARTIAL>
+								<OWN>
+									<TYPE AU="0" BU="0" CU="0" DU="0" EU="0" FU="0" GU="0" HU="{ND}" KZB="{ND}" IU="{ND}" JU="{ND}" KU="{ND}" LU="{ND}"/>
+									<TIME MU="{ND}" NU="{ND}" PU="{ND}" QU="{ND}" QZB="{ND}"/>
+									<OPENED WW="{ND}" XW="{ND}" YW="{ND}" ZW="{ND}" AX="{ND}" WGC="{ND}"/>
+									<TOTDF MX="{ND}"/>
+									<NUMDF BY="0"/>
+									<TOTNONDF QY="{ND}"/>
+									<NUMNONDF FZ="0"/>
+									<VALSECTOR LZ="{ND}" MZ="{ND}" NZ="{ND}"/>
+									<DEBT UZ="{ND}" VZ="{ND}"/>
+									<NOTICES TGB="0" UGB="0"/>
+									<WORST JQB="{ND}" TZB="{ND}"/>
+									<HCDELQ DAC="0" EAC="{ND}" FAC="{ND}"/>
+								</OWN>
+								<CIFAS>
+									<MAIN CAB="0" DAB="0" EAB="{ND}" FAB="{ND}" GAB="{ND}" HAB="{ND}" IAB="{ND}" JAB="{ND}" KAB="{ND}" LAB="{ND}" MAB="{ND}" NAB="{ND}" OAB="{ND}"/>
+									<NOTICES KBB="0"/>
+								</CIFAS>
+								<SEARCH>
+									<MAIN UDB="0"/>
+									<DEBTCOLL KEB="0" LEB="0" MEB="0" NEB="0"/>
+									<ALLCA YGC="0" QEB="0" REB="0" SEB="0" TEB="0" UEB="0"/>
+									<OWNCA VEB="0" WEB="0" XEB="0" YEB="0" ZEB="0"/>
+									<HOMECREDIT MFB="0" NFB="0" OFB="0" PFB="0" QFB="0" RFB="0"/>
+									<TELECOM XGC="{ND}"/>
+									<PAYDAY DJC="0" NIC="0" OIC="0" PIC="0" QIC="0"/>
+								</SEARCH>
+								<ADDRLINK>
+									<ADDMAIN VGB="1" WGB="1" ZAC="{ND}" NBC="{ND}"/>
+									<ADDRAW XGB="97,RICHMOND STREET,COVENTRY,CV2 4JA" YGB="M" QOB="{447106C3-07C0-48F7-89F9-BABA08083851}" ZGB="{ND}" AHB="{ND}" ROB="{ND}" BHB="{ND}" CHB="{ND}" SOB="{ND}" DHB="{ND}" EHB="{ND}" TOB="{ND}" FHB="{ND}" GHB="{ND}" JBB="{ND}"/>
+									<ADDTIME HHB="2008-03-08" IHB="{ND}" JHB="{ND}" KHB="{ND}" LHB="{ND}"/>
+									<NOTICES XPB="0" YPB="0"/>
+								</ADDRLINK>
+								<ACD>
+									<BALANCE AYB="0"/>
+									<PAYMENTS BYB="0" CYB="{ND}" DYB="{ND}" EYB="{ND}" FHC="{ND}" GHC="{ND}" IYB="{ND}" JYB="{ND}" KYB="{ND}" LYB="{ND}" WHC="0"/>
+									<CASH_ADV_NUM PYB="0" QYB="0" ZGC="{ND}" AHC="{ND}"/>
+									<CASH_ADV_VAL UYB="{ND}" VYB="{ND}" BHC="{ND}" CHC="{ND}"/>
+									<CASH_ADV_BAL ZYB="{ND}" AZB="{ND}" DHC="{ND}" EHC="{ND}"/>
+									<CASH_ADV_BALTIME EZB="{ND}"/>
+									<CASH_ADV_PAY IZB="{ND}"/>
+								</ACD>
+							</OIAUNDEC>
+						</OIA>
+					</APPLICANT>
+				</BSB>
+				<VanquisCustomData>
+					<BBV01>1</BBV01>
+					<BBV02>12</BBV02>
+					<BBV03>23</BBV03>
+					<BBV04>5</BBV04>
+					<BBV05>2</BBV05>
+					<BBV06>Y</BBV06>
+					<BBV07>201712191338</BBV07>
+					<BBV08>D</BBV08>
+					<BBV10>-999</BBV10>
+					<BBV12>1988-10-16T00:00:00</BBV12>
+					<BBV15>3</BBV15>
+					<Var1>5</Var1>
+					<Var2>-999</Var2>
+					<Var3>-999</Var3>
+					<Var4>-999</Var4>
+					<Var5>-999</Var5>
+					<Var6>-999</Var6>
+					<Var7>-999</Var7>
+					<Var8>-999</Var8>
+					<Var9>-999</Var9>
+					<Var10>-999</Var10>
+					<Var11>-999</Var11>
+					<Var12>749</Var12>
+					<Var13>1</Var13>
+					<Var14>1</Var14>
+					<Var15>1</Var15>
+					<Var16>682</Var16>
+					<Var17>5</Var17>
+					<Var18>168</Var18>
+					<Var19>2</Var19>
+					<Var20>0</Var20>
+					<Var21>-999999</Var21>
+					<Var22>2</Var22>
+					<Var23>-999999</Var23>
+					<Var24>0</Var24>
+					<Var25>23</Var25>
+					<Var26>5</Var26>
+					<Var27>-999999</Var27>
+					<Var28>7500</Var28>
+					<Var29>25</Var29>
+					<Var30>-999999</Var30>
+					<Var31>2</Var31>
+					<Var32>3</Var32>
+					<Var33>-999999</Var33>
+					<Var34>-999999</Var34>
+					<Var35>9</Var35>
+					<Var36>7500</Var36>
+					<Var37>-999999</Var37>
+					<Var38>201712191338</Var38>
+					<Var39/>
+					<Var62>2018-05-01T00:00:00</Var62>
+					<Var63>2018-09-11T10:33:00</Var63>
+					<Var74>-999</Var74>
+					<Var75>-999</Var75>
+					<Var76>-999</Var76>
+					<Var77>-999</Var77>
+					<Var110>0.5</Var110>
+					<Var111>51.6</Var111>
+					<Var112>88.9</Var112>
+					<Var113>5361.9</Var113>
+					<Var114>82.0</Var114>
+					<Var115>28</Var115>
+					<Var116>12</Var116>
+					<Var117>21</Var117>
+					<Var118>21</Var118>
+				</VanquisCustomData>
+			</SearchResult>
+		</Search07aResponse>
+	</Body>
+</Envelope>
